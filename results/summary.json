@@ -1,0 +1,126 @@
+{
+  "method": "Offline reanalysis; no application, database or provider calls",
+  "cost_unit": "USD; Decimal arithmetic; eight decimal places",
+  "percentile_method": "nearest-rank; calls with a measured latency only",
+  "real_rounds": {
+    "A": {
+      "audit_events": 640,
+      "text_events": 600,
+      "image_events": 40,
+      "audited_usd": "1.83261560",
+      "provider_usd": "1.83397940",
+      "divergence_usd": "-0.00136380",
+      "complete_text_tokens": 379,
+      "complete_text_tokens_pct": 63.166666666666664,
+      "complete_cost_events": 639,
+      "complete_cost_pct": 99.84375,
+      "complete_events": 419,
+      "events_with_request_id": 0,
+      "failed_call_events": 1,
+      "audited_failed_calls_usd": "0.00000000"
+    },
+    "B": {
+      "audit_events": 640,
+      "text_events": 600,
+      "image_events": 40,
+      "audited_usd": "1.83978490",
+      "provider_usd": "1.83978490",
+      "divergence_usd": "0.00000000",
+      "complete_text_tokens": 600,
+      "complete_text_tokens_pct": 100.0,
+      "complete_cost_events": 640,
+      "complete_cost_pct": 100.0,
+      "complete_events": 640,
+      "events_with_request_id": 640,
+      "failed_call_events": 2,
+      "audited_failed_calls_usd": "0.00233410"
+    }
+  },
+  "call_rounds": {
+    "A": {
+      "calls": 640,
+      "outcomes": {
+        "done": 639,
+        "error": 1
+      },
+      "measured_latencies": 640,
+      "p50_ms": 3891,
+      "p95_ms": 39026,
+      "reconstructed_rows": 0,
+      "planned_ok_calls": 576,
+      "planned_ok_completed": 575
+    },
+    "B": {
+      "calls": 640,
+      "outcomes": {
+        "client_interrupted": 1,
+        "done": 637,
+        "error": 2
+      },
+      "measured_latencies": 639,
+      "p50_ms": 3835,
+      "p95_ms": 37516,
+      "reconstructed_rows": 1,
+      "planned_ok_calls": 576,
+      "planned_ok_completed": 573
+    },
+    "B-audit-off": {
+      "calls": 640,
+      "outcomes": {
+        "done": 589,
+        "error": 42,
+        "http_error": 9
+      },
+      "measured_latencies": 640,
+      "p50_ms": 47,
+      "p95_ms": 3002,
+      "reconstructed_rows": 0,
+      "planned_ok_calls": 576,
+      "planned_ok_completed": 576
+    },
+    "B-db-fail": {
+      "calls": 640,
+      "outcomes": {
+        "done": 589,
+        "error": 42,
+        "http_error": 9
+      },
+      "measured_latencies": 640,
+      "p50_ms": 50,
+      "p95_ms": 3003,
+      "reconstructed_rows": 0,
+      "planned_ok_calls": 576,
+      "planned_ok_completed": 576
+    },
+    "B-mock": {
+      "calls": 640,
+      "outcomes": {
+        "done": 589,
+        "error": 42,
+        "http_error": 9
+      },
+      "measured_latencies": 640,
+      "p50_ms": 49,
+      "p95_ms": 3002,
+      "reconstructed_rows": 0,
+      "planned_ok_calls": 576,
+      "planned_ok_completed": 576
+    }
+  },
+  "b_recorded_provider_comparison": {
+    "text_generations": 600,
+    "exact_cost_matches": 600,
+    "exact_token_matches": 600,
+    "provider_text_usd": "0.43978490",
+    "image_usd_derived_from_round_minus_text": "1.40000000",
+    "provenance": "Whitelisted fields from recorded provider-truth.json; not new provider queries"
+  },
+  "simulated_insert_failure": {
+    "identical_call_outcomes": 640,
+    "recorded_persisted_audit_events": 322,
+    "missing_audit_events": 318,
+    "planned_ok_completed": 576,
+    "provenance": "Call outcomes recomputed from released CSV; persisted count and failure counter from recorded summary, not raw database reanalysis",
+    "interpretation": "Injected audit INSERT failures; not 318 provider-call failures"
+  }
+}

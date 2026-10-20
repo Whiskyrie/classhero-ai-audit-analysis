@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "Please cite this versioned dataset and offline analysis package."
+type: dataset
+title: "ClassHero AI audit: data and offline analysis"
+version: 1.0.0
+date-released: 2026-10-20
+url: "https://github.com/Whiskyrie/classhero-ai-audit-analysis/releases/tag/v1.0.0"
+repository-code: "https://github.com/Whiskyrie/classhero-ai-audit-analysis"
+license:
+  - CC-BY-4.0
+  - MIT
+authors:
+  - family-names: "Ropelatto Filho"
+    given-names: "Evandro Roberto"
+    affiliation: "Federal University of Technology – Paraná, Medianeira campus"
+  - family-names: "Almeida Araujo"
+    given-names: "Shiderlene Vieira de"
+    affiliation: "Federal University of Technology – Paraná, Medianeira campus"
+  - family-names: "Araújo"
+    given-names: "Everton Coimbra de"
+    affiliation: "Federal University of Technology – Paraná, Medianeira campus"
+abstract: >-
+  Pseudonymized observations from one real-provider round per ClassHero
+  version and three simulated-provider passes. Includes offline reanalysis
+  of audit completeness, monetary reconciliation, client outcomes and latency.
+  This deposit does not include the private application or a full rerun harness.
+keywords:
+  - LLM observability
+  - cost auditing
+  - reproducible analysis
+  - ClassHero

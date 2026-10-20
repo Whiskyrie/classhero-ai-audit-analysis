@@ -1,0 +1,24 @@
+{
+  "algorithm": "SHA-256",
+  "scope": "All released files except MANIFEST.json itself",
+  "sha256": {
+    ".gitignore": "659b58adf3c76744ba587f9d5935302d35ffdd65a5765d9b69a09e7f5ab7891b",
+    "CITATION.cff": "231ec0875acaf66733abc734d6a3e1d5257326c72423743560eb39f158a49495",
+    "DATA_DICTIONARY.md": "d8dfecf2e6df869f32447455760ea862d08d1d529879c1523fb0e140291c1aec",
+    "LICENSE": "498125e6eaddaeb84e1d633ce720299df51b6a6372869abb291fd6cdd986b893",
+    "LICENSE-CODE.txt": "66c1926ab08697aa5dbef0a280e40dec95c9fccbc77876647cfff5a6cc46e33a",
+    "LICENSE-DATA.md": "967c58e8f89e249888819d5a7d31cb62c07ca6e04d166f38819ae0c9def9cb22",
+    "PROVENANCE.json": "da8cb63c113586a3db6f33c5db8eb79b77c8dc120bf0f12dda66c16cbbb8856c",
+    "README.md": "a978a96238f1431ca1d6a8b6deac1fc9999c93599d23577be60ed327ac98d47a",
+    "RELEASE_NOTES.md": "c232bced4c98f5f5c0091582ef8275836c26c0ec44291c13226338253334acd8",
+    "analysis.py": "19d35c17cabb8ac3cffed161c00c1a04a1a11f75dd7155f32d7c82877f402115",
+    "data/ai_usage_events_A_B.csv": "22303f2716c8736fcfbeb49a9dd6f5f4848f058737a33c7e0207948475a48114",
+    "data/calls_all_rounds.csv": "11eb8d7840e44298ee1025a813b02e157c6de9d50fb0c6922e23b9a9d1bdbdd1",
+    "data/workload.json": "e5a2209f07553cead9765bd068a678d2fbfbb7c4b2bf0194027864738f15174d",
+    "evidence/provider_reference.json": "b37da2891a6a2c2993583b7ed3b04c3d588f7862da128e6150b761cb0b18842d",
+    "evidence/simulated_audit_counts.json": "b2c909c2c48d01a9d3e63d1f6e1d4c7ddba32b6f142951facc697ef94704f6e0",
+    "results/report.md": "ed5e8a3fe4d67b2a8b12c36dab9824bc8c27563566ec2d1b42e1a44d1d87fbbc",
+    "results/summary.json": "b1646fcb58f1d097ff3cc3cb2e323bbc43c08dadc7e9318f138aee847e6d0ed7",
+    "tests/test_analysis.py": "bcff1b6938673e21a0af1272537a6718eb9a680ac12083cc68c9971df624e6a8"
+  }
+}
