@@ -1,0 +1,59 @@
+{
+  "release": "v1.0.0",
+  "experiment_date_utc": "2026-10-20",
+  "application_versions": {
+    "A": "30f02e62f46530adecf1f9b8ec1136a4a0f015a5",
+    "B": "196effba1aee75514000734afbb5bb875edc0dd6"
+  },
+  "limitations": "Application, execution harness, simulator, raw logs and database dumps are not published. Supplied evidence is not independently authenticated.",
+  "inputs": [
+    {
+      "source": "experiment/results/public/ai_usage_events_A_B.csv",
+      "source_sha256": "ea9b35e0ca8cd9491e6cb219a759e1522b99ba6f9a556d6a75f514bc49d8e0f5",
+      "release_file": "data/ai_usage_events_A_B.csv",
+      "transformation": "Existing pseudonymized export; request/generation IDs replaced consistently with package-local tokens; mapping not released"
+    },
+    {
+      "source": "experiment/results/public/calls_all_rounds.csv",
+      "source_sha256": "e8b3349be208f6fc385b66f82606ddfaa7462cd938b0badb6f18a6b86adcc00b",
+      "release_file": "data/calls_all_rounds.csv",
+      "transformation": "Existing pseudonymized export; request/generation IDs replaced consistently with package-local tokens; mapping not released"
+    },
+    {
+      "source": "experiment/results/public/workload.json",
+      "source_sha256": "e5a2209f07553cead9765bd068a678d2fbfbb7c4b2bf0194027864738f15174d",
+      "release_file": "data/workload.json",
+      "transformation": "Byte-identical historical workload definition"
+    },
+    {
+      "source": "experiment/results/A/provider-truth.json",
+      "source_sha256": "6f6db252e1f9b462e37b9bdc4216e44705798c8698663957a1f95738c60d5fec",
+      "release_file": "evidence/provider_reference.json",
+      "transformation": "explicit field allowlist; no raw management-account responses"
+    },
+    {
+      "source": "experiment/results/B/provider-truth.json",
+      "source_sha256": "39eb96516b647b35532c8e112d07b19e407e7c909056b1b2de69a2341b2e4abe",
+      "release_file": "evidence/provider_reference.json",
+      "transformation": "explicit field allowlist; no raw management-account responses"
+    },
+    {
+      "source": "experiment/results/B-mock/summary.json",
+      "source_sha256": "b12f19e83cafa14e1f89abb5a42c1f92a1298fa59de5977c57a25eda5c18b897",
+      "release_file": "evidence/simulated_audit_counts.json",
+      "transformation": "allowlisted aggregate counters only"
+    },
+    {
+      "source": "experiment/results/B-audit-off/summary.json",
+      "source_sha256": "c1391c51adce5f34f06db9d2383d77c232a5a387258aa032b0ca355669a2e27a",
+      "release_file": "evidence/simulated_audit_counts.json",
+      "transformation": "allowlisted aggregate counters only"
+    },
+    {
+      "source": "experiment/results/B-db-fail/summary.json",
+      "source_sha256": "d5d635b3739c1695a59dfb4d298e86e5fa69948e5111c20e9635645635b26ff0",
+      "release_file": "evidence/simulated_audit_counts.json",
+      "transformation": "allowlisted aggregate counters only"
+    }
+  ]
+}

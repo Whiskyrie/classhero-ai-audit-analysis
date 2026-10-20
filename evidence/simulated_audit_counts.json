@@ -1,0 +1,20 @@
+{
+  "source_kind": "Selected recorded summary fields; simulated audit rows/dumps not released",
+  "rounds": {
+    "B-mock": {
+      "events_in_db": 640,
+      "events_missing_vs_calls": 0,
+      "ai_audit_write_failures_total": null
+    },
+    "B-audit-off": {
+      "events_in_db": 0,
+      "events_missing_vs_calls": 640,
+      "ai_audit_write_failures_total": null
+    },
+    "B-db-fail": {
+      "events_in_db": 322,
+      "events_missing_vs_calls": 318,
+      "ai_audit_write_failures_total": 318
+    }
+  }
+}

@@ -1,0 +1,3625 @@
+{
+  "source_kind": "Recorded experimental management-API evidence; not new API queries",
+  "excluded": [
+    "event_id",
+    "account objects",
+    "keys",
+    "key prefixes",
+    "management-response metadata"
+  ],
+  "rounds": {
+    "A": {
+      "key_usage_before_usd": 0.1181445,
+      "key_usage_after_usd": 1.9521239,
+      "recorded_round_total_provider_usd": 1.8339794,
+      "text_generations": []
+    },
+    "B": {
+      "key_usage_before_usd": 1.9521239,
+      "key_usage_after_usd": 3.7919088,
+      "recorded_round_total_provider_usd": 1.8397849,
+      "text_generations": [
+        {
+          "provider_cost_usd": 0.003627,
+          "provider_native_prompt": 825,
+          "provider_native_completion": 7089,
+          "generation_id": "generation-000001"
+        },
+        {
+          "provider_cost_usd": 0.0005079,
+          "provider_native_prompt": 1049,
+          "provider_native_completion": 806,
+          "generation_id": "generation-000002"
+        },
+        {
+          "provider_cost_usd": 2.64e-05,
+          "provider_native_prompt": 179,
+          "provider_native_completion": 17,
+          "generation_id": "generation-000003"
+        },
+        {
+          "provider_cost_usd": 0.0002409,
+          "provider_native_prompt": 344,
+          "provider_native_completion": 413,
+          "generation_id": "generation-000004"
+        },
+        {
+          "provider_cost_usd": 2.7e-05,
+          "provider_native_prompt": 180,
+          "provider_native_completion": 18,
+          "generation_id": "generation-000005"
+        },
+        {
+          "provider_cost_usd": 0.0010348,
+          "provider_native_prompt": 673,
+          "provider_native_completion": 1935,
+          "generation_id": "generation-000006"
+        },
+        {
+          "provider_cost_usd": 0.0028855,
+          "provider_native_prompt": 2115,
+          "provider_native_completion": 5348,
+          "generation_id": "generation-000007"
+        },
+        {
+          "provider_cost_usd": 0.0002675,
+          "provider_native_prompt": 350,
+          "provider_native_completion": 465,
+          "generation_id": "generation-000008"
+        },
+        {
+          "provider_cost_usd": 0.0005538,
+          "provider_native_prompt": 1203,
+          "provider_native_completion": 867,
+          "generation_id": "generation-000009"
+        },
+        {
+          "provider_cost_usd": 0.0005215,
+          "provider_native_prompt": 795,
+          "provider_native_completion": 884,
+          "generation_id": "generation-000010"
+        },
+        {
+          "provider_cost_usd": 3.3e-05,
+          "provider_native_prompt": 180,
+          "provider_native_completion": 30,
+          "generation_id": "generation-000011"
+        },
+        {
+          "provider_cost_usd": 0.0010133,
+          "provider_native_prompt": 593,
+          "provider_native_completion": 1908,
+          "generation_id": "generation-000012"
+        },
+        {
+          "provider_cost_usd": 0.0009968,
+          "provider_native_prompt": 673,
+          "provider_native_completion": 1859,
+          "generation_id": "generation-000013"
+        },
+        {
+          "provider_cost_usd": 2.93e-05,
+          "provider_native_prompt": 208,
+          "provider_native_completion": 17,
+          "generation_id": "generation-000014"
+        },
+        {
+          "provider_cost_usd": 7.08e-05,
+          "provider_native_prompt": 173,
+          "provider_native_completion": 107,
+          "generation_id": "generation-000015"
+        },
+        {
+          "provider_cost_usd": 0.0004945,
+          "provider_native_prompt": 535,
+          "provider_native_completion": 882,
+          "generation_id": "generation-000016"
+        },
+        {
+          "provider_cost_usd": 0.0005723,
+          "provider_native_prompt": 1203,
+          "provider_native_completion": 904,
+          "generation_id": "generation-000017"
+        },
+        {
+          "provider_cost_usd": 2.98e-05,
+          "provider_native_prompt": 208,
+          "provider_native_completion": 18,
+          "generation_id": "generation-000018"
+        },
+        {
+          "provider_cost_usd": 0.0007398,
+          "provider_native_prompt": 593,
+          "provider_native_completion": 1361,
+          "generation_id": "generation-000019"
+        },
+        {
+          "provider_cost_usd": 0.0003915,
+          "provider_native_prompt": 795,
+          "provider_native_completion": 624,
+          "generation_id": "generation-000020"
+        },
+        {
+          "provider_cost_usd": 9.35e-05,
+          "provider_native_prompt": 195,
+          "provider_native_completion": 148,
+          "generation_id": "generation-000021"
+        },
+        {
+          "provider_cost_usd": 0.0010729,
+          "provider_native_prompt": 1049,
+          "provider_native_completion": 1936,
+          "generation_id": "generation-000022"
+        },
+        {
+          "provider_cost_usd": 0.0005595,
+          "provider_native_prompt": 535,
+          "provider_native_completion": 1012,
+          "generation_id": "generation-000023"
+        },
+        {
+          "provider_cost_usd": 0.0002061,
+          "provider_native_prompt": 496,
+          "provider_native_completion": 313,
+          "generation_id": "generation-000024"
+        },
+        {
+          "provider_cost_usd": 0.000556,
+          "provider_native_prompt": 795,
+          "provider_native_completion": 953,
+          "generation_id": "generation-000025"
+        },
+        {
+          "provider_cost_usd": 0.002657,
+          "provider_native_prompt": 2115,
+          "provider_native_completion": 4891,
+          "generation_id": "generation-000026"
+        },
+        {
+          "provider_cost_usd": 0.0001906,
+          "provider_native_prompt": 496,
+          "provider_native_completion": 282,
+          "generation_id": "generation-000027"
+        },
+        {
+          "provider_cost_usd": 0.0014203,
+          "provider_native_prompt": 673,
+          "provider_native_completion": 2706,
+          "generation_id": "generation-000028"
+        },
+        {
+          "provider_cost_usd": 9.33e-05,
+          "provider_native_prompt": 173,
+          "provider_native_completion": 152,
+          "generation_id": "generation-000029"
+        },
+        {
+          "provider_cost_usd": 2.85e-05,
+          "provider_native_prompt": 195,
+          "provider_native_completion": 18,
+          "generation_id": "generation-000030"
+        },
+        {
+          "provider_cost_usd": 0.000412,
+          "provider_native_prompt": 795,
+          "provider_native_completion": 665,
+          "generation_id": "generation-000031"
+        },
+        {
+          "provider_cost_usd": 2.68e-05,
+          "provider_native_prompt": 208,
+          "provider_native_completion": 12,
+          "generation_id": "generation-000032"
+        },
+        {
+          "provider_cost_usd": 0.0002454,
+          "provider_native_prompt": 344,
+          "provider_native_completion": 422,
+          "generation_id": "generation-000033"
+        },
+        {
+          "provider_cost_usd": 2.9e-05,
+          "provider_native_prompt": 195,
+          "provider_native_completion": 19,
+          "generation_id": "generation-000034"
+        },
+        {
+          "provider_cost_usd": 0.0012623,
+          "provider_native_prompt": 673,
+          "provider_native_completion": 2390,
+          "generation_id": "generation-000035"
+        },
+        {
+          "provider_cost_usd": 7.37e-05,
+          "provider_native_prompt": 172,
+          "provider_native_completion": 113,
+          "generation_id": "generation-000036"
+        },
+        {
+          "provider_cost_usd": 2.93e-05,
+          "provider_native_prompt": 208,
+          "provider_native_completion": 17,
+          "generation_id": "generation-000037"
+        },
+        {
+          "provider_cost_usd": 3.15e-05,
+          "provider_native_prompt": 180,
+          "provider_native_completion": 27,
+          "generation_id": "generation-000038"
+        },
+        {
+          "provider_cost_usd": 2.71e-05,
+          "provider_native_prompt": 181,
+          "provider_native_completion": 18,
+          "generation_id": "generation-000039"
+        },
+        {
+          "provider_cost_usd": 2.96e-05,
+          "provider_native_prompt": 181,
+          "provider_native_completion": 23,
+          "generation_id": "generation-000040"
+        },
+        {
+          "provider_cost_usd": 9.79e-05,
+          "provider_native_prompt": 174,
+          "provider_native_completion": 161,
+          "generation_id": "generation-000041"
+        },
+        {
+          "provider_cost_usd": 2.91e-05,
+          "provider_native_prompt": 181,
+          "provider_native_completion": 22,
+          "generation_id": "generation-000042"
+        },
+        {
+          "provider_cost_usd": 0.0002006,
+          "provider_native_prompt": 496,
+          "provider_native_completion": 302,
+          "generation_id": "generation-000043"
+        },
+        {
+          "provider_cost_usd": 8.47e-05,
+          "provider_native_prompt": 172,
+          "provider_native_completion": 135,
+          "generation_id": "generation-000044"
+        },
+        {
+          "provider_cost_usd": 2.81e-05,
+          "provider_native_prompt": 196,
+          "provider_native_completion": 17,
+          "generation_id": "generation-000045"
+        },
+        {
+          "provider_cost_usd": 0.0004669,
+          "provider_native_prompt": 1049,
+          "provider_native_completion": 724,
+          "generation_id": "generation-000046"
+        },
+        {
+          "provider_cost_usd": 0.0023795,
+          "provider_native_prompt": 2115,
+          "provider_native_completion": 4336,
+          "generation_id": "generation-000047"
+        },
+        {
+          "provider_cost_usd": 0.0011988,
+          "provider_native_prompt": 673,
+          "provider_native_completion": 2263,
+          "generation_id": "generation-000048"
+        },
+        {
+          "provider_cost_usd": 0.000111,
+          "provider_native_prompt": 195,
+          "provider_native_completion": 183,
+          "generation_id": "generation-000049"
+        },
+        {
+          "provider_cost_usd": 0.0010798,
+          "provider_native_prompt": 673,
+          "provider_native_completion": 2025,
+          "generation_id": "generation-000050"
+        },
+        {
+          "provider_cost_usd": 0.0001906,
+          "provider_native_prompt": 496,
+          "provider_native_completion": 282,
+          "generation_id": "generation-000051"
+        },
+        {
+          "provider_cost_usd": 0.0009898,
+          "provider_native_prompt": 673,
+          "provider_native_completion": 1845,
+          "generation_id": "generation-000052"
+        },
+        {
+          "provider_cost_usd": 2.65e-05,
+          "provider_native_prompt": 180,
+          "provider_native_completion": 17,
+          "generation_id": "generation-000053"
+        },
+        {
+          "provider_cost_usd": 0.002806,
+          "provider_native_prompt": 2115,
+          "provider_native_completion": 5189,
+          "generation_id": "generation-000054"
+        },
+        {
+          "provider_cost_usd": 0.0005763,
+          "provider_native_prompt": 1203,
+          "provider_native_completion": 912,
+          "generation_id": "generation-000055"
+        },
+        {
+          "provider_cost_usd": 0.0008703,
+          "provider_native_prompt": 538,
+          "provider_native_completion": 1633,
+          "generation_id": "generation-000056"
+        },
+        {
+          "provider_cost_usd": 2.79e-05,
+          "provider_native_prompt": 194,
+          "provider_native_completion": 17,
+          "generation_id": "generation-000057"
+        },
+        {
+          "provider_cost_usd": 2.98e-05,
+          "provider_native_prompt": 208,
+          "provider_native_completion": 18,
+          "generation_id": "generation-000058"
+        },
+        {
+          "provider_cost_usd": 9.48e-05,
+          "provider_native_prompt": 173,
+          "provider_native_completion": 155,
+          "generation_id": "generation-000059"
+        },
+        {
+          "provider_cost_usd": 0.000546,
+          "provider_native_prompt": 795,
+          "provider_native_completion": 933,
+          "generation_id": "generation-000060"
+        },
+        {
+          "provider_cost_usd": 3.3e-05,
+          "provider_native_prompt": 180,
+          "provider_native_completion": 30,
+          "generation_id": "generation-000061"
+        },
+        {
+          "provider_cost_usd": 0.002869,
+          "provider_native_prompt": 2115,
+          "provider_native_completion": 5315,
+          "generation_id": "generation-000062"
+        },
+        {
+          "provider_cost_usd": 0.0010983,
+          "provider_native_prompt": 593,
+          "provider_native_completion": 2078,
+          "generation_id": "generation-000063"
+        },
+        {
+          "provider_cost_usd": 0.0005939,
+          "provider_native_prompt": 539,
+          "provider_native_completion": 1080,
+          "generation_id": "generation-000064"
+        },
+        {
+          "provider_cost_usd": 0.0008303,
+          "provider_native_prompt": 673,
+          "provider_native_completion": 1526,
+          "generation_id": "generation-000065"
+        },
+        {
+          "provider_cost_usd": 2.8e-05,
+          "provider_native_prompt": 195,
+          "provider_native_completion": 17,
+          "generation_id": "generation-000066"
+        },
+        {
+          "provider_cost_usd": 0.0011505,
+          "provider_native_prompt": 1030,
+          "provider_native_completion": 2095,
+          "generation_id": "generation-000067"
+        },
+        {
+          "provider_cost_usd": 0.0001876,
+          "provider_native_prompt": 496,
+          "provider_native_completion": 276,
+          "generation_id": "generation-000068"
+        },
+        {
+          "provider_cost_usd": 0.0011755,
+          "provider_native_prompt": 1030,
+          "provider_native_completion": 2145,
+          "generation_id": "generation-000069"
+        },
+        {
+          "provider_cost_usd": 0.0002648,
+          "provider_native_prompt": 348,
+          "provider_native_completion": 460,
+          "generation_id": "generation-000070"
+        },
+        {
+          "provider_cost_usd": 0.0001007,
+          "provider_native_prompt": 172,
+          "provider_native_completion": 167,
+          "generation_id": "generation-000071"
+        },
+        {
+          "provider_cost_usd": 0.0004235,
+          "provider_native_prompt": 535,
+          "provider_native_completion": 740,
+          "generation_id": "generation-000072"
+        },
+        {
+          "provider_cost_usd": 0.0006185,
+          "provider_native_prompt": 795,
+          "provider_native_completion": 1078,
+          "generation_id": "generation-000073"
+        },
+        {
+          "provider_cost_usd": 2.85e-05,
+          "provider_native_prompt": 195,
+          "provider_native_completion": 18,
+          "generation_id": "generation-000074"
+        },
+        {
+          "provider_cost_usd": 0.002316,
+          "provider_native_prompt": 2115,
+          "provider_native_completion": 4209,
+          "generation_id": "generation-000075"
+        },
+        {
+          "provider_cost_usd": 0.0005045,
+          "provider_native_prompt": 535,
+          "provider_native_completion": 902,
+          "generation_id": "generation-000076"
+        },
+        {
+          "provider_cost_usd": 2.8e-05,
+          "provider_native_prompt": 195,
+          "provider_native_completion": 17,
+          "generation_id": "generation-000077"
+        },
+        {
+          "provider_cost_usd": 0.003215,
+          "provider_native_prompt": 2115,
+          "provider_native_completion": 6007,
+          "generation_id": "generation-000078"
+        },
+        {
+          "provider_cost_usd": 0.0025265,
+          "provider_native_prompt": 2115,
+          "provider_native_completion": 4630,
+          "generation_id": "generation-000079"
+        },
+        {
+          "provider_cost_usd": 0.0006838,
+          "provider_native_prompt": 538,
+          "provider_native_completion": 1260,
+          "generation_id": "generation-000080"
+        },
+        {
+          "provider_cost_usd": 2.61e-05,
+          "provider_native_prompt": 196,
+          "provider_native_completion": 13,
+          "generation_id": "generation-000081"
+        },
+        {
+          "provider_cost_usd": 0.0002289,
+          "provider_native_prompt": 344,
+          "provider_native_completion": 389,
+          "generation_id": "generation-000082"
+        },
+        {
+          "provider_cost_usd": 2.98e-05,
+          "provider_native_prompt": 208,
+          "provider_native_completion": 18,
+          "generation_id": "generation-000083"
+        },
+        {
+          "provider_cost_usd": 0.0002457,
+          "provider_native_prompt": 342,
+          "provider_native_completion": 423,
+          "generation_id": "generation-000084"
+        },
+        {
+          "provider_cost_usd": 0.0004959,
+          "provider_native_prompt": 1049,
+          "provider_native_completion": 782,
+          "generation_id": "generation-000085"
+        },
+        {
+          "provider_cost_usd": 6.98e-05,
+          "provider_native_prompt": 173,
+          "provider_native_completion": 105,
+          "generation_id": "generation-000086"
+        },
+        {
+          "provider_cost_usd": 0.0026935,
+          "provider_native_prompt": 2115,
+          "provider_native_completion": 4964,
+          "generation_id": "generation-000087"
+        },
+        {
+          "provider_cost_usd": 0.0004914,
+          "provider_native_prompt": 1049,
+          "provider_native_completion": 773,
+          "generation_id": "generation-000088"
+        },
+        {
+          "provider_cost_usd": 8.28e-05,
+          "provider_native_prompt": 173,
+          "provider_native_completion": 131,
+          "generation_id": "generation-000089"
+        },
+        {
+          "provider_cost_usd": 0.0008903,
+          "provider_native_prompt": 673,
+          "provider_native_completion": 1646,
+          "generation_id": "generation-000090"
+        },
+        {
+          "provider_cost_usd": 0.0005635,
+          "provider_native_prompt": 795,
+          "provider_native_completion": 968,
+          "generation_id": "generation-000091"
+        },
+        {
+          "provider_cost_usd": 2.98e-05,
+          "provider_native_prompt": 208,
+          "provider_native_completion": 18,
+          "generation_id": "generation-000092"
+        },
+        {
+          "provider_cost_usd": 0.0001926,
+          "provider_native_prompt": 496,
+          "provider_native_completion": 286,
+          "generation_id": "generation-000093"
+        },
+        {
+          "provider_cost_usd": 0.0001911,
+          "provider_native_prompt": 496,
+          "provider_native_completion": 283,
+          "generation_id": "generation-000094"
+        },
+        {
+          "provider_cost_usd": 0.0001004,
+          "provider_native_prompt": 174,
+          "provider_native_completion": 166,
+          "generation_id": "generation-000095"
+        },
+        {
+          "provider_cost_usd": 0.0006968,
+          "provider_native_prompt": 538,
+          "provider_native_completion": 1286,
+          "generation_id": "generation-000096"
+        },
+        {
+          "provider_cost_usd": 0.0023315,
+          "provider_native_prompt": 2115,
+          "provider_native_completion": 4240,
+          "generation_id": "generation-000097"
+        },
+        {
+          "provider_cost_usd": 0.0010718,
+          "provider_native_prompt": 593,
+          "provider_native_completion": 2025,
+          "generation_id": "generation-000098"
+        },
+        {
+          "provider_cost_usd": 0.0002472,
+          "provider_native_prompt": 342,
+          "provider_native_completion": 426,
+          "generation_id": "generation-000099"
+        },
+        {
+          "provider_cost_usd": 3.06e-05,
+          "provider_native_prompt": 181,
+          "provider_native_completion": 25,
+          "generation_id": "generation-000100"
+        },
+        {
+          "provider_cost_usd": 2.71e-05,
+          "provider_native_prompt": 181,
+          "provider_native_completion": 18,
+          "generation_id": "generation-000101"
+        },
+        {
+          "provider_cost_usd": 0.0004884,
+          "provider_native_prompt": 1049,
+          "provider_native_completion": 767,
+          "generation_id": "generation-000102"
+        },
+        {
+          "provider_cost_usd": 0.000567,
+          "provider_native_prompt": 795,
+          "provider_native_completion": 975,
+          "generation_id": "generation-000103"
+        },
+        {
+          "provider_cost_usd": 0.0005331,
+          "provider_native_prompt": 536,
+          "provider_native_completion": 959,
+          "generation_id": "generation-000104"
+        },
+        {
+          "provider_cost_usd": 2.44e-05,
+          "provider_native_prompt": 179,
+          "provider_native_completion": 13,
+          "generation_id": "generation-000105"
+        },
+        {
+          "provider_cost_usd": 0.0004434,
+          "provider_native_prompt": 1049,
+          "provider_native_completion": 677,
+          "generation_id": "generation-000106"
+        },
+        {
+          "provider_cost_usd": 0.0028615,
+          "provider_native_prompt": 2115,
+          "provider_native_completion": 5300,
+          "generation_id": "generation-000107"
+        },
+        {
+          "provider_cost_usd": 0.0010839,
+          "provider_native_prompt": 1049,
+          "provider_native_completion": 1958,
+          "generation_id": "generation-000108"
+        },
+        {
+          "provider_cost_usd": 9.57e-05,
+          "provider_native_prompt": 172,
+          "provider_native_completion": 157,
+          "generation_id": "generation-000109"
+        },
+        {
+          "provider_cost_usd": 0.0002434,
+          "provider_native_prompt": 344,
+          "provider_native_completion": 418,
+          "generation_id": "generation-000110"
+        },
+        {
+          "provider_cost_usd": 8.82e-05,
+          "provider_native_prompt": 172,
+          "provider_native_completion": 142,
+          "generation_id": "generation-000111"
+        },
+        {
+          "provider_cost_usd": 3.06e-05,
+          "provider_native_prompt": 181,
+          "provider_native_completion": 25,
+          "generation_id": "generation-000112"
+        },
+        {
+          "provider_cost_usd": 0.0010838,
+          "provider_native_prompt": 673,
+          "provider_native_completion": 2033,
+          "generation_id": "generation-000113"
+        },
+        {
+          "provider_cost_usd": 7.23e-05,
+          "provider_native_prompt": 173,
+          "provider_native_completion": 110,
+          "generation_id": "generation-000114"
+        },
+        {
+          "provider_cost_usd": 0.0001012,
+          "provider_native_prompt": 172,
+          "provider_native_completion": 168,
+          "generation_id": "generation-000115"
+        },
+        {
+          "provider_cost_usd": 0.0001966,
+          "provider_native_prompt": 496,
+          "provider_native_completion": 294,
+          "generation_id": "generation-000116"
+        },
+        {
+          "provider_cost_usd": 0.0005793,
+          "provider_native_prompt": 1203,
+          "provider_native_completion": 918,
+          "generation_id": "generation-000117"
+        },
+        {
+          "provider_cost_usd": 2.68e-05,
+          "provider_native_prompt": 208,
+          "provider_native_completion": 12,
+          "generation_id": "generation-000118"
+        },
+        {
+          "provider_cost_usd": 0.0001906,
+          "provider_native_prompt": 496,
+          "provider_native_completion": 282,
+          "generation_id": "generation-000119"
+        },
+        {
+          "provider_cost_usd": 0.0006923,
+          "provider_native_prompt": 538,
+          "provider_native_completion": 1277,
+          "generation_id": "generation-000120"
+        },
+        {
+          "provider_cost_usd": 0.0009428,
+          "provider_native_prompt": 593,
+          "provider_native_completion": 1767,
+          "generation_id": "generation-000121"
+        },
+        {
+          "provider_cost_usd": 0.0002467,
+          "provider_native_prompt": 342,
+          "provider_native_completion": 425,
+          "generation_id": "generation-000122"
+        },
+        {
+          "provider_cost_usd": 0.0002367,
+          "provider_native_prompt": 342,
+          "provider_native_completion": 405,
+          "generation_id": "generation-000123"
+        },
+        {
+          "provider_cost_usd": 0.0042678,
+          "provider_native_prompt": 863,
+          "provider_native_completion": 8363,
+          "generation_id": "generation-000124"
+        },
+        {
+          "provider_cost_usd": 0.0009288,
+          "provider_native_prompt": 593,
+          "provider_native_completion": 1739,
+          "generation_id": "generation-000125"
+        },
+        {
+          "provider_cost_usd": 0.0005963,
+          "provider_native_prompt": 1203,
+          "provider_native_completion": 952,
+          "generation_id": "generation-000126"
+        },
+        {
+          "provider_cost_usd": 0.0001221,
+          "provider_native_prompt": 196,
+          "provider_native_completion": 205,
+          "generation_id": "generation-000127"
+        },
+        {
+          "provider_cost_usd": 0.0001465,
+          "provider_native_prompt": 195,
+          "provider_native_completion": 254,
+          "generation_id": "generation-000128"
+        },
+        {
+          "provider_cost_usd": 0.0002101,
+          "provider_native_prompt": 496,
+          "provider_native_completion": 321,
+          "generation_id": "generation-000129"
+        },
+        {
+          "provider_cost_usd": 0.0008753,
+          "provider_native_prompt": 593,
+          "provider_native_completion": 1632,
+          "generation_id": "generation-000130"
+        },
+        {
+          "provider_cost_usd": 0.0026345,
+          "provider_native_prompt": 2115,
+          "provider_native_completion": 4846,
+          "generation_id": "generation-000131"
+        },
+        {
+          "provider_cost_usd": 0.0006281,
+          "provider_native_prompt": 536,
+          "provider_native_completion": 1149,
+          "generation_id": "generation-000132"
+        },
+        {
+          "provider_cost_usd": 0.0002006,
+          "provider_native_prompt": 496,
+          "provider_native_completion": 302,
+          "generation_id": "generation-000133"
+        },
+        {
+          "provider_cost_usd": 2.8e-05,
+          "provider_native_prompt": 195,
+          "provider_native_completion": 17,
+          "generation_id": "generation-000134"
+        },
+        {
+          "provider_cost_usd": 0.0004816,
+          "provider_native_prompt": 536,
+          "provider_native_completion": 856,
+          "generation_id": "generation-000135"
+        },
+        {
+          "provider_cost_usd": 0.002845,
+          "provider_native_prompt": 2115,
+          "provider_native_completion": 5267,
+          "generation_id": "generation-000136"
+        },
+        {
+          "provider_cost_usd": 0.0009653,
+          "provider_native_prompt": 673,
+          "provider_native_completion": 1796,
+          "generation_id": "generation-000137"
+        },
+        {
+          "provider_cost_usd": 2.98e-05,
+          "provider_native_prompt": 208,
+          "provider_native_completion": 18,
+          "generation_id": "generation-000138"
+        },
+        {
+          "provider_cost_usd": 0.0009353,
+          "provider_native_prompt": 673,
+          "provider_native_completion": 1736,
+          "generation_id": "generation-000139"
+        },
+        {
+          "provider_cost_usd": 0.0013598,
+          "provider_native_prompt": 673,
+          "provider_native_completion": 2585,
+          "generation_id": "generation-000140"
+        },
+        {
+          "provider_cost_usd": 3.14e-05,
+          "provider_native_prompt": 179,
+          "provider_native_completion": 27,
+          "generation_id": "generation-000141"
+        },
+        {
+          "provider_cost_usd": 0.002236,
+          "provider_native_prompt": 2115,
+          "provider_native_completion": 4049,
+          "generation_id": "generation-000142"
+        },
+        {
+          "provider_cost_usd": 0.0009848,
+          "provider_native_prompt": 673,
+          "provider_native_completion": 1835,
+          "generation_id": "generation-000143"
+        },
+        {
+          "provider_cost_usd": 0.0002026,
+          "provider_native_prompt": 496,
+          "provider_native_completion": 306,
+          "generation_id": "generation-000144"
+        },
+        {
+          "provider_cost_usd": 0.0005291,
+          "provider_native_prompt": 536,
+          "provider_native_completion": 951,
+          "generation_id": "generation-000145"
+        },
+        {
+          "provider_cost_usd": 2.45e-05,
+          "provider_native_prompt": 180,
+          "provider_native_completion": 13,
+          "generation_id": "generation-000146"
+        },
+        {
+          "provider_cost_usd": 0.000686,
+          "provider_native_prompt": 535,
+          "provider_native_completion": 1265,
+          "generation_id": "generation-000147"
+        },
+        {
+          "provider_cost_usd": 0.0046828,
+          "provider_native_prompt": 863,
+          "provider_native_completion": 9193,
+          "generation_id": "generation-000148"
+        },
+        {
+          "provider_cost_usd": 2.95e-05,
+          "provider_native_prompt": 195,
+          "provider_native_completion": 20,
+          "generation_id": "generation-000149"
+        },
+        {
+          "provider_cost_usd": 7.38e-05,
+          "provider_native_prompt": 173,
+          "provider_native_completion": 113,
+          "generation_id": "generation-000150"
+        },
+        {
+          "provider_cost_usd": 2.8e-05,
+          "provider_native_prompt": 195,
+          "provider_native_completion": 17,
+          "generation_id": "generation-000151"
+        },
+        {
+          "provider_cost_usd": 0.0004699,
+          "provider_native_prompt": 1049,
+          "provider_native_completion": 730,
+          "generation_id": "generation-000152"
+        },
+        {
+          "provider_cost_usd": 0.0008713,
+          "provider_native_prompt": 593,
+          "provider_native_completion": 1624,
+          "generation_id": "generation-000153"
+        },
+        {
+          "provider_cost_usd": 3.06e-05,
+          "provider_native_prompt": 181,
+          "provider_native_completion": 25,
+          "generation_id": "generation-000154"
+        },
+        {
+          "provider_cost_usd": 0.0005356,
+          "provider_native_prompt": 536,
+          "provider_native_completion": 964,
+          "generation_id": "generation-000155"
+        },
+        {
+          "provider_cost_usd": 0.0005965,
+          "provider_native_prompt": 535,
+          "provider_native_completion": 1086,
+          "generation_id": "generation-000156"
+        },
+        {
+          "provider_cost_usd": 0.0002637,
+          "provider_native_prompt": 342,
+          "provider_native_completion": 459,
+          "generation_id": "generation-000157"
+        },
+        {
+          "provider_cost_usd": 0.000601,
+          "provider_native_prompt": 795,
+          "provider_native_completion": 1043,
+          "generation_id": "generation-000158"
+        },
+        {
+          "provider_cost_usd": 0.0005885,
+          "provider_native_prompt": 795,
+          "provider_native_completion": 1018,
+          "generation_id": "generation-000159"
+        },
+        {
+          "provider_cost_usd": 0.0011523,
+          "provider_native_prompt": 1048,
+          "provider_native_completion": 2095,
+          "generation_id": "generation-000160"
+        },
+        {
+          "provider_cost_usd": 2.7e-05,
+          "provider_native_prompt": 195,
+          "provider_native_completion": 15,
+          "generation_id": "generation-000161"
+        },
+        {
+          "provider_cost_usd": 8.54e-05,
+          "provider_native_prompt": 174,
+          "provider_native_completion": 136,
+          "generation_id": "generation-000162"
+        },
+        {
+          "provider_cost_usd": 2.66e-05,
+          "provider_native_prompt": 196,
+          "provider_native_completion": 14,
+          "generation_id": "generation-000163"
+        },
+        {
+          "provider_cost_usd": 0.0010678,
+          "provider_native_prompt": 673,
+          "provider_native_completion": 2001,
+          "generation_id": "generation-000164"
+        },
+        {
+          "provider_cost_usd": 0.0005723,
+          "provider_native_prompt": 1203,
+          "provider_native_completion": 904,
+          "generation_id": "generation-000165"
+        },
+        {
+          "provider_cost_usd": 7.83e-05,
+          "provider_native_prompt": 173,
+          "provider_native_completion": 122,
+          "generation_id": "generation-000166"
+        },
+        {
+          "provider_cost_usd": 0.0001856,
+          "provider_native_prompt": 496,
+          "provider_native_completion": 272,
+          "generation_id": "generation-000167"
+        },
+        {
+          "provider_cost_usd": 0.0039149,
+          "provider_native_prompt": 1049,
+          "provider_native_completion": 7620,
+          "generation_id": "generation-000168"
+        },
+        {
+          "provider_cost_usd": 0.0024924,
+          "provider_native_prompt": 814,
+          "provider_native_completion": 4822,
+          "generation_id": "generation-000169"
+        },
+        {
+          "provider_cost_usd": 0.0004754,
+          "provider_native_prompt": 1049,
+          "provider_native_completion": 741,
+          "generation_id": "generation-000170"
+        },
+        {
+          "provider_cost_usd": 0.0002407,
+          "provider_native_prompt": 342,
+          "provider_native_completion": 413,
+          "generation_id": "generation-000171"
+        },
+        {
+          "provider_cost_usd": 2.86e-05,
+          "provider_native_prompt": 196,
+          "provider_native_completion": 18,
+          "generation_id": "generation-000172"
+        },
+        {
+          "provider_cost_usd": 0.0005505,
+          "provider_native_prompt": 535,
+          "provider_native_completion": 994,
+          "generation_id": "generation-000173"
+        },
+        {
+          "provider_cost_usd": 2.93e-05,
+          "provider_native_prompt": 208,
+          "provider_native_completion": 17,
+          "generation_id": "generation-000174"
+        },
+        {
+          "provider_cost_usd": 0.0006045,
+          "provider_native_prompt": 535,
+          "provider_native_completion": 1102,
+          "generation_id": "generation-000175"
+        },
+        {
+          "provider_cost_usd": 6.33e-05,
+          "provider_native_prompt": 173,
+          "provider_native_completion": 92,
+          "generation_id": "generation-000176"
+        },
+        {
+          "provider_cost_usd": 0.0005803,
+          "provider_native_prompt": 1203,
+          "provider_native_completion": 920,
+          "generation_id": "generation-000177"
+        },
+        {
+          "provider_cost_usd": 3.25e-05,
+          "provider_native_prompt": 180,
+          "provider_native_completion": 29,
+          "generation_id": "generation-000178"
+        },
+        {
+          "provider_cost_usd": 0.002223,
+          "provider_native_prompt": 2115,
+          "provider_native_completion": 4023,
+          "generation_id": "generation-000179"
+        },
+        {
+          "provider_cost_usd": 0.0001286,
+          "provider_native_prompt": 196,
+          "provider_native_completion": 218,
+          "generation_id": "generation-000180"
+        },
+        {
+          "provider_cost_usd": 8.38e-05,
+          "provider_native_prompt": 173,
+          "provider_native_completion": 133,
+          "generation_id": "generation-000181"
+        },
+        {
+          "provider_cost_usd": 2.88e-05,
+          "provider_native_prompt": 208,
+          "provider_native_completion": 16,
+          "generation_id": "generation-000182"
+        },
+        {
+          "provider_cost_usd": 8.37e-05,
+          "provider_native_prompt": 172,
+          "provider_native_completion": 133,
+          "generation_id": "generation-000183"
+        },
+        {
+          "provider_cost_usd": 2.8e-05,
+          "provider_native_prompt": 195,
+          "provider_native_completion": 17,
+          "generation_id": "generation-000184"
+        },
+        {
+          "provider_cost_usd": 0.0038758,
+          "provider_native_prompt": 1103,
+          "provider_native_completion": 7531,
+          "generation_id": "generation-000185"
+        },
+        {
+          "provider_cost_usd": 0.0004744,
+          "provider_native_prompt": 1049,
+          "provider_native_completion": 739,
+          "generation_id": "generation-000186"
+        },
+        {
+          "provider_cost_usd": 2.81e-05,
+          "provider_native_prompt": 196,
+          "provider_native_completion": 17,
+          "generation_id": "generation-000187"
+        },
+        {
+          "provider_cost_usd": 0.0009278,
+          "provider_native_prompt": 593,
+          "provider_native_completion": 1737,
+          "generation_id": "generation-000188"
+        },
+        {
+          "provider_cost_usd": 0.0005499,
+          "provider_native_prompt": 539,
+          "provider_native_completion": 992,
+          "generation_id": "generation-000189"
+        },
+        {
+          "provider_cost_usd": 0.0001911,
+          "provider_native_prompt": 496,
+          "provider_native_completion": 283,
+          "generation_id": "generation-000190"
+        },
+        {
+          "provider_cost_usd": 2.89e-05,
+          "provider_native_prompt": 194,
+          "provider_native_completion": 19,
+          "generation_id": "generation-000191"
+        },
+        {
+          "provider_cost_usd": 3.09e-05,
+          "provider_native_prompt": 179,
+          "provider_native_completion": 26,
+          "generation_id": "generation-000192"
+        },
+        {
+          "provider_cost_usd": 0.000572,
+          "provider_native_prompt": 795,
+          "provider_native_completion": 985,
+          "generation_id": "generation-000193"
+        },
+        {
+          "provider_cost_usd": 0.000622,
+          "provider_native_prompt": 795,
+          "provider_native_completion": 1085,
+          "generation_id": "generation-000194"
+        },
+        {
+          "provider_cost_usd": 0.0005274,
+          "provider_native_prompt": 539,
+          "provider_native_completion": 947,
+          "generation_id": "generation-000195"
+        },
+        {
+          "provider_cost_usd": 0.000526,
+          "provider_native_prompt": 795,
+          "provider_native_completion": 893,
+          "generation_id": "generation-000196"
+        },
+        {
+          "provider_cost_usd": 0.0012023,
+          "provider_native_prompt": 673,
+          "provider_native_completion": 2270,
+          "generation_id": "generation-000197"
+        },
+        {
+          "provider_cost_usd": 0.0032398,
+          "provider_native_prompt": 823,
+          "provider_native_completion": 6315,
+          "generation_id": "generation-000198"
+        },
+        {
+          "provider_cost_usd": 7.83e-05,
+          "provider_native_prompt": 173,
+          "provider_native_completion": 122,
+          "generation_id": "generation-000199"
+        },
+        {
+          "provider_cost_usd": 0.0012573,
+          "provider_native_prompt": 673,
+          "provider_native_completion": 2380,
+          "generation_id": "generation-000200"
+        },
+        {
+          "provider_cost_usd": 0.0040364,
+          "provider_native_prompt": 814,
+          "provider_native_completion": 7910,
+          "generation_id": "generation-000201"
+        },
+        {
+          "provider_cost_usd": 2.9e-05,
+          "provider_native_prompt": 195,
+          "provider_native_completion": 19,
+          "generation_id": "generation-000202"
+        },
+        {
+          "provider_cost_usd": 6.83e-05,
+          "provider_native_prompt": 173,
+          "provider_native_completion": 102,
+          "generation_id": "generation-000203"
+        },
+        {
+          "provider_cost_usd": 2.98e-05,
+          "provider_native_prompt": 208,
+          "provider_native_completion": 18,
+          "generation_id": "generation-000204"
+        },
+        {
+          "provider_cost_usd": 8.28e-05,
+          "provider_native_prompt": 173,
+          "provider_native_completion": 131,
+          "generation_id": "generation-000205"
+        },
+        {
+          "provider_cost_usd": 2.81e-05,
+          "provider_native_prompt": 181,
+          "provider_native_completion": 20,
+          "generation_id": "generation-000206"
+        },
+        {
+          "provider_cost_usd": 7.48e-05,
+          "provider_native_prompt": 173,
+          "provider_native_completion": 115,
+          "generation_id": "generation-000207"
+        },
+        {
+          "provider_cost_usd": 2.79e-05,
+          "provider_native_prompt": 194,
+          "provider_native_completion": 17,
+          "generation_id": "generation-000208"
+        },
+        {
+          "provider_cost_usd": 9.49e-05,
+          "provider_native_prompt": 174,
+          "provider_native_completion": 155,
+          "generation_id": "generation-000209"
+        },
+        {
+          "provider_cost_usd": 2.9e-05,
+          "provider_native_prompt": 195,
+          "provider_native_completion": 19,
+          "generation_id": "generation-000210"
+        },
+        {
+          "provider_cost_usd": 0.0005715,
+          "provider_native_prompt": 535,
+          "provider_native_completion": 1036,
+          "generation_id": "generation-000211"
+        },
+        {
+          "provider_cost_usd": 3.35e-05,
+          "provider_native_prompt": 180,
+          "provider_native_completion": 31,
+          "generation_id": "generation-000212"
+        },
+        {
+          "provider_cost_usd": 0.0013643,
+          "provider_native_prompt": 673,
+          "provider_native_completion": 2594,
+          "generation_id": "generation-000213"
+        },
+        {
+          "provider_cost_usd": 0.000569,
+          "provider_native_prompt": 535,
+          "provider_native_completion": 1031,
+          "generation_id": "generation-000214"
+        },
+        {
+          "provider_cost_usd": 0.0006235,
+          "provider_native_prompt": 535,
+          "provider_native_completion": 1140,
+          "generation_id": "generation-000215"
+        },
+        {
+          "provider_cost_usd": 0.0010118,
+          "provider_native_prompt": 593,
+          "provider_native_completion": 1905,
+          "generation_id": "generation-000216"
+        },
+        {
+          "provider_cost_usd": 0.0004734,
+          "provider_native_prompt": 1049,
+          "provider_native_completion": 737,
+          "generation_id": "generation-000217"
+        },
+        {
+          "provider_cost_usd": 0.000533,
+          "provider_native_prompt": 795,
+          "provider_native_completion": 907,
+          "generation_id": "generation-000218"
+        },
+        {
+          "provider_cost_usd": 2.9e-05,
+          "provider_native_prompt": 195,
+          "provider_native_completion": 19,
+          "generation_id": "generation-000219"
+        },
+        {
+          "provider_cost_usd": 0.0002299,
+          "provider_native_prompt": 344,
+          "provider_native_completion": 391,
+          "generation_id": "generation-000220"
+        },
+        {
+          "provider_cost_usd": 0.0013095,
+          "provider_native_prompt": 790,
+          "provider_native_completion": 2461,
+          "generation_id": "generation-000221"
+        },
+        {
+          "provider_cost_usd": 0.002442,
+          "provider_native_prompt": 2115,
+          "provider_native_completion": 4461,
+          "generation_id": "generation-000222"
+        },
+        {
+          "provider_cost_usd": 0.0006013,
+          "provider_native_prompt": 1203,
+          "provider_native_completion": 962,
+          "generation_id": "generation-000223"
+        },
+        {
+          "provider_cost_usd": 0.0029495,
+          "provider_native_prompt": 2115,
+          "provider_native_completion": 5476,
+          "generation_id": "generation-000224"
+        },
+        {
+          "provider_cost_usd": 0.0005773,
+          "provider_native_prompt": 538,
+          "provider_native_completion": 1047,
+          "generation_id": "generation-000225"
+        },
+        {
+          "provider_cost_usd": 0.0005989,
+          "provider_native_prompt": 539,
+          "provider_native_completion": 1090,
+          "generation_id": "generation-000226"
+        },
+        {
+          "provider_cost_usd": 2.68e-05,
+          "provider_native_prompt": 208,
+          "provider_native_completion": 12,
+          "generation_id": "generation-000227"
+        },
+        {
+          "provider_cost_usd": 0.0001966,
+          "provider_native_prompt": 496,
+          "provider_native_completion": 294,
+          "generation_id": "generation-000228"
+        },
+        {
+          "provider_cost_usd": 0.0011113,
+          "provider_native_prompt": 593,
+          "provider_native_completion": 2104,
+          "generation_id": "generation-000229"
+        },
+        {
+          "provider_cost_usd": 0.0001926,
+          "provider_native_prompt": 496,
+          "provider_native_completion": 286,
+          "generation_id": "generation-000230"
+        },
+        {
+          "provider_cost_usd": 3.05e-05,
+          "provider_native_prompt": 180,
+          "provider_native_completion": 25,
+          "generation_id": "generation-000231"
+        },
+        {
+          "provider_cost_usd": 2.81e-05,
+          "provider_native_prompt": 196,
+          "provider_native_completion": 17,
+          "generation_id": "generation-000232"
+        },
+        {
+          "provider_cost_usd": 0.0008438,
+          "provider_native_prompt": 593,
+          "provider_native_completion": 1569,
+          "generation_id": "generation-000233"
+        },
+        {
+          "provider_cost_usd": 0.0009923,
+          "provider_native_prompt": 673,
+          "provider_native_completion": 1850,
+          "generation_id": "generation-000234"
+        },
+        {
+          "provider_cost_usd": 2.8e-05,
+          "provider_native_prompt": 195,
+          "provider_native_completion": 17,
+          "generation_id": "generation-000235"
+        },
+        {
+          "provider_cost_usd": 9.02e-05,
+          "provider_native_prompt": 172,
+          "provider_native_completion": 146,
+          "generation_id": "generation-000236"
+        },
+        {
+          "provider_cost_usd": 0.0039684,
+          "provider_native_prompt": 814,
+          "provider_native_completion": 7774,
+          "generation_id": "generation-000237"
+        },
+        {
+          "provider_cost_usd": 0.0002091,
+          "provider_native_prompt": 496,
+          "provider_native_completion": 319,
+          "generation_id": "generation-000238"
+        },
+        {
+          "provider_cost_usd": 2.98e-05,
+          "provider_native_prompt": 208,
+          "provider_native_completion": 18,
+          "generation_id": "generation-000239"
+        },
+        {
+          "provider_cost_usd": 0.0029709,
+          "provider_native_prompt": 1054,
+          "provider_native_completion": 5731,
+          "generation_id": "generation-000240"
+        },
+        {
+          "provider_cost_usd": 0.0009623,
+          "provider_native_prompt": 593,
+          "provider_native_completion": 1806,
+          "generation_id": "generation-000241"
+        },
+        {
+          "provider_cost_usd": 0.0003115,
+          "provider_native_prompt": 535,
+          "provider_native_completion": 516,
+          "generation_id": "generation-000242"
+        },
+        {
+          "provider_cost_usd": 0.000911,
+          "provider_native_prompt": 1030,
+          "provider_native_completion": 1616,
+          "generation_id": "generation-000243"
+        },
+        {
+          "provider_cost_usd": 0.0008568,
+          "provider_native_prompt": 593,
+          "provider_native_completion": 1595,
+          "generation_id": "generation-000244"
+        },
+        {
+          "provider_cost_usd": 0.0009493,
+          "provider_native_prompt": 593,
+          "provider_native_completion": 1780,
+          "generation_id": "generation-000245"
+        },
+        {
+          "provider_cost_usd": 2.8e-05,
+          "provider_native_prompt": 195,
+          "provider_native_completion": 17,
+          "generation_id": "generation-000246"
+        },
+        {
+          "provider_cost_usd": 0.002484,
+          "provider_native_prompt": 2115,
+          "provider_native_completion": 4545,
+          "generation_id": "generation-000247"
+        },
+        {
+          "provider_cost_usd": 9.99e-05,
+          "provider_native_prompt": 174,
+          "provider_native_completion": 165,
+          "generation_id": "generation-000248"
+        },
+        {
+          "provider_cost_usd": 0.0005618,
+          "provider_native_prompt": 1203,
+          "provider_native_completion": 883,
+          "generation_id": "generation-000249"
+        },
+        {
+          "provider_cost_usd": 0.002717,
+          "provider_native_prompt": 2115,
+          "provider_native_completion": 5011,
+          "generation_id": "generation-000250"
+        },
+        {
+          "provider_cost_usd": 2.98e-05,
+          "provider_native_prompt": 208,
+          "provider_native_completion": 18,
+          "generation_id": "generation-000251"
+        },
+        {
+          "provider_cost_usd": 0.0029785,
+          "provider_native_prompt": 1065,
+          "provider_native_completion": 5744,
+          "generation_id": "generation-000252"
+        },
+        {
+          "provider_cost_usd": 2.66e-05,
+          "provider_native_prompt": 196,
+          "provider_native_completion": 14,
+          "generation_id": "generation-000253"
+        },
+        {
+          "provider_cost_usd": 0.000256,
+          "provider_native_prompt": 350,
+          "provider_native_completion": 442,
+          "generation_id": "generation-000254"
+        },
+        {
+          "provider_cost_usd": 0.0002845,
+          "provider_native_prompt": 350,
+          "provider_native_completion": 499,
+          "generation_id": "generation-000255"
+        },
+        {
+          "provider_cost_usd": 0.0008958,
+          "provider_native_prompt": 673,
+          "provider_native_completion": 1657,
+          "generation_id": "generation-000256"
+        },
+        {
+          "provider_cost_usd": 0.000603,
+          "provider_native_prompt": 795,
+          "provider_native_completion": 1047,
+          "generation_id": "generation-000257"
+        },
+        {
+          "provider_cost_usd": 0.0049834,
+          "provider_native_prompt": 809,
+          "provider_native_completion": 9805,
+          "generation_id": "generation-000258"
+        },
+        {
+          "provider_cost_usd": 0.0002176,
+          "provider_native_prompt": 496,
+          "provider_native_completion": 336,
+          "generation_id": "generation-000259"
+        },
+        {
+          "provider_cost_usd": 0.0024178,
+          "provider_native_prompt": 1063,
+          "provider_native_completion": 4623,
+          "generation_id": "generation-000260"
+        },
+        {
+          "provider_cost_usd": 0.0017478,
+          "provider_native_prompt": 808,
+          "provider_native_completion": 3334,
+          "generation_id": "generation-000261"
+        },
+        {
+          "provider_cost_usd": 0.000557,
+          "provider_native_prompt": 795,
+          "provider_native_completion": 955,
+          "generation_id": "generation-000262"
+        },
+        {
+          "provider_cost_usd": 0.0012088,
+          "provider_native_prompt": 673,
+          "provider_native_completion": 2283,
+          "generation_id": "generation-000263"
+        },
+        {
+          "provider_cost_usd": 0.0010088,
+          "provider_native_prompt": 673,
+          "provider_native_completion": 1883,
+          "generation_id": "generation-000264"
+        },
+        {
+          "provider_cost_usd": 6.78e-05,
+          "provider_native_prompt": 173,
+          "provider_native_completion": 101,
+          "generation_id": "generation-000265"
+        },
+        {
+          "provider_cost_usd": 0.0010973,
+          "provider_native_prompt": 673,
+          "provider_native_completion": 2060,
+          "generation_id": "generation-000266"
+        },
+        {
+          "provider_cost_usd": 0.0006315,
+          "provider_native_prompt": 795,
+          "provider_native_completion": 1104,
+          "generation_id": "generation-000267"
+        },
+        {
+          "provider_cost_usd": 2.98e-05,
+          "provider_native_prompt": 208,
+          "provider_native_completion": 18,
+          "generation_id": "generation-000268"
+        },
+        {
+          "provider_cost_usd": 9.72e-05,
+          "provider_native_prompt": 172,
+          "provider_native_completion": 160,
+          "generation_id": "generation-000269"
+        },
+        {
+          "provider_cost_usd": 0.0002747,
+          "provider_native_prompt": 342,
+          "provider_native_completion": 481,
+          "generation_id": "generation-000270"
+        },
+        {
+          "provider_cost_usd": 2.98e-05,
+          "provider_native_prompt": 208,
+          "provider_native_completion": 18,
+          "generation_id": "generation-000271"
+        },
+        {
+          "provider_cost_usd": 2.75e-05,
+          "provider_native_prompt": 180,
+          "provider_native_completion": 19,
+          "generation_id": "generation-000272"
+        },
+        {
+          "provider_cost_usd": 8.67e-05,
+          "provider_native_prompt": 172,
+          "provider_native_completion": 139,
+          "generation_id": "generation-000273"
+        },
+        {
+          "provider_cost_usd": 0.0042303,
+          "provider_native_prompt": 1103,
+          "provider_native_completion": 8240,
+          "generation_id": "generation-000274"
+        },
+        {
+          "provider_cost_usd": 0.002575,
+          "provider_native_prompt": 2115,
+          "provider_native_completion": 4727,
+          "generation_id": "generation-000275"
+        },
+        {
+          "provider_cost_usd": 2.45e-05,
+          "provider_native_prompt": 180,
+          "provider_native_completion": 13,
+          "generation_id": "generation-000276"
+        },
+        {
+          "provider_cost_usd": 3.2e-05,
+          "provider_native_prompt": 180,
+          "provider_native_completion": 28,
+          "generation_id": "generation-000277"
+        },
+        {
+          "provider_cost_usd": 0.000103,
+          "provider_native_prompt": 195,
+          "provider_native_completion": 167,
+          "generation_id": "generation-000278"
+        },
+        {
+          "provider_cost_usd": 2.9e-05,
+          "provider_native_prompt": 195,
+          "provider_native_completion": 19,
+          "generation_id": "generation-000279"
+        },
+        {
+          "provider_cost_usd": 0.0031185,
+          "provider_native_prompt": 2115,
+          "provider_native_completion": 5814,
+          "generation_id": "generation-000280"
+        },
+        {
+          "provider_cost_usd": 0.0010398,
+          "provider_native_prompt": 673,
+          "provider_native_completion": 1945,
+          "generation_id": "generation-000281"
+        },
+        {
+          "provider_cost_usd": 0.0009383,
+          "provider_native_prompt": 593,
+          "provider_native_completion": 1758,
+          "generation_id": "generation-000282"
+        },
+        {
+          "provider_cost_usd": 0.0005738,
+          "provider_native_prompt": 1203,
+          "provider_native_completion": 907,
+          "generation_id": "generation-000283"
+        },
+        {
+          "provider_cost_usd": 3.2e-05,
+          "provider_native_prompt": 180,
+          "provider_native_completion": 28,
+          "generation_id": "generation-000284"
+        },
+        {
+          "provider_cost_usd": 3.1e-05,
+          "provider_native_prompt": 180,
+          "provider_native_completion": 26,
+          "generation_id": "generation-000285"
+        },
+        {
+          "provider_cost_usd": 0.0010543,
+          "provider_native_prompt": 1048,
+          "provider_native_completion": 1899,
+          "generation_id": "generation-000286"
+        },
+        {
+          "provider_cost_usd": 2.93e-05,
+          "provider_native_prompt": 208,
+          "provider_native_completion": 17,
+          "generation_id": "generation-000287"
+        },
+        {
+          "provider_cost_usd": 2.9e-05,
+          "provider_native_prompt": 180,
+          "provider_native_completion": 22,
+          "generation_id": "generation-000288"
+        },
+        {
+          "provider_cost_usd": 0.0006151,
+          "provider_native_prompt": 536,
+          "provider_native_completion": 1123,
+          "generation_id": "generation-000289"
+        },
+        {
+          "provider_cost_usd": 2.79e-05,
+          "provider_native_prompt": 194,
+          "provider_native_completion": 17,
+          "generation_id": "generation-000290"
+        },
+        {
+          "provider_cost_usd": 0.0008498,
+          "provider_native_prompt": 593,
+          "provider_native_completion": 1581,
+          "generation_id": "generation-000291"
+        },
+        {
+          "provider_cost_usd": 0.0002021,
+          "provider_native_prompt": 496,
+          "provider_native_completion": 305,
+          "generation_id": "generation-000292"
+        },
+        {
+          "provider_cost_usd": 0.0010873,
+          "provider_native_prompt": 673,
+          "provider_native_completion": 2040,
+          "generation_id": "generation-000293"
+        },
+        {
+          "provider_cost_usd": 0.0002031,
+          "provider_native_prompt": 496,
+          "provider_native_completion": 307,
+          "generation_id": "generation-000294"
+        },
+        {
+          "provider_cost_usd": 0.0007346,
+          "provider_native_prompt": 536,
+          "provider_native_completion": 1362,
+          "generation_id": "generation-000295"
+        },
+        {
+          "provider_cost_usd": 3.26e-05,
+          "provider_native_prompt": 181,
+          "provider_native_completion": 29,
+          "generation_id": "generation-000296"
+        },
+        {
+          "provider_cost_usd": 0.000244,
+          "provider_native_prompt": 350,
+          "provider_native_completion": 418,
+          "generation_id": "generation-000297"
+        },
+        {
+          "provider_cost_usd": 0.0012073,
+          "provider_native_prompt": 673,
+          "provider_native_completion": 2280,
+          "generation_id": "generation-000298"
+        },
+        {
+          "provider_cost_usd": 0.0001681,
+          "provider_native_prompt": 196,
+          "provider_native_completion": 297,
+          "generation_id": "generation-000299"
+        },
+        {
+          "provider_cost_usd": 7.97e-05,
+          "provider_native_prompt": 172,
+          "provider_native_completion": 125,
+          "generation_id": "generation-000300"
+        },
+        {
+          "provider_cost_usd": 8.59e-05,
+          "provider_native_prompt": 174,
+          "provider_native_completion": 137,
+          "generation_id": "generation-000301"
+        },
+        {
+          "provider_cost_usd": 0.0035554,
+          "provider_native_prompt": 1049,
+          "provider_native_completion": 6901,
+          "generation_id": "generation-000302"
+        },
+        {
+          "provider_cost_usd": 0.002633,
+          "provider_native_prompt": 2115,
+          "provider_native_completion": 4843,
+          "generation_id": "generation-000303"
+        },
+        {
+          "provider_cost_usd": 0.0009818,
+          "provider_native_prompt": 673,
+          "provider_native_completion": 1829,
+          "generation_id": "generation-000304"
+        },
+        {
+          "provider_cost_usd": 0.0006011,
+          "provider_native_prompt": 536,
+          "provider_native_completion": 1095,
+          "generation_id": "generation-000305"
+        },
+        {
+          "provider_cost_usd": 0.0001876,
+          "provider_native_prompt": 496,
+          "provider_native_completion": 276,
+          "generation_id": "generation-000306"
+        },
+        {
+          "provider_cost_usd": 0.0003109,
+          "provider_native_prompt": 539,
+          "provider_native_completion": 514,
+          "generation_id": "generation-000307"
+        },
+        {
+          "provider_cost_usd": 0.000439,
+          "provider_native_prompt": 535,
+          "provider_native_completion": 771,
+          "generation_id": "generation-000308"
+        },
+        {
+          "provider_cost_usd": 0.0002061,
+          "provider_native_prompt": 496,
+          "provider_native_completion": 313,
+          "generation_id": "generation-000309"
+        },
+        {
+          "provider_cost_usd": 0.0005029,
+          "provider_native_prompt": 539,
+          "provider_native_completion": 898,
+          "generation_id": "generation-000310"
+        },
+        {
+          "provider_cost_usd": 3.3e-05,
+          "provider_native_prompt": 180,
+          "provider_native_completion": 30,
+          "generation_id": "generation-000311"
+        },
+        {
+          "provider_cost_usd": 2.95e-05,
+          "provider_native_prompt": 180,
+          "provider_native_completion": 23,
+          "generation_id": "generation-000312"
+        },
+        {
+          "provider_cost_usd": 0.0005385,
+          "provider_native_prompt": 795,
+          "provider_native_completion": 918,
+          "generation_id": "generation-000313"
+        },
+        {
+          "provider_cost_usd": 0.0011468,
+          "provider_native_prompt": 808,
+          "provider_native_completion": 2132,
+          "generation_id": "generation-000314"
+        },
+        {
+          "provider_cost_usd": 0.00043,
+          "provider_native_prompt": 535,
+          "provider_native_completion": 753,
+          "generation_id": "generation-000315"
+        },
+        {
+          "provider_cost_usd": 0.0001256,
+          "provider_native_prompt": 196,
+          "provider_native_completion": 212,
+          "generation_id": "generation-000316"
+        },
+        {
+          "provider_cost_usd": 2.9e-05,
+          "provider_native_prompt": 195,
+          "provider_native_completion": 19,
+          "generation_id": "generation-000317"
+        },
+        {
+          "provider_cost_usd": 0.0028435,
+          "provider_native_prompt": 2115,
+          "provider_native_completion": 5264,
+          "generation_id": "generation-000318"
+        },
+        {
+          "provider_cost_usd": 0.0006488,
+          "provider_native_prompt": 538,
+          "provider_native_completion": 1190,
+          "generation_id": "generation-000319"
+        },
+        {
+          "provider_cost_usd": 0.0005988,
+          "provider_native_prompt": 1203,
+          "provider_native_completion": 957,
+          "generation_id": "generation-000320"
+        },
+        {
+          "provider_cost_usd": 3.01e-05,
+          "provider_native_prompt": 181,
+          "provider_native_completion": 24,
+          "generation_id": "generation-000321"
+        },
+        {
+          "provider_cost_usd": 3.2e-05,
+          "provider_native_prompt": 180,
+          "provider_native_completion": 28,
+          "generation_id": "generation-000322"
+        },
+        {
+          "provider_cost_usd": 0.0009423,
+          "provider_native_prompt": 673,
+          "provider_native_completion": 1750,
+          "generation_id": "generation-000323"
+        },
+        {
+          "provider_cost_usd": 0.0001906,
+          "provider_native_prompt": 496,
+          "provider_native_completion": 282,
+          "generation_id": "generation-000324"
+        },
+        {
+          "provider_cost_usd": 0.0002289,
+          "provider_native_prompt": 344,
+          "provider_native_completion": 389,
+          "generation_id": "generation-000325"
+        },
+        {
+          "provider_cost_usd": 0.0034955,
+          "provider_native_prompt": 1065,
+          "provider_native_completion": 6778,
+          "generation_id": "generation-000326"
+        },
+        {
+          "provider_cost_usd": 2.69e-05,
+          "provider_native_prompt": 179,
+          "provider_native_completion": 18,
+          "generation_id": "generation-000327"
+        },
+        {
+          "provider_cost_usd": 0.000514,
+          "provider_native_prompt": 795,
+          "provider_native_completion": 869,
+          "generation_id": "generation-000328"
+        },
+        {
+          "provider_cost_usd": 0.0004844,
+          "provider_native_prompt": 1049,
+          "provider_native_completion": 759,
+          "generation_id": "generation-000329"
+        },
+        {
+          "provider_cost_usd": 0.0005555,
+          "provider_native_prompt": 535,
+          "provider_native_completion": 1004,
+          "generation_id": "generation-000330"
+        },
+        {
+          "provider_cost_usd": 0.0008308,
+          "provider_native_prompt": 593,
+          "provider_native_completion": 1543,
+          "generation_id": "generation-000331"
+        },
+        {
+          "provider_cost_usd": 0.0026695,
+          "provider_native_prompt": 2115,
+          "provider_native_completion": 4916,
+          "generation_id": "generation-000332"
+        },
+        {
+          "provider_cost_usd": 0.0024254,
+          "provider_native_prompt": 1054,
+          "provider_native_completion": 4640,
+          "generation_id": "generation-000333"
+        },
+        {
+          "provider_cost_usd": 0.0005918,
+          "provider_native_prompt": 538,
+          "provider_native_completion": 1076,
+          "generation_id": "generation-000334"
+        },
+        {
+          "provider_cost_usd": 2.68e-05,
+          "provider_native_prompt": 208,
+          "provider_native_completion": 12,
+          "generation_id": "generation-000335"
+        },
+        {
+          "provider_cost_usd": 2.95e-05,
+          "provider_native_prompt": 180,
+          "provider_native_completion": 23,
+          "generation_id": "generation-000336"
+        },
+        {
+          "provider_cost_usd": 0.0008429,
+          "provider_native_prompt": 1049,
+          "provider_native_completion": 1476,
+          "generation_id": "generation-000337"
+        },
+        {
+          "provider_cost_usd": 0.0005325,
+          "provider_native_prompt": 535,
+          "provider_native_completion": 958,
+          "generation_id": "generation-000338"
+        },
+        {
+          "provider_cost_usd": 0.0027855,
+          "provider_native_prompt": 2115,
+          "provider_native_completion": 5148,
+          "generation_id": "generation-000339"
+        },
+        {
+          "provider_cost_usd": 0.0002031,
+          "provider_native_prompt": 496,
+          "provider_native_completion": 307,
+          "generation_id": "generation-000340"
+        },
+        {
+          "provider_cost_usd": 2.86e-05,
+          "provider_native_prompt": 196,
+          "provider_native_completion": 18,
+          "generation_id": "generation-000341"
+        },
+        {
+          "provider_cost_usd": 0.0010448,
+          "provider_native_prompt": 673,
+          "provider_native_completion": 1955,
+          "generation_id": "generation-000342"
+        },
+        {
+          "provider_cost_usd": 0.0045633,
+          "provider_native_prompt": 1103,
+          "provider_native_completion": 8906,
+          "generation_id": "generation-000343"
+        },
+        {
+          "provider_cost_usd": 0.0004889,
+          "provider_native_prompt": 1049,
+          "provider_native_completion": 768,
+          "generation_id": "generation-000344"
+        },
+        {
+          "provider_cost_usd": 0.0039263,
+          "provider_native_prompt": 823,
+          "provider_native_completion": 7688,
+          "generation_id": "generation-000345"
+        },
+        {
+          "provider_cost_usd": 0.0008223,
+          "provider_native_prompt": 673,
+          "provider_native_completion": 1510,
+          "generation_id": "generation-000346"
+        },
+        {
+          "provider_cost_usd": 0.00269,
+          "provider_native_prompt": 2115,
+          "provider_native_completion": 4957,
+          "generation_id": "generation-000347"
+        },
+        {
+          "provider_cost_usd": 0.0008333,
+          "provider_native_prompt": 673,
+          "provider_native_completion": 1532,
+          "generation_id": "generation-000348"
+        },
+        {
+          "provider_cost_usd": 0.0005791,
+          "provider_native_prompt": 536,
+          "provider_native_completion": 1051,
+          "generation_id": "generation-000349"
+        },
+        {
+          "provider_cost_usd": 0.0002248,
+          "provider_native_prompt": 348,
+          "provider_native_completion": 380,
+          "generation_id": "generation-000350"
+        },
+        {
+          "provider_cost_usd": 0.0022724,
+          "provider_native_prompt": 814,
+          "provider_native_completion": 4382,
+          "generation_id": "generation-000351"
+        },
+        {
+          "provider_cost_usd": 0.00088,
+          "provider_native_prompt": 790,
+          "provider_native_completion": 1602,
+          "generation_id": "generation-000352"
+        },
+        {
+          "provider_cost_usd": 2.98e-05,
+          "provider_native_prompt": 208,
+          "provider_native_completion": 18,
+          "generation_id": "generation-000353"
+        },
+        {
+          "provider_cost_usd": 3e-05,
+          "provider_native_prompt": 180,
+          "provider_native_completion": 24,
+          "generation_id": "generation-000354"
+        },
+        {
+          "provider_cost_usd": 0.0011269,
+          "provider_native_prompt": 1049,
+          "provider_native_completion": 2044,
+          "generation_id": "generation-000355"
+        },
+        {
+          "provider_cost_usd": 2.79e-05,
+          "provider_native_prompt": 194,
+          "provider_native_completion": 17,
+          "generation_id": "generation-000356"
+        },
+        {
+          "provider_cost_usd": 0.000592,
+          "provider_native_prompt": 795,
+          "provider_native_completion": 1025,
+          "generation_id": "generation-000357"
+        },
+        {
+          "provider_cost_usd": 0.0026265,
+          "provider_native_prompt": 2115,
+          "provider_native_completion": 4830,
+          "generation_id": "generation-000358"
+        },
+        {
+          "provider_cost_usd": 0.0001976,
+          "provider_native_prompt": 496,
+          "provider_native_completion": 296,
+          "generation_id": "generation-000359"
+        },
+        {
+          "provider_cost_usd": 0.0002464,
+          "provider_native_prompt": 344,
+          "provider_native_completion": 424,
+          "generation_id": "generation-000360"
+        },
+        {
+          "provider_cost_usd": 2.44e-05,
+          "provider_native_prompt": 179,
+          "provider_native_completion": 13,
+          "generation_id": "generation-000361"
+        },
+        {
+          "provider_cost_usd": 0.0007773,
+          "provider_native_prompt": 593,
+          "provider_native_completion": 1436,
+          "generation_id": "generation-000362"
+        },
+        {
+          "provider_cost_usd": 7.92e-05,
+          "provider_native_prompt": 172,
+          "provider_native_completion": 124,
+          "generation_id": "generation-000363"
+        },
+        {
+          "provider_cost_usd": 0.0028825,
+          "provider_native_prompt": 2115,
+          "provider_native_completion": 5342,
+          "generation_id": "generation-000364"
+        },
+        {
+          "provider_cost_usd": 2.68e-05,
+          "provider_native_prompt": 208,
+          "provider_native_completion": 12,
+          "generation_id": "generation-000365"
+        },
+        {
+          "provider_cost_usd": 4.39e-05,
+          "provider_native_prompt": 179,
+          "provider_native_completion": 52,
+          "generation_id": "generation-000366"
+        },
+        {
+          "provider_cost_usd": 2.88e-05,
+          "provider_native_prompt": 208,
+          "provider_native_completion": 16,
+          "generation_id": "generation-000367"
+        },
+        {
+          "provider_cost_usd": 2.8e-05,
+          "provider_native_prompt": 195,
+          "provider_native_completion": 17,
+          "generation_id": "generation-000368"
+        },
+        {
+          "provider_cost_usd": 0.0005406,
+          "provider_native_prompt": 536,
+          "provider_native_completion": 974,
+          "generation_id": "generation-000369"
+        },
+        {
+          "provider_cost_usd": 8.97e-05,
+          "provider_native_prompt": 172,
+          "provider_native_completion": 145,
+          "generation_id": "generation-000370"
+        },
+        {
+          "provider_cost_usd": 8.63e-05,
+          "provider_native_prompt": 173,
+          "provider_native_completion": 138,
+          "generation_id": "generation-000371"
+        },
+        {
+          "provider_cost_usd": 0.0006811,
+          "provider_native_prompt": 536,
+          "provider_native_completion": 1255,
+          "generation_id": "generation-000372"
+        },
+        {
+          "provider_cost_usd": 0.0007843,
+          "provider_native_prompt": 593,
+          "provider_native_completion": 1450,
+          "generation_id": "generation-000373"
+        },
+        {
+          "provider_cost_usd": 0.0005533,
+          "provider_native_prompt": 1203,
+          "provider_native_completion": 866,
+          "generation_id": "generation-000374"
+        },
+        {
+          "provider_cost_usd": 0.0005275,
+          "provider_native_prompt": 795,
+          "provider_native_completion": 896,
+          "generation_id": "generation-000375"
+        },
+        {
+          "provider_cost_usd": 2.86e-05,
+          "provider_native_prompt": 196,
+          "provider_native_completion": 18,
+          "generation_id": "generation-000376"
+        },
+        {
+          "provider_cost_usd": 0.0002651,
+          "provider_native_prompt": 536,
+          "provider_native_completion": 423,
+          "generation_id": "generation-000377"
+        },
+        {
+          "provider_cost_usd": 0.0043038,
+          "provider_native_prompt": 863,
+          "provider_native_completion": 8435,
+          "generation_id": "generation-000378"
+        },
+        {
+          "provider_cost_usd": 0.000509,
+          "provider_native_prompt": 795,
+          "provider_native_completion": 859,
+          "generation_id": "generation-000379"
+        },
+        {
+          "provider_cost_usd": 0.0063884,
+          "provider_native_prompt": 809,
+          "provider_native_completion": 12615,
+          "generation_id": "generation-000380"
+        },
+        {
+          "provider_cost_usd": 6.38e-05,
+          "provider_native_prompt": 173,
+          "provider_native_completion": 93,
+          "generation_id": "generation-000381"
+        },
+        {
+          "provider_cost_usd": 0.0006699,
+          "provider_native_prompt": 539,
+          "provider_native_completion": 1232,
+          "generation_id": "generation-000382"
+        },
+        {
+          "provider_cost_usd": 0.0002477,
+          "provider_native_prompt": 342,
+          "provider_native_completion": 427,
+          "generation_id": "generation-000383"
+        },
+        {
+          "provider_cost_usd": 0.0001039,
+          "provider_native_prompt": 174,
+          "provider_native_completion": 173,
+          "generation_id": "generation-000384"
+        },
+        {
+          "provider_cost_usd": 0.0003985,
+          "provider_native_prompt": 535,
+          "provider_native_completion": 690,
+          "generation_id": "generation-000385"
+        },
+        {
+          "provider_cost_usd": 0.0022583,
+          "provider_native_prompt": 823,
+          "provider_native_completion": 4352,
+          "generation_id": "generation-000386"
+        },
+        {
+          "provider_cost_usd": 0.002416,
+          "provider_native_prompt": 2115,
+          "provider_native_completion": 4409,
+          "generation_id": "generation-000387"
+        },
+        {
+          "provider_cost_usd": 2.79e-05,
+          "provider_native_prompt": 194,
+          "provider_native_completion": 17,
+          "generation_id": "generation-000388"
+        },
+        {
+          "provider_cost_usd": 3.26e-05,
+          "provider_native_prompt": 181,
+          "provider_native_completion": 29,
+          "generation_id": "generation-000389"
+        },
+        {
+          "provider_cost_usd": 0.0002469,
+          "provider_native_prompt": 344,
+          "provider_native_completion": 425,
+          "generation_id": "generation-000390"
+        },
+        {
+          "provider_cost_usd": 0.0005378,
+          "provider_native_prompt": 1203,
+          "provider_native_completion": 835,
+          "generation_id": "generation-000391"
+        },
+        {
+          "provider_cost_usd": 2.98e-05,
+          "provider_native_prompt": 208,
+          "provider_native_completion": 18,
+          "generation_id": "generation-000392"
+        },
+        {
+          "provider_cost_usd": 0.003343,
+          "provider_native_prompt": 1065,
+          "provider_native_completion": 6473,
+          "generation_id": "generation-000393"
+        },
+        {
+          "provider_cost_usd": 0.0005584,
+          "provider_native_prompt": 539,
+          "provider_native_completion": 1009,
+          "generation_id": "generation-000394"
+        },
+        {
+          "provider_cost_usd": 0.001411,
+          "provider_native_prompt": 790,
+          "provider_native_completion": 2664,
+          "generation_id": "generation-000395"
+        },
+        {
+          "provider_cost_usd": 3.01e-05,
+          "provider_native_prompt": 181,
+          "provider_native_completion": 24,
+          "generation_id": "generation-000396"
+        },
+        {
+          "provider_cost_usd": 0.0009006,
+          "provider_native_prompt": 536,
+          "provider_native_completion": 1694,
+          "generation_id": "generation-000397"
+        },
+        {
+          "provider_cost_usd": 0.0012643,
+          "provider_native_prompt": 673,
+          "provider_native_completion": 2394,
+          "generation_id": "generation-000398"
+        },
+        {
+          "provider_cost_usd": 0.0035369,
+          "provider_native_prompt": 1049,
+          "provider_native_completion": 6864,
+          "generation_id": "generation-000399"
+        },
+        {
+          "provider_cost_usd": 2.93e-05,
+          "provider_native_prompt": 208,
+          "provider_native_completion": 17,
+          "generation_id": "generation-000400"
+        },
+        {
+          "provider_cost_usd": 9.18e-05,
+          "provider_native_prompt": 173,
+          "provider_native_completion": 149,
+          "generation_id": "generation-000401"
+        },
+        {
+          "provider_cost_usd": 7.78e-05,
+          "provider_native_prompt": 173,
+          "provider_native_completion": 121,
+          "generation_id": "generation-000402"
+        },
+        {
+          "provider_cost_usd": 8.18e-05,
+          "provider_native_prompt": 173,
+          "provider_native_completion": 129,
+          "generation_id": "generation-000403"
+        },
+        {
+          "provider_cost_usd": 0.0010308,
+          "provider_native_prompt": 673,
+          "provider_native_completion": 1927,
+          "generation_id": "generation-000404"
+        },
+        {
+          "provider_cost_usd": 0.0010898,
+          "provider_native_prompt": 673,
+          "provider_native_completion": 2045,
+          "generation_id": "generation-000405"
+        },
+        {
+          "provider_cost_usd": 2.68e-05,
+          "provider_native_prompt": 208,
+          "provider_native_completion": 12,
+          "generation_id": "generation-000406"
+        },
+        {
+          "provider_cost_usd": 2.89e-05,
+          "provider_native_prompt": 179,
+          "provider_native_completion": 22,
+          "generation_id": "generation-000407"
+        },
+        {
+          "provider_cost_usd": 2.96e-05,
+          "provider_native_prompt": 181,
+          "provider_native_completion": 23,
+          "generation_id": "generation-000408"
+        },
+        {
+          "provider_cost_usd": 0.0005598,
+          "provider_native_prompt": 1203,
+          "provider_native_completion": 879,
+          "generation_id": "generation-000409"
+        },
+        {
+          "provider_cost_usd": 0.0008168,
+          "provider_native_prompt": 673,
+          "provider_native_completion": 1499,
+          "generation_id": "generation-000410"
+        },
+        {
+          "provider_cost_usd": 0.0010183,
+          "provider_native_prompt": 593,
+          "provider_native_completion": 1918,
+          "generation_id": "generation-000411"
+        },
+        {
+          "provider_cost_usd": 7.92e-05,
+          "provider_native_prompt": 172,
+          "provider_native_completion": 124,
+          "generation_id": "generation-000412"
+        },
+        {
+          "provider_cost_usd": 2.8e-05,
+          "provider_native_prompt": 195,
+          "provider_native_completion": 17,
+          "generation_id": "generation-000413"
+        },
+        {
+          "provider_cost_usd": 0.0005014,
+          "provider_native_prompt": 1049,
+          "provider_native_completion": 793,
+          "generation_id": "generation-000414"
+        },
+        {
+          "provider_cost_usd": 8.17e-05,
+          "provider_native_prompt": 172,
+          "provider_native_completion": 129,
+          "generation_id": "generation-000415"
+        },
+        {
+          "provider_cost_usd": 0.0029319,
+          "provider_native_prompt": 1054,
+          "provider_native_completion": 5653,
+          "generation_id": "generation-000416"
+        },
+        {
+          "provider_cost_usd": 0.0004979,
+          "provider_native_prompt": 1049,
+          "provider_native_completion": 786,
+          "generation_id": "generation-000417"
+        },
+        {
+          "provider_cost_usd": 0.0005538,
+          "provider_native_prompt": 1203,
+          "provider_native_completion": 867,
+          "generation_id": "generation-000418"
+        },
+        {
+          "provider_cost_usd": 0.0008174,
+          "provider_native_prompt": 1049,
+          "provider_native_completion": 1425,
+          "generation_id": "generation-000419"
+        },
+        {
+          "provider_cost_usd": 0.0002142,
+          "provider_native_prompt": 342,
+          "provider_native_completion": 360,
+          "generation_id": "generation-000420"
+        },
+        {
+          "provider_cost_usd": 0.0010673,
+          "provider_native_prompt": 673,
+          "provider_native_completion": 2000,
+          "generation_id": "generation-000421"
+        },
+        {
+          "provider_cost_usd": 2.68e-05,
+          "provider_native_prompt": 208,
+          "provider_native_completion": 12,
+          "generation_id": "generation-000422"
+        },
+        {
+          "provider_cost_usd": 0.0004289,
+          "provider_native_prompt": 539,
+          "provider_native_completion": 750,
+          "generation_id": "generation-000423"
+        },
+        {
+          "provider_cost_usd": 2.66e-05,
+          "provider_native_prompt": 196,
+          "provider_native_completion": 14,
+          "generation_id": "generation-000424"
+        },
+        {
+          "provider_cost_usd": 8.67e-05,
+          "provider_native_prompt": 172,
+          "provider_native_completion": 139,
+          "generation_id": "generation-000425"
+        },
+        {
+          "provider_cost_usd": 0.0025415,
+          "provider_native_prompt": 2115,
+          "provider_native_completion": 4660,
+          "generation_id": "generation-000426"
+        },
+        {
+          "provider_cost_usd": 0.0006508,
+          "provider_native_prompt": 538,
+          "provider_native_completion": 1194,
+          "generation_id": "generation-000427"
+        },
+        {
+          "provider_cost_usd": 0.0007613,
+          "provider_native_prompt": 673,
+          "provider_native_completion": 1388,
+          "generation_id": "generation-000428"
+        },
+        {
+          "provider_cost_usd": 2.75e-05,
+          "provider_native_prompt": 195,
+          "provider_native_completion": 16,
+          "generation_id": "generation-000429"
+        },
+        {
+          "provider_cost_usd": 0.0001886,
+          "provider_native_prompt": 496,
+          "provider_native_completion": 278,
+          "generation_id": "generation-000430"
+        },
+        {
+          "provider_cost_usd": 2.81e-05,
+          "provider_native_prompt": 196,
+          "provider_native_completion": 17,
+          "generation_id": "generation-000431"
+        },
+        {
+          "provider_cost_usd": 0.0034515,
+          "provider_native_prompt": 2115,
+          "provider_native_completion": 6480,
+          "generation_id": "generation-000432"
+        },
+        {
+          "provider_cost_usd": 2.75e-05,
+          "provider_native_prompt": 180,
+          "provider_native_completion": 19,
+          "generation_id": "generation-000433"
+        },
+        {
+          "provider_cost_usd": 3.05e-05,
+          "provider_native_prompt": 180,
+          "provider_native_completion": 25,
+          "generation_id": "generation-000434"
+        },
+        {
+          "provider_cost_usd": 0.000453,
+          "provider_native_prompt": 535,
+          "provider_native_completion": 799,
+          "generation_id": "generation-000435"
+        },
+        {
+          "provider_cost_usd": 3.1e-05,
+          "provider_native_prompt": 180,
+          "provider_native_completion": 26,
+          "generation_id": "generation-000436"
+        },
+        {
+          "provider_cost_usd": 2.79e-05,
+          "provider_native_prompt": 194,
+          "provider_native_completion": 17,
+          "generation_id": "generation-000437"
+        },
+        {
+          "provider_cost_usd": 0.0001088,
+          "provider_native_prompt": 173,
+          "provider_native_completion": 183,
+          "generation_id": "generation-000438"
+        },
+        {
+          "provider_cost_usd": 3.09e-05,
+          "provider_native_prompt": 179,
+          "provider_native_completion": 26,
+          "generation_id": "generation-000439"
+        },
+        {
+          "provider_cost_usd": 0.0001931,
+          "provider_native_prompt": 496,
+          "provider_native_completion": 287,
+          "generation_id": "generation-000440"
+        },
+        {
+          "provider_cost_usd": 3.05e-05,
+          "provider_native_prompt": 180,
+          "provider_native_completion": 25,
+          "generation_id": "generation-000441"
+        },
+        {
+          "provider_cost_usd": 0.0001866,
+          "provider_native_prompt": 496,
+          "provider_native_completion": 274,
+          "generation_id": "generation-000442"
+        },
+        {
+          "provider_cost_usd": 0.002635,
+          "provider_native_prompt": 2115,
+          "provider_native_completion": 4847,
+          "generation_id": "generation-000443"
+        },
+        {
+          "provider_cost_usd": 0.0009258,
+          "provider_native_prompt": 1048,
+          "provider_native_completion": 1642,
+          "generation_id": "generation-000444"
+        },
+        {
+          "provider_cost_usd": 0.0008648,
+          "provider_native_prompt": 593,
+          "provider_native_completion": 1611,
+          "generation_id": "generation-000445"
+        },
+        {
+          "provider_cost_usd": 0.000562,
+          "provider_native_prompt": 795,
+          "provider_native_completion": 965,
+          "generation_id": "generation-000446"
+        },
+        {
+          "provider_cost_usd": 7.37e-05,
+          "provider_native_prompt": 172,
+          "provider_native_completion": 113,
+          "generation_id": "generation-000447"
+        },
+        {
+          "provider_cost_usd": 9.6e-05,
+          "provider_native_prompt": 195,
+          "provider_native_completion": 153,
+          "generation_id": "generation-000448"
+        },
+        {
+          "provider_cost_usd": 0.0009103,
+          "provider_native_prompt": 593,
+          "provider_native_completion": 1702,
+          "generation_id": "generation-000449"
+        },
+        {
+          "provider_cost_usd": 0.0011593,
+          "provider_native_prompt": 593,
+          "provider_native_completion": 2200,
+          "generation_id": "generation-000450"
+        },
+        {
+          "provider_cost_usd": 0.0015973,
+          "provider_native_prompt": 808,
+          "provider_native_completion": 3033,
+          "generation_id": "generation-000451"
+        },
+        {
+          "provider_cost_usd": 0.0005708,
+          "provider_native_prompt": 1203,
+          "provider_native_completion": 901,
+          "generation_id": "generation-000452"
+        },
+        {
+          "provider_cost_usd": 0.0005768,
+          "provider_native_prompt": 538,
+          "provider_native_completion": 1046,
+          "generation_id": "generation-000453"
+        },
+        {
+          "provider_cost_usd": 0.0005045,
+          "provider_native_prompt": 795,
+          "provider_native_completion": 850,
+          "generation_id": "generation-000454"
+        },
+        {
+          "provider_cost_usd": 2.95e-05,
+          "provider_native_prompt": 195,
+          "provider_native_completion": 20,
+          "generation_id": "generation-000455"
+        },
+        {
+          "provider_cost_usd": 0.0001941,
+          "provider_native_prompt": 496,
+          "provider_native_completion": 289,
+          "generation_id": "generation-000456"
+        },
+        {
+          "provider_cost_usd": 0.000627,
+          "provider_native_prompt": 535,
+          "provider_native_completion": 1147,
+          "generation_id": "generation-000457"
+        },
+        {
+          "provider_cost_usd": 7.13e-05,
+          "provider_native_prompt": 173,
+          "provider_native_completion": 108,
+          "generation_id": "generation-000458"
+        },
+        {
+          "provider_cost_usd": 2.98e-05,
+          "provider_native_prompt": 208,
+          "provider_native_completion": 18,
+          "generation_id": "generation-000459"
+        },
+        {
+          "provider_cost_usd": 3.05e-05,
+          "provider_native_prompt": 180,
+          "provider_native_completion": 25,
+          "generation_id": "generation-000460"
+        },
+        {
+          "provider_cost_usd": 8.28e-05,
+          "provider_native_prompt": 173,
+          "provider_native_completion": 131,
+          "generation_id": "generation-000461"
+        },
+        {
+          "provider_cost_usd": 0.0009478,
+          "provider_native_prompt": 593,
+          "provider_native_completion": 1777,
+          "generation_id": "generation-000462"
+        },
+        {
+          "provider_cost_usd": 0.002735,
+          "provider_native_prompt": 2115,
+          "provider_native_completion": 5047,
+          "generation_id": "generation-000463"
+        },
+        {
+          "provider_cost_usd": 0.0009473,
+          "provider_native_prompt": 593,
+          "provider_native_completion": 1776,
+          "generation_id": "generation-000464"
+        },
+        {
+          "provider_cost_usd": 0.0042595,
+          "provider_native_prompt": 2115,
+          "provider_native_completion": 8096,
+          "generation_id": "generation-000465"
+        },
+        {
+          "provider_cost_usd": 2.93e-05,
+          "provider_native_prompt": 208,
+          "provider_native_completion": 17,
+          "generation_id": "generation-000466"
+        },
+        {
+          "provider_cost_usd": 0.0001059,
+          "provider_native_prompt": 174,
+          "provider_native_completion": 177,
+          "generation_id": "generation-000467"
+        },
+        {
+          "provider_cost_usd": 0.0010003,
+          "provider_native_prompt": 593,
+          "provider_native_completion": 1882,
+          "generation_id": "generation-000468"
+        },
+        {
+          "provider_cost_usd": 0.0010414,
+          "provider_native_prompt": 1049,
+          "provider_native_completion": 1873,
+          "generation_id": "generation-000469"
+        },
+        {
+          "provider_cost_usd": 9.69e-05,
+          "provider_native_prompt": 174,
+          "provider_native_completion": 159,
+          "generation_id": "generation-000470"
+        },
+        {
+          "provider_cost_usd": 0.0001931,
+          "provider_native_prompt": 496,
+          "provider_native_completion": 287,
+          "generation_id": "generation-000471"
+        },
+        {
+          "provider_cost_usd": 0.0003173,
+          "provider_native_prompt": 348,
+          "provider_native_completion": 565,
+          "generation_id": "generation-000472"
+        },
+        {
+          "provider_cost_usd": 2.81e-05,
+          "provider_native_prompt": 196,
+          "provider_native_completion": 17,
+          "generation_id": "generation-000473"
+        },
+        {
+          "provider_cost_usd": 0.0005311,
+          "provider_native_prompt": 536,
+          "provider_native_completion": 955,
+          "generation_id": "generation-000474"
+        },
+        {
+          "provider_cost_usd": 0.0002473,
+          "provider_native_prompt": 348,
+          "provider_native_completion": 425,
+          "generation_id": "generation-000475"
+        },
+        {
+          "provider_cost_usd": 0.0004784,
+          "provider_native_prompt": 1049,
+          "provider_native_completion": 747,
+          "generation_id": "generation-000476"
+        },
+        {
+          "provider_cost_usd": 0.0006704,
+          "provider_native_prompt": 539,
+          "provider_native_completion": 1233,
+          "generation_id": "generation-000477"
+        },
+        {
+          "provider_cost_usd": 2.95e-05,
+          "provider_native_prompt": 195,
+          "provider_native_completion": 20,
+          "generation_id": "generation-000478"
+        },
+        {
+          "provider_cost_usd": 2.98e-05,
+          "provider_native_prompt": 208,
+          "provider_native_completion": 18,
+          "generation_id": "generation-000479"
+        },
+        {
+          "provider_cost_usd": 0.0002056,
+          "provider_native_prompt": 496,
+          "provider_native_completion": 312,
+          "generation_id": "generation-000480"
+        },
+        {
+          "provider_cost_usd": 2.79e-05,
+          "provider_native_prompt": 194,
+          "provider_native_completion": 17,
+          "generation_id": "generation-000481"
+        },
+        {
+          "provider_cost_usd": 2.93e-05,
+          "provider_native_prompt": 208,
+          "provider_native_completion": 17,
+          "generation_id": "generation-000482"
+        },
+        {
+          "provider_cost_usd": 2.79e-05,
+          "provider_native_prompt": 194,
+          "provider_native_completion": 17,
+          "generation_id": "generation-000483"
+        },
+        {
+          "provider_cost_usd": 2.68e-05,
+          "provider_native_prompt": 208,
+          "provider_native_completion": 12,
+          "generation_id": "generation-000484"
+        },
+        {
+          "provider_cost_usd": 0.0005698,
+          "provider_native_prompt": 1203,
+          "provider_native_completion": 899,
+          "generation_id": "generation-000485"
+        },
+        {
+          "provider_cost_usd": 8.12e-05,
+          "provider_native_prompt": 172,
+          "provider_native_completion": 128,
+          "generation_id": "generation-000486"
+        },
+        {
+          "provider_cost_usd": 0.0005408,
+          "provider_native_prompt": 538,
+          "provider_native_completion": 974,
+          "generation_id": "generation-000487"
+        },
+        {
+          "provider_cost_usd": 0.000571,
+          "provider_native_prompt": 795,
+          "provider_native_completion": 983,
+          "generation_id": "generation-000488"
+        },
+        {
+          "provider_cost_usd": 0.0004686,
+          "provider_native_prompt": 536,
+          "provider_native_completion": 830,
+          "generation_id": "generation-000489"
+        },
+        {
+          "provider_cost_usd": 3.06e-05,
+          "provider_native_prompt": 181,
+          "provider_native_completion": 25,
+          "generation_id": "generation-000490"
+        },
+        {
+          "provider_cost_usd": 0.0002116,
+          "provider_native_prompt": 496,
+          "provider_native_completion": 324,
+          "generation_id": "generation-000491"
+        },
+        {
+          "provider_cost_usd": 0.0001971,
+          "provider_native_prompt": 496,
+          "provider_native_completion": 295,
+          "generation_id": "generation-000492"
+        },
+        {
+          "provider_cost_usd": 0.0002519,
+          "provider_native_prompt": 344,
+          "provider_native_completion": 435,
+          "generation_id": "generation-000493"
+        },
+        {
+          "provider_cost_usd": 0.0011068,
+          "provider_native_prompt": 673,
+          "provider_native_completion": 2079,
+          "generation_id": "generation-000494"
+        },
+        {
+          "provider_cost_usd": 7.18e-05,
+          "provider_native_prompt": 173,
+          "provider_native_completion": 109,
+          "generation_id": "generation-000495"
+        },
+        {
+          "provider_cost_usd": 2.66e-05,
+          "provider_native_prompt": 196,
+          "provider_native_completion": 14,
+          "generation_id": "generation-000496"
+        },
+        {
+          "provider_cost_usd": 2.7e-05,
+          "provider_native_prompt": 180,
+          "provider_native_completion": 18,
+          "generation_id": "generation-000497"
+        },
+        {
+          "provider_cost_usd": 2.83e-05,
+          "provider_native_prompt": 208,
+          "provider_native_completion": 15,
+          "generation_id": "generation-000498"
+        },
+        {
+          "provider_cost_usd": 2.95e-05,
+          "provider_native_prompt": 195,
+          "provider_native_completion": 20,
+          "generation_id": "generation-000499"
+        },
+        {
+          "provider_cost_usd": 0.0009838,
+          "provider_native_prompt": 673,
+          "provider_native_completion": 1833,
+          "generation_id": "generation-000500"
+        },
+        {
+          "provider_cost_usd": 0.0006296,
+          "provider_native_prompt": 536,
+          "provider_native_completion": 1152,
+          "generation_id": "generation-000501"
+        },
+        {
+          "provider_cost_usd": 2.86e-05,
+          "provider_native_prompt": 196,
+          "provider_native_completion": 18,
+          "generation_id": "generation-000502"
+        },
+        {
+          "provider_cost_usd": 0.0011329,
+          "provider_native_prompt": 1049,
+          "provider_native_completion": 2056,
+          "generation_id": "generation-000503"
+        },
+        {
+          "provider_cost_usd": 0.003218,
+          "provider_native_prompt": 2115,
+          "provider_native_completion": 6013,
+          "generation_id": "generation-000504"
+        },
+        {
+          "provider_cost_usd": 0.0002483,
+          "provider_native_prompt": 348,
+          "provider_native_completion": 427,
+          "generation_id": "generation-000505"
+        },
+        {
+          "provider_cost_usd": 0.0013308,
+          "provider_native_prompt": 673,
+          "provider_native_completion": 2527,
+          "generation_id": "generation-000506"
+        },
+        {
+          "provider_cost_usd": 0.0033665,
+          "provider_native_prompt": 825,
+          "provider_native_completion": 6568,
+          "generation_id": "generation-000507"
+        },
+        {
+          "provider_cost_usd": 2.88e-05,
+          "provider_native_prompt": 208,
+          "provider_native_completion": 16,
+          "generation_id": "generation-000508"
+        },
+        {
+          "provider_cost_usd": 2.88e-05,
+          "provider_native_prompt": 208,
+          "provider_native_completion": 16,
+          "generation_id": "generation-000509"
+        },
+        {
+          "provider_cost_usd": 0.0001936,
+          "provider_native_prompt": 496,
+          "provider_native_completion": 288,
+          "generation_id": "generation-000510"
+        },
+        {
+          "provider_cost_usd": 3.21e-05,
+          "provider_native_prompt": 181,
+          "provider_native_completion": 28,
+          "generation_id": "generation-000511"
+        },
+        {
+          "provider_cost_usd": 0.0006568,
+          "provider_native_prompt": 1203,
+          "provider_native_completion": 1073,
+          "generation_id": "generation-000512"
+        },
+        {
+          "provider_cost_usd": 0.0008105,
+          "provider_native_prompt": 790,
+          "provider_native_completion": 1463,
+          "generation_id": "generation-000513"
+        },
+        {
+          "provider_cost_usd": 2.98e-05,
+          "provider_native_prompt": 208,
+          "provider_native_completion": 18,
+          "generation_id": "generation-000514"
+        },
+        {
+          "provider_cost_usd": 0.0002181,
+          "provider_native_prompt": 496,
+          "provider_native_completion": 337,
+          "generation_id": "generation-000515"
+        },
+        {
+          "provider_cost_usd": 0.002754,
+          "provider_native_prompt": 2115,
+          "provider_native_completion": 5085,
+          "generation_id": "generation-000516"
+        },
+        {
+          "provider_cost_usd": 2.71e-05,
+          "provider_native_prompt": 181,
+          "provider_native_completion": 18,
+          "generation_id": "generation-000517"
+        },
+        {
+          "provider_cost_usd": 0.0009488,
+          "provider_native_prompt": 593,
+          "provider_native_completion": 1779,
+          "generation_id": "generation-000518"
+        },
+        {
+          "provider_cost_usd": 0.0031704,
+          "provider_native_prompt": 1049,
+          "provider_native_completion": 6131,
+          "generation_id": "generation-000519"
+        },
+        {
+          "provider_cost_usd": 0.0005545,
+          "provider_native_prompt": 795,
+          "provider_native_completion": 950,
+          "generation_id": "generation-000520"
+        },
+        {
+          "provider_cost_usd": 0.0001931,
+          "provider_native_prompt": 496,
+          "provider_native_completion": 287,
+          "generation_id": "generation-000521"
+        },
+        {
+          "provider_cost_usd": 0.0002021,
+          "provider_native_prompt": 496,
+          "provider_native_completion": 305,
+          "generation_id": "generation-000522"
+        },
+        {
+          "provider_cost_usd": 8.07e-05,
+          "provider_native_prompt": 172,
+          "provider_native_completion": 127,
+          "generation_id": "generation-000523"
+        },
+        {
+          "provider_cost_usd": 8.23e-05,
+          "provider_native_prompt": 173,
+          "provider_native_completion": 130,
+          "generation_id": "generation-000524"
+        },
+        {
+          "provider_cost_usd": 0.0001926,
+          "provider_native_prompt": 496,
+          "provider_native_completion": 286,
+          "generation_id": "generation-000525"
+        },
+        {
+          "provider_cost_usd": 0.0001561,
+          "provider_native_prompt": 196,
+          "provider_native_completion": 273,
+          "generation_id": "generation-000526"
+        },
+        {
+          "provider_cost_usd": 9.18e-05,
+          "provider_native_prompt": 173,
+          "provider_native_completion": 149,
+          "generation_id": "generation-000527"
+        },
+        {
+          "provider_cost_usd": 0.0010463,
+          "provider_native_prompt": 673,
+          "provider_native_completion": 1958,
+          "generation_id": "generation-000528"
+        },
+        {
+          "provider_cost_usd": 8.43e-05,
+          "provider_native_prompt": 173,
+          "provider_native_completion": 134,
+          "generation_id": "generation-000529"
+        },
+        {
+          "provider_cost_usd": 3.36e-05,
+          "provider_native_prompt": 181,
+          "provider_native_completion": 31,
+          "generation_id": "generation-000530"
+        },
+        {
+          "provider_cost_usd": 0.000579,
+          "provider_native_prompt": 795,
+          "provider_native_completion": 999,
+          "generation_id": "generation-000531"
+        },
+        {
+          "provider_cost_usd": 0.0004776,
+          "provider_native_prompt": 536,
+          "provider_native_completion": 848,
+          "generation_id": "generation-000532"
+        },
+        {
+          "provider_cost_usd": 0.0010598,
+          "provider_native_prompt": 673,
+          "provider_native_completion": 1985,
+          "generation_id": "generation-000533"
+        },
+        {
+          "provider_cost_usd": 0.0005723,
+          "provider_native_prompt": 1203,
+          "provider_native_completion": 904,
+          "generation_id": "generation-000534"
+        },
+        {
+          "provider_cost_usd": 0.0023418,
+          "provider_native_prompt": 1063,
+          "provider_native_completion": 4471,
+          "generation_id": "generation-000535"
+        },
+        {
+          "provider_cost_usd": 2.93e-05,
+          "provider_native_prompt": 208,
+          "provider_native_completion": 17,
+          "generation_id": "generation-000536"
+        },
+        {
+          "provider_cost_usd": 0.0005745,
+          "provider_native_prompt": 795,
+          "provider_native_completion": 990,
+          "generation_id": "generation-000537"
+        },
+        {
+          "provider_cost_usd": 0.0032195,
+          "provider_native_prompt": 825,
+          "provider_native_completion": 6274,
+          "generation_id": "generation-000538"
+        },
+        {
+          "provider_cost_usd": 8.43e-05,
+          "provider_native_prompt": 173,
+          "provider_native_completion": 134,
+          "generation_id": "generation-000539"
+        },
+        {
+          "provider_cost_usd": 0.000539,
+          "provider_native_prompt": 795,
+          "provider_native_completion": 919,
+          "generation_id": "generation-000540"
+        },
+        {
+          "provider_cost_usd": 8.38e-05,
+          "provider_native_prompt": 173,
+          "provider_native_completion": 133,
+          "generation_id": "generation-000541"
+        },
+        {
+          "provider_cost_usd": 0.0010433,
+          "provider_native_prompt": 593,
+          "provider_native_completion": 1968,
+          "generation_id": "generation-000542"
+        },
+        {
+          "provider_cost_usd": 2.68e-05,
+          "provider_native_prompt": 208,
+          "provider_native_completion": 12,
+          "generation_id": "generation-000543"
+        },
+        {
+          "provider_cost_usd": 0.0005598,
+          "provider_native_prompt": 1203,
+          "provider_native_completion": 879,
+          "generation_id": "generation-000544"
+        },
+        {
+          "provider_cost_usd": 3.1e-05,
+          "provider_native_prompt": 180,
+          "provider_native_completion": 26,
+          "generation_id": "generation-000545"
+        },
+        {
+          "provider_cost_usd": 2.71e-05,
+          "provider_native_prompt": 181,
+          "provider_native_completion": 18,
+          "generation_id": "generation-000546"
+        },
+        {
+          "provider_cost_usd": 2.81e-05,
+          "provider_native_prompt": 196,
+          "provider_native_completion": 17,
+          "generation_id": "generation-000547"
+        },
+        {
+          "provider_cost_usd": 0.0006593,
+          "provider_native_prompt": 1203,
+          "provider_native_completion": 1078,
+          "generation_id": "generation-000548"
+        },
+        {
+          "provider_cost_usd": 0.0010258,
+          "provider_native_prompt": 673,
+          "provider_native_completion": 1917,
+          "generation_id": "generation-000549"
+        },
+        {
+          "provider_cost_usd": 2.95e-05,
+          "provider_native_prompt": 180,
+          "provider_native_completion": 23,
+          "generation_id": "generation-000550"
+        },
+        {
+          "provider_cost_usd": 0.0005628,
+          "provider_native_prompt": 1203,
+          "provider_native_completion": 885,
+          "generation_id": "generation-000551"
+        },
+        {
+          "provider_cost_usd": 3.1e-05,
+          "provider_native_prompt": 180,
+          "provider_native_completion": 26,
+          "generation_id": "generation-000552"
+        },
+        {
+          "provider_cost_usd": 0.0002617,
+          "provider_native_prompt": 342,
+          "provider_native_completion": 455,
+          "generation_id": "generation-000553"
+        },
+        {
+          "provider_cost_usd": 0.0010823,
+          "provider_native_prompt": 673,
+          "provider_native_completion": 2030,
+          "generation_id": "generation-000554"
+        },
+        {
+          "provider_cost_usd": 0.0028445,
+          "provider_native_prompt": 2115,
+          "provider_native_completion": 5266,
+          "generation_id": "generation-000555"
+        },
+        {
+          "provider_cost_usd": 3e-05,
+          "provider_native_prompt": 180,
+          "provider_native_completion": 24,
+          "generation_id": "generation-000556"
+        },
+        {
+          "provider_cost_usd": 0.0004879,
+          "provider_native_prompt": 1049,
+          "provider_native_completion": 766,
+          "generation_id": "generation-000557"
+        },
+        {
+          "provider_cost_usd": 8.94e-05,
+          "provider_native_prompt": 174,
+          "provider_native_completion": 144,
+          "generation_id": "generation-000558"
+        },
+        {
+          "provider_cost_usd": 0.0006636,
+          "provider_native_prompt": 536,
+          "provider_native_completion": 1220,
+          "generation_id": "generation-000559"
+        },
+        {
+          "provider_cost_usd": 0.0034523,
+          "provider_native_prompt": 1103,
+          "provider_native_completion": 6684,
+          "generation_id": "generation-000560"
+        },
+        {
+          "provider_cost_usd": 2.85e-05,
+          "provider_native_prompt": 195,
+          "provider_native_completion": 18,
+          "generation_id": "generation-000561"
+        },
+        {
+          "provider_cost_usd": 2.98e-05,
+          "provider_native_prompt": 208,
+          "provider_native_completion": 18,
+          "generation_id": "generation-000562"
+        },
+        {
+          "provider_cost_usd": 7.53e-05,
+          "provider_native_prompt": 173,
+          "provider_native_completion": 116,
+          "generation_id": "generation-000563"
+        },
+        {
+          "provider_cost_usd": 2.8e-05,
+          "provider_native_prompt": 195,
+          "provider_native_completion": 17,
+          "generation_id": "generation-000564"
+        },
+        {
+          "provider_cost_usd": 0.0005538,
+          "provider_native_prompt": 1203,
+          "provider_native_completion": 867,
+          "generation_id": "generation-000565"
+        },
+        {
+          "provider_cost_usd": 0.0010588,
+          "provider_native_prompt": 673,
+          "provider_native_completion": 1983,
+          "generation_id": "generation-000566"
+        },
+        {
+          "provider_cost_usd": 0.0011353,
+          "provider_native_prompt": 673,
+          "provider_native_completion": 2136,
+          "generation_id": "generation-000567"
+        },
+        {
+          "provider_cost_usd": 0.0029798,
+          "provider_native_prompt": 823,
+          "provider_native_completion": 5795,
+          "generation_id": "generation-000568"
+        },
+        {
+          "provider_cost_usd": 0.0009438,
+          "provider_native_prompt": 1048,
+          "provider_native_completion": 1678,
+          "generation_id": "generation-000569"
+        },
+        {
+          "provider_cost_usd": 2.79e-05,
+          "provider_native_prompt": 194,
+          "provider_native_completion": 17,
+          "generation_id": "generation-000570"
+        },
+        {
+          "provider_cost_usd": 0.000258,
+          "provider_native_prompt": 350,
+          "provider_native_completion": 446,
+          "generation_id": "generation-000571"
+        },
+        {
+          "provider_cost_usd": 2.98e-05,
+          "provider_native_prompt": 208,
+          "provider_native_completion": 18,
+          "generation_id": "generation-000572"
+        },
+        {
+          "provider_cost_usd": 2.68e-05,
+          "provider_native_prompt": 208,
+          "provider_native_completion": 12,
+          "generation_id": "generation-000573"
+        },
+        {
+          "provider_cost_usd": 0.0007938,
+          "provider_native_prompt": 673,
+          "provider_native_completion": 1453,
+          "generation_id": "generation-000574"
+        },
+        {
+          "provider_cost_usd": 0.0007251,
+          "provider_native_prompt": 536,
+          "provider_native_completion": 1343,
+          "generation_id": "generation-000575"
+        },
+        {
+          "provider_cost_usd": 0.0005293,
+          "provider_native_prompt": 1203,
+          "provider_native_completion": 818,
+          "generation_id": "generation-000576"
+        },
+        {
+          "provider_cost_usd": 0.0005645,
+          "provider_native_prompt": 535,
+          "provider_native_completion": 1022,
+          "generation_id": "generation-000577"
+        },
+        {
+          "provider_cost_usd": 0.0010688,
+          "provider_native_prompt": 673,
+          "provider_native_completion": 2003,
+          "generation_id": "generation-000578"
+        },
+        {
+          "provider_cost_usd": 0.0007948,
+          "provider_native_prompt": 673,
+          "provider_native_completion": 1455,
+          "generation_id": "generation-000579"
+        },
+        {
+          "provider_cost_usd": 0.0001961,
+          "provider_native_prompt": 496,
+          "provider_native_completion": 293,
+          "generation_id": "generation-000580"
+        },
+        {
+          "provider_cost_usd": 0.0004931,
+          "provider_native_prompt": 536,
+          "provider_native_completion": 879,
+          "generation_id": "generation-000581"
+        },
+        {
+          "provider_cost_usd": 0.003504,
+          "provider_native_prompt": 2115,
+          "provider_native_completion": 6585,
+          "generation_id": "generation-000582"
+        },
+        {
+          "provider_cost_usd": 0.0041049,
+          "provider_native_prompt": 809,
+          "provider_native_completion": 8048,
+          "generation_id": "generation-000583"
+        },
+        {
+          "provider_cost_usd": 0.0005124,
+          "provider_native_prompt": 1049,
+          "provider_native_completion": 815,
+          "generation_id": "generation-000584"
+        },
+        {
+          "provider_cost_usd": 3.04e-05,
+          "provider_native_prompt": 179,
+          "provider_native_completion": 25,
+          "generation_id": "generation-000585"
+        },
+        {
+          "provider_cost_usd": 0.0001766,
+          "provider_native_prompt": 496,
+          "provider_native_completion": 254,
+          "generation_id": "generation-000586"
+        },
+        {
+          "provider_cost_usd": 0.0006185,
+          "provider_native_prompt": 795,
+          "provider_native_completion": 1078,
+          "generation_id": "generation-000587"
+        },
+        {
+          "provider_cost_usd": 2.76e-05,
+          "provider_native_prompt": 181,
+          "provider_native_completion": 19,
+          "generation_id": "generation-000588"
+        },
+        {
+          "provider_cost_usd": 0.0006373,
+          "provider_native_prompt": 1203,
+          "provider_native_completion": 1034,
+          "generation_id": "generation-000589"
+        },
+        {
+          "provider_cost_usd": 2.96e-05,
+          "provider_native_prompt": 181,
+          "provider_native_completion": 23,
+          "generation_id": "generation-000590"
+        },
+        {
+          "provider_cost_usd": 0.0011683,
+          "provider_native_prompt": 673,
+          "provider_native_completion": 2202,
+          "generation_id": "generation-000591"
+        },
+        {
+          "provider_cost_usd": 0.0025765,
+          "provider_native_prompt": 2115,
+          "provider_native_completion": 4730,
+          "generation_id": "generation-000592"
+        },
+        {
+          "provider_cost_usd": 0.0002144,
+          "provider_native_prompt": 344,
+          "provider_native_completion": 360,
+          "generation_id": "generation-000593"
+        },
+        {
+          "provider_cost_usd": 0.0008003,
+          "provider_native_prompt": 593,
+          "provider_native_completion": 1482,
+          "generation_id": "generation-000594"
+        },
+        {
+          "provider_cost_usd": 0.002679,
+          "provider_native_prompt": 825,
+          "provider_native_completion": 5193,
+          "generation_id": "generation-000595"
+        },
+        {
+          "provider_cost_usd": 0.0026225,
+          "provider_native_prompt": 2115,
+          "provider_native_completion": 4822,
+          "generation_id": "generation-000596"
+        },
+        {
+          "provider_cost_usd": 0.0029515,
+          "provider_native_prompt": 1065,
+          "provider_native_completion": 5690,
+          "generation_id": "generation-000597"
+        },
+        {
+          "provider_cost_usd": 0.0024023,
+          "provider_native_prompt": 1063,
+          "provider_native_completion": 4592,
+          "generation_id": "generation-000598"
+        },
+        {
+          "provider_cost_usd": 0.0004839,
+          "provider_native_prompt": 1049,
+          "provider_native_completion": 758,
+          "generation_id": "generation-000599"
+        },
+        {
+          "provider_cost_usd": 9.07e-05,
+          "provider_native_prompt": 172,
+          "provider_native_completion": 147,
+          "generation_id": "generation-000600"
+        }
+      ]
+    }
+  }
+}

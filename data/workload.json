@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "seed": 20261019,
+  "notes": "Composicao fixa da carga do experimento (design secao 4). Mesma carga em A e B. 600 chamadas de texto + 40 de imagem; 64 (10%) com falha provocada. Mudar qualquer numero aqui muda a carga: registrar no README.",
+  "accounts": {
+    "email_pattern": "load-user-<n>@paper.test",
+    "students": 12,
+    "teachers": 12,
+    "admins": 1
+  },
+  "quotas": {
+    "hero_text_per_action_per_day": 10,
+    "hero_avatar_per_day": 3
+  },
+  "client_rate_limits_per_minute": {
+    "default": 100,
+    "sse": 5,
+    "hero_avatar": 3,
+    "badge_title": 20
+  },
+  "flows": {
+    "hero_title":           { "type": "sync_text",   "role": "student", "count": 60, "provoked_failures": 6 },
+    "hero_persona":         { "type": "sync_text",   "role": "student", "count": 60, "provoked_failures": 6 },
+    "hero_name":            { "type": "sync_text",   "role": "student", "count": 60, "provoked_failures": 6 },
+    "badge_title":          { "type": "sync_text",   "role": "teacher", "count": 40, "provoked_failures": 4 },
+    "course_description":   { "type": "stream_text", "role": "teacher", "count": 60, "provoked_failures": 6 },
+    "description_feedback": { "type": "stream_text", "role": "teacher", "count": 30, "provoked_failures": 3 },
+    "pedagogical_spec":     { "type": "stream_text", "role": "teacher", "count": 30, "provoked_failures": 3 },
+    "missions_generate":    { "type": "stream_text", "role": "teacher", "count": 30, "provoked_failures": 3 },
+    "mission_metadata":     { "type": "stream_text", "role": "teacher", "count": 40, "provoked_failures": 4 },
+    "mission_proposal":     { "type": "stream_text", "role": "teacher", "count": 50, "provoked_failures": 5 },
+    "story_slides":         { "type": "stream_text", "role": "teacher", "count": 40, "provoked_failures": 4 },
+    "knowledge_map":        { "type": "stream_text", "role": "teacher", "count": 50, "provoked_failures": 5 },
+    "mission_material":     { "type": "stream_text", "role": "teacher", "count": 50, "provoked_failures": 5 },
+    "hero_avatar":          { "type": "image",       "role": "student", "count": 16, "provoked_failures": 2 },
+    "course_cover":         { "type": "image",       "role": "teacher", "count": 12, "provoked_failures": 1 },
+    "badge_image":          { "type": "image",       "role": "teacher", "count": 8,  "provoked_failures": 1 },
+    "discipline_cover":     { "type": "image",       "role": "admin",   "count": 4,  "provoked_failures": 0 }
+  },
+  "failure_modes": {
+    "sync_text": [
+      { "mode": "rate_limited",      "count": 3, "weight": 3, "expect": "error",     "why": "429 nas 3 tentativas do retry do curador" },
+      { "mode": "rate_limited",      "count": 1, "weight": 2, "expect": "recovered", "why": "429 na 1a tentativa; o retry recupera" },
+      { "mode": "length_with_usage", "count": 1, "weight": 2, "expect": "error",     "why": "resposta truncada (finish length) e cobrada; o curador nao repete (erro permanente)" },
+      { "mode": "timeout",           "count": 1, "weight": 1, "expect": "recovered", "why": "1a tentativa estoura o timeout de 30 s do curador" }
+    ],
+    "stream_text": [
+      { "mode": "rate_limited",      "count": 1, "weight": 2, "expect": "error", "why": "429 antes do stream (stream nao tem retry)" },
+      { "mode": "length_with_usage", "count": 1, "weight": 2, "expect": "error", "why": "stream truncado por limite de tokens, com usage" },
+      { "mode": "stream_abort",      "count": 1, "weight": 2, "expect": "error", "why": "conexao cai no meio do stream depois do usage (Review Focus 3)" }
+    ],
+    "image": [
+      { "mode": "rate_limited",      "count": 1, "weight": 1, "expect": "error", "why": "429 no /images ou chat com modalities (sem retry)" }
+    ]
+  },
+  "flow_params": {
+    "course_names": ["Fundamentos de Git", "Estruturas de Dados", "Banco de Dados Relacionais", "Redes de Computadores", "Engenharia de Software", "Algoritmos em Grafos"],
+    "material_kinds": ["study_guide", "glossary", "exercises", "practical_guide", "extra_challenge", "case_study", "reflection_questions"],
+    "knowledge_map_roles": ["initial", "final"],
+    "badge_rarities": ["common", "rare", "epic", "legendary"],
+    "avatar_tags": [["fogo", "espada"], ["gelo", "escudo"], ["floresta", "arco"], ["raio", "livro"]],
+    "missions_per_course": 2,
+    "missions_generate_count": 2
+  }
+}

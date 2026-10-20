@@ -1,0 +1,8 @@
+# Licensing scope
+
+Copyright (c) 2026 Evandro Roberto Ropelatto Filho and research contributors.
+
+- Data, recorded evidence, result reports, metadata and documentation in this repository: Creative Commons Attribution 4.0 International (CC BY 4.0). See LICENSE-DATA.md.
+- Newly provided Python analysis and test scripts: MIT. See LICENSE-CODE.txt.
+
+These permissions apply only to this public analysis package. The private ClassHero application, full execution harness, simulator, third-party APIs, institutional marks and any material not included here are not licensed by this repository.
