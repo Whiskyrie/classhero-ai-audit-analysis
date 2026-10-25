@@ -1,11 +1,14 @@
 {
-  "release": "v1.0.0",
+  "release": "v1.1.0",
   "experiment_date_utc": "2026-10-20",
   "application_versions": {
     "A": "30f02e62f46530adecf1f9b8ec1136a4a0f015a5",
-    "B": "196effba1aee75514000734afbb5bb875edc0dd6"
+    "B": "196effba1aee75514000734afbb5bb875edc0dd6",
+    "C_properties": "b5dd3ee9076eb6728c7c2a987573f43c66feecdd",
+    "C_integrated": "9a1b5066a2c552217f33115d8793fd44f008b225",
+    "C_integrated_pre_fix": "726ff9103958eb4de0c6b38d7dd247d5d9b41942"
   },
-  "limitations": "Application, execution harness, simulator, raw logs and database dumps are not published. Supplied evidence is not independently authenticated.",
+  "limitations": "Application, execution harness, simulator, raw logs and database dumps are not published. Supplied evidence is not independently authenticated. From v1.1.0 the provider simulator and the integrated-evaluation harness are published; the harness requires the private application. Property spec, C patches and B-to-C diff are not published.",
   "inputs": [
     {
       "source": "experiment/results/public/ai_usage_events_A_B.csv",
@@ -54,6 +57,39 @@
       "source_sha256": "d5d635b3739c1695a59dfb4d298e86e5fa69948e5111c20e9635645635b26ff0",
       "release_file": "evidence/simulated_audit_counts.json",
       "transformation": "allowlisted aggregate counters only"
+    },
+    {
+      "source": "experiment/results/integrated-C/20261025T200826Z/",
+      "release_file": "integrated-c/runs/20261025T200826Z/",
+      "transformation": "Copied run outputs; removed api.log, curator.log, stack-up logs, Jest console logs and worktree-status-final.txt; synthetic e-mail replaced with user-901"
+    },
+    {
+      "source": "experiment/results/integrated-C/20261025T195549Z-pre-fix-breakdowns/",
+      "release_file": "integrated-c/runs/20261025T195549Z-pre-fix/",
+      "transformation": "Same as the final package"
+    },
+    {
+      "source": "experiment/mock-openrouter/",
+      "release_file": "integrated-c/mock-openrouter/",
+      "transformation": "Byte-identical server.js, server.test.js and fixtures (synthetic pixel-art badge and recorded curator outputs)"
+    },
+    {
+      "source": "experiment/integrated-C/",
+      "release_file": "integrated-c/harness/",
+      "transformation": "Byte-identical run-all.sh, run-public.mjs, run-composition.sh, build-report.mjs, lib/common.mjs; run-mutant-control.sh and README.md (Portuguese) not copied"
+    },
+    {
+      "source": "experiment/properties-B/result-B.json",
+      "source_sha256": "72c06f88cf730a8fc5af46c40149e9893319114b74a2ec0c241cf7e9c247784a",
+      "release_file": "properties/property-results-B-C.json",
+      "transformation": "Allowlist: per-test group, title and status; counts"
+    },
+    {
+      "source": "experiment/properties-B/result-C.json",
+      "source_sha256": "555301e8f9316200eeba5565394f1c23abb77a09609b10171fc4db52d0f7a401",
+      "release_file": "properties/property-results-B-C.json",
+      "transformation": "Allowlist: per-test group, title and status; counts"
     }
-  ]
+  ],
+  "integrated_c_date_utc": "2026-10-25"
 }

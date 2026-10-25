@@ -2,9 +2,9 @@ cff-version: 1.2.0
 message: "Please cite this versioned dataset and offline analysis package."
 type: dataset
 title: "ClassHero AI audit: data and offline analysis"
-version: 1.0.0
-date-released: 2026-10-20
-url: "https://github.com/Whiskyrie/classhero-ai-audit-analysis/releases/tag/v1.0.0"
+version: 1.1.0
+date-released: 2026-10-25
+url: "https://github.com/Whiskyrie/classhero-ai-audit-analysis/releases/tag/v1.1.0"
 repository-code: "https://github.com/Whiskyrie/classhero-ai-audit-analysis"
 license:
   - CC-BY-4.0
@@ -23,7 +23,11 @@ abstract: >-
   Pseudonymized observations from one real-provider round per ClassHero
   version and three simulated-provider passes. Includes offline reanalysis
   of audit completeness, monetary reconciliation, client outcomes and latency.
-  This deposit does not include the private application or a full rerun harness.
+  Version 1.1.0 adds the integrated evaluation of version C against a simulated
+  provider (simulator, harness scripts, synthetic run outputs and an offline
+  recheck) and the recorded outcome of the deterministic property tests.
+  This deposit does not include the private application; the real-round
+  workload and the integrated runs cannot be re-executed without it.
 keywords:
   - LLM observability
   - cost auditing

@@ -1,6 +1,8 @@
 # ClassHero AI audit — data and offline analysis
 
-Version **1.0.0**. Public analysis artifact accompanying the ClassHero AI-usage auditing study. This is a separate repository; it does **not** expose the private ClassHero application.
+Version **1.1.0**. Public analysis artifact accompanying the ClassHero AI-usage auditing study. This is a separate repository; it does **not** expose the private ClassHero application.
+
+v1.1.0 adds the integrated evaluation of version C (provider simulator, harness scripts, synthetic run outputs, result tables and an offline recheck) and the recorded outcome of the deterministic property tests B against C. See `integrated-c/README.md` and `properties/README.md`. Everything released in v1.0.0 is unchanged.
 
 ## Run the analysis
 
@@ -11,6 +13,7 @@ git clone https://github.com/Whiskyrie/classhero-ai-audit-analysis.git
 cd classhero-ai-audit-analysis
 python3 -m unittest discover -s tests -v
 python3 analysis.py
+python3 integrated_c.py
 ```
 
 The script verifies `MANIFEST.json` and writes `generated/summary.json` and `generated/report.md`. Outputs are deterministic and can be compared with the committed `results/` files:
@@ -33,13 +36,17 @@ The same commands work after extracting the release ZIP; cloning is not required
 | `evidence/simulated_audit_counts.json` | Selected recorded audit-write counters, explicitly distinguished from recomputed client outcomes |
 | `analysis.py` | New self-contained offline reanalysis entry point |
 | `tests/test_analysis.py` | Unit, integrity and dataset regression checks |
+| `integrated-c/` | v1.1.0: integrated evaluation of C: simulator, harness scripts, two synthetic run packages (final and pre-fix), `QUADRO.md` tables |
+| `integrated_c.py` | v1.1.0: offline recheck of the integrated runs from raw outputs |
+| `tests/test_integrated_c.py` | v1.1.0: recheck regression, negative controls and simulator self-tests (skipped without Node) |
+| `properties/` | v1.1.0: recorded outcome of the 17 deterministic property tests, B 7/17 and C 17/17 |
 | `results/` | Outputs generated from the shipped inputs, not invented examples |
 | `PROVENANCE.json` | Source paths relative to the internal study tree and hashes; no host paths |
 | `MANIFEST.json` | SHA-256 for the released files, excluding itself |
 | `DATA_DICTIONARY.md` | CSV field meanings and null conventions |
 | `CITATION.cff` | Dataset attribution and versioned citation |
 
-The old internal JavaScript scripts are deliberately not copied: some depend on unreleased helper modules, raw logs, API credentials or database dumps. The full workload runner, simulator and application source are **not** part of this release.
+The old internal JavaScript scripts of the real rounds are deliberately not copied: some depend on unreleased helper modules, raw logs, API credentials or database dumps. The real-round workload runner and the application source are **not** part of this release. The provider simulator and the integrated-evaluation harness are released from v1.1.0; the harness needs the private application to run and is published for inspection. The property spec, the C patches and the B-to-C diff remain private.
 
 ## What this release can verify
 
@@ -48,6 +55,8 @@ The old internal JavaScript scripts are deliberately not copied: some depend on 
 - Cost and native-token agreement for the 600 B text events against the supplied recorded provider reference fields.
 - Client outcomes, nearest-rank latency percentiles and planned-successful completions across all five released rounds.
 - Equality of all 640 simulated client outcomes with and without the injected audit-write failure.
+- v1.1.0: every E1/E2 verdict of the integrated evaluation of C, recomputed from requests, simulator ledger, exported audit events, report responses and metric deltas; determinism across the two runs; the report defect in the pre-fix package and its absence after the fix.
+- v1.1.0: the provider simulator behaviour, through its own tests.
 
 Provider reference fields were extracted from saved experimental records. This package does not independently authenticate those records, re-query the provider or turn supplied records into new observations. Trace-ID **presence** is recomputable; linkage to unreleased service logs is not.
 
@@ -78,12 +87,14 @@ Accounts were synthetic; e-mail addresses were nevertheless replaced with `user-
 
 ## Reproduction limits
 
-This artifact supports **reanalysis of the included recorded observations**, not a full independent end-to-end rerun. It does not reproduce every manuscript table: simulated audit-event rows, raw trace logs and certain internal source inputs are not included. Recorded simulated persisted-event counters are labelled as supplied evidence; client outcomes are independently recomputed from the released CSV.
+This artifact supports **reanalysis of the included recorded observations**, not a full independent end-to-end rerun. The integrated runs of C cannot be re-executed without the private application; their outputs can be rechecked. It does not reproduce every manuscript table: simulated audit-event rows, raw trace logs and certain internal source inputs are not included. Recorded simulated persisted-event counters are labelled as supplied evidence; client outcomes are independently recomputed from the released CSV.
 
 Historical evaluated application commits:
 
 - A: `30f02e62f46530adecf1f9b8ec1136a4a0f015a5`.
 - B: `196effba1aee75514000734afbb5bb875edc0dd6`.
+- C (property tests): `b5dd3ee9076eb6728c7c2a987573f43c66feecdd`.
+- C (integrated evaluation, after the report fix): `9a1b5066a2c552217f33115d8793fd44f008b225`.
 
 These are provenance identifiers, not public source links or promises of access.
 
@@ -91,7 +102,7 @@ The workload byte hash is `e5a2209f07553cead9765bd068a678d2fbfbb7c4b2bf019402786
 
 ## Citation and licensing
 
-Use `CITATION.cff` or cite the authors, repository, version **v1.0.0** and its release URL. No DOI has been assigned; a GitHub release is not a DOI deposit.
+Use `CITATION.cff` or cite the authors, repository, version **v1.1.0** and its release URL. No DOI has been assigned; a GitHub release is not a DOI deposit.
 
 - Data, evidence, results and documentation: **CC BY 4.0**.
 - Newly provided Python scripts/tests: **MIT**.
