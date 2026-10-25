@@ -1,0 +1,25 @@
+PASSA E1.5 Controle sequencial (termino em ordem)
+   ok  E1.5-http: esperado status 2xx; eco igual | observado e15a:200 e15b:201 e15c:200
+   ok  E1.5-ident: esperado trocas = 0 | observado trocas = 0
+PASSA E1.1 Concorrencia entre requisicoes publicas, termino invertido
+   ok  E1.1-http: esperado status 2xx; eco igual | observado e11a:200 e11b:201 e11c:200 e11d:201 e11e:200
+   ok  E1.1-ident: esperado trocas = 0 | observado trocas = 0
+   ok  E1.1-ordem: esperado e11e,e11d,e11c,e11b,e11a | observado e11e,e11d,e11c,e11b,e11a
+PASSA E2 Conservacao de custo: evento, relatorio e metricas
+   ok  E2-http: esperado 2xx | observado e2a:200 e2b:200 e2c:200 e2d:200 e2e:201
+   ok  E2.a-evento: esperado 0.0311 | observado 0.03110000
+   ok  E2.b-evento: esperado cost=0.0344 failed=0.0122 attempts=2 | observado cost=0.03440000 failed=0.01220000 attempts=2
+   ok  E2.c-evento: esperado cost=NULL | observado cost=null
+   ok  E2.d-evento: esperado cost=0 | observado cost=0.00000000
+   ok  E2.e-evento: esperado cost=NULL | observado cost=null
+   ok  E2-eventos: esperado 5 | observado 5
+   ok  E2-rel-total: esperado 0.0777 | observado 0.0777
+   ok  E2-rel-desconhecido: esperado 2 | observado 2
+   ok  E2-rel-gratis: esperado 1 | observado 1
+   ok  E2-rel-completo: esperado unknownCostRequests > 0 e total < cobrado | observado unknown=2 total=0.0777 cobrado=0.1153
+   ok  E2-rel-modelo: esperado 0.0777 | observado 0.0777
+   ok  E2-met-api-custo: esperado 0.0777 | observado 0.0777
+   ok  E2-met-api-desconhecido: esperado 2 | observado 2
+   ok  E2-met-curador: esperado 0.0777 | observado 0.0777
+   ok  E2.f-rel-gratis: esperado free=0 unknown=1 | observado http=200 free=0 unknown=1
+   ok  E2.f-rel-modelo-gratis: esperado isFree=false | observado isFree=false

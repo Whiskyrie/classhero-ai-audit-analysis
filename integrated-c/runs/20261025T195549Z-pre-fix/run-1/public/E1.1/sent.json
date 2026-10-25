@@ -1,0 +1,82 @@
+[
+  {
+    "marker": "e11a",
+    "flow": "badge",
+    "cost": 0.01011,
+    "delay_ms": 900,
+    "requestId": "d3dc2432-0ae7-4d52-a4c9-904aa65ac0e6",
+    "echoed": "d3dc2432-0ae7-4d52-a4c9-904aa65ac0e6",
+    "status": 200,
+    "ms": 956,
+    "payload": "{\"title\":\"Resposta simulada.\"}",
+    "startIdx": 0
+  },
+  {
+    "marker": "e11b",
+    "flow": "description",
+    "cost": 0.02022,
+    "delay_ms": 700,
+    "requestId": "a0fe7f78-4ca4-4344-84e8-41e0d7047cb5",
+    "echoed": "a0fe7f78-4ca4-4344-84e8-41e0d7047cb5",
+    "status": 201,
+    "ms": 713,
+    "payload": {
+      "events": [
+        "progress",
+        "progress",
+        "progress",
+        "progress",
+        "progress",
+        "done"
+      ],
+      "last": "{\"data\":{\"sigla\":\"FGIT\",\"titulo\":\"Fundamentos de Git\",\"ementa\":[\"Introdução ao controle de versão\",\"Conceitos básicos do Git\",\"Configuração inicial do Git\",\"Comandos essenciais do Git\",\"Trabalho com r"
+    },
+    "startIdx": 1
+  },
+  {
+    "marker": "e11c",
+    "flow": "badge",
+    "cost": 0.03033,
+    "delay_ms": 500,
+    "requestId": "a46c8ea5-d2fa-4ea9-92b0-bacc9d7f0db2",
+    "echoed": "a46c8ea5-d2fa-4ea9-92b0-bacc9d7f0db2",
+    "status": 200,
+    "ms": 515,
+    "payload": "{\"title\":\"Resposta simulada.\"}",
+    "startIdx": 2
+  },
+  {
+    "marker": "e11d",
+    "flow": "description",
+    "cost": 0.04044,
+    "delay_ms": 300,
+    "requestId": "a0838a97-c5e7-440b-8dd5-bc5af99f0166",
+    "echoed": "a0838a97-c5e7-440b-8dd5-bc5af99f0166",
+    "status": 201,
+    "ms": 311,
+    "payload": {
+      "events": [
+        "progress",
+        "progress",
+        "progress",
+        "progress",
+        "progress",
+        "done"
+      ],
+      "last": "{\"data\":{\"sigla\":\"FGIT\",\"titulo\":\"Fundamentos de Git\",\"ementa\":[\"Introdução ao controle de versão\",\"Conceitos básicos do Git\",\"Configuração inicial do Git\",\"Comandos essenciais do Git\",\"Trabalho com r"
+    },
+    "startIdx": 3
+  },
+  {
+    "marker": "e11e",
+    "flow": "badge",
+    "cost": 0.05055,
+    "delay_ms": 0,
+    "requestId": "25e25b1c-4d15-4ce9-8275-029dc3ca79b9",
+    "echoed": "25e25b1c-4d15-4ce9-8275-029dc3ca79b9",
+    "status": 200,
+    "ms": 14,
+    "payload": "{\"title\":\"Resposta simulada.\"}",
+    "startIdx": 4
+  }
+]

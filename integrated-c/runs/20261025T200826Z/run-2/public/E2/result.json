@@ -1,0 +1,214 @@
+{
+  "id": "E2",
+  "title": "Conservacao de custo: evento, relatorio e metricas",
+  "ok": true,
+  "oracle": {
+    "billed_cost_usd": 0.1153,
+    "reported_cost_usd": 0.0777,
+    "unknown_operations": 2,
+    "free_operations": 1
+  },
+  "checks": [
+    {
+      "id": "E2-http",
+      "descricao": "todas as chamadas responderam 2xx",
+      "esperado": "2xx",
+      "observado": "e2a:200 e2b:200 e2c:200 e2d:200 e2e:201",
+      "ok": true
+    },
+    {
+      "id": "E2.a-evento",
+      "descricao": "custo conhecido gravado igual ao servido",
+      "esperado": "0.0311",
+      "observado": "0.03110000",
+      "ok": true
+    },
+    {
+      "id": "E2.b-evento",
+      "descricao": "retry: final em cost_usd, anterior em failed_attempts_cost_usd, 2 tentativas",
+      "esperado": "cost=0.0344 failed=0.0122 attempts=2",
+      "observado": "cost=0.03440000 failed=0.01220000 attempts=2",
+      "ok": true
+    },
+    {
+      "id": "E2.c-evento",
+      "descricao": "texto sem usage: custo NULL (desconhecido), nao zero",
+      "esperado": "cost=NULL",
+      "observado": "cost=null",
+      "ok": true
+    },
+    {
+      "id": "E2.d-evento",
+      "descricao": "zero real gravado como 0",
+      "esperado": "cost=0",
+      "observado": "cost=0.00000000",
+      "ok": true
+    },
+    {
+      "id": "E2.e-evento",
+      "descricao": "SSE sem usage: custo NULL (desconhecido)",
+      "esperado": "cost=NULL",
+      "observado": "cost=null",
+      "ok": true
+    },
+    {
+      "id": "E2-eventos",
+      "descricao": "um evento por operacao (sem dupla contagem da tentativa final)",
+      "esperado": "5",
+      "observado": "5",
+      "ok": true
+    },
+    {
+      "id": "E2-rel-total",
+      "descricao": "relatorio: totalCostInUsd = soma do custo informado (inclui tentativa anterior cobrada)",
+      "esperado": "0.0777",
+      "observado": "0.0777",
+      "ok": true
+    },
+    {
+      "id": "E2-rel-desconhecido",
+      "descricao": "relatorio: unknownCostRequests = operacoes sem custo final",
+      "esperado": "2",
+      "observado": "2",
+      "ok": true
+    },
+    {
+      "id": "E2-rel-gratis",
+      "descricao": "relatorio: freeRequests conta so o zero real (desconhecido nao vira gratuito)",
+      "esperado": "1",
+      "observado": "1",
+      "ok": true
+    },
+    {
+      "id": "E2-rel-completo",
+      "descricao": "relatorio: total so pode ser lido como completo se unknownCostRequests = 0; aqui deve sinalizar incompleto",
+      "esperado": "unknownCostRequests > 0 e total < cobrado",
+      "observado": "unknown=2 total=0.0777 cobrado=0.1153",
+      "ok": true
+    },
+    {
+      "id": "E2-rel-modelo",
+      "descricao": "relatorio: soma por modelo = totalCostInUsd",
+      "esperado": "0.0777",
+      "observado": "0.0777",
+      "ok": true
+    },
+    {
+      "id": "E2-met-api-custo",
+      "descricao": "metrica API: delta de ai_cost_usd_total = custo informado",
+      "esperado": "0.0777",
+      "observado": "0.0777",
+      "ok": true
+    },
+    {
+      "id": "E2-met-api-desconhecido",
+      "descricao": "metrica API: delta de ai_cost_unknown_total = operacoes sem custo final",
+      "esperado": "2",
+      "observado": "2",
+      "ok": true
+    },
+    {
+      "id": "E2-met-curador",
+      "descricao": "metrica curador: delta de curator_ai_cost_usd_total = custo informado",
+      "esperado": "0.0777",
+      "observado": "0.0777",
+      "ok": true
+    },
+    {
+      "id": "E2.f-rel-gratis",
+      "descricao": "so desconhecido: freeRequests = 0 e unknownCostRequests = 1",
+      "esperado": "free=0 unknown=1",
+      "observado": "http=200 free=0 unknown=1",
+      "ok": true
+    },
+    {
+      "id": "E2.f-rel-modelo-gratis",
+      "descricao": "so desconhecido: isFree por modelo = false (desconhecido nao vira gratuito)",
+      "esperado": "isFree=false",
+      "observado": "isFree=false",
+      "ok": true
+    }
+  ],
+  "rows": [
+    {
+      "marker": "e2a",
+      "flow": "badge",
+      "request_id": "ec4ad0d6-5d9a-4b0b-a373-ff1348382a3c",
+      "http_status": 200,
+      "events_for_request": 1,
+      "event_generation_id": "gen-357",
+      "ledger_marker_of_event_generation": "e2a",
+      "expected_final_cost": 0.0311,
+      "expected_failed_cost": 0,
+      "observed_cost_usd": "0.03110000",
+      "observed_failed_cost_usd": null,
+      "observed_attempt_count": null,
+      "ledger_attempts": 1,
+      "finish_seq": 1
+    },
+    {
+      "marker": "e2b",
+      "flow": "badge",
+      "request_id": "6b5f1ae0-5088-447f-92db-25bad4783768",
+      "http_status": 200,
+      "events_for_request": 1,
+      "event_generation_id": "gen-359",
+      "ledger_marker_of_event_generation": "e2b",
+      "expected_final_cost": 0.0344,
+      "expected_failed_cost": 0.0122,
+      "observed_cost_usd": "0.03440000",
+      "observed_failed_cost_usd": "0.01220000",
+      "observed_attempt_count": 2,
+      "ledger_attempts": 2,
+      "finish_seq": 3
+    },
+    {
+      "marker": "e2c",
+      "flow": "badge",
+      "request_id": "3a5274b6-c747-49fa-b615-18b651754eb2",
+      "http_status": 200,
+      "events_for_request": 1,
+      "event_generation_id": "gen-360",
+      "ledger_marker_of_event_generation": "e2c",
+      "expected_final_cost": null,
+      "expected_failed_cost": 0,
+      "observed_cost_usd": null,
+      "observed_failed_cost_usd": null,
+      "observed_attempt_count": null,
+      "ledger_attempts": 1,
+      "finish_seq": 4
+    },
+    {
+      "marker": "e2d",
+      "flow": "badge",
+      "request_id": "d61571d4-44dd-4616-a544-b01c5acb9679",
+      "http_status": 200,
+      "events_for_request": 1,
+      "event_generation_id": "gen-361",
+      "ledger_marker_of_event_generation": "e2d",
+      "expected_final_cost": 0,
+      "expected_failed_cost": 0,
+      "observed_cost_usd": "0.00000000",
+      "observed_failed_cost_usd": null,
+      "observed_attempt_count": null,
+      "ledger_attempts": 1,
+      "finish_seq": 5
+    },
+    {
+      "marker": "e2e",
+      "flow": "description",
+      "request_id": "ba721f2e-0e9f-4f81-82a6-af75a8c16447",
+      "http_status": 201,
+      "events_for_request": 1,
+      "event_generation_id": "gen-362",
+      "ledger_marker_of_event_generation": "e2e",
+      "expected_final_cost": null,
+      "expected_failed_cost": 0,
+      "observed_cost_usd": null,
+      "observed_failed_cost_usd": null,
+      "observed_attempt_count": null,
+      "ledger_attempts": 1,
+      "finish_seq": 6
+    }
+  ]
+}

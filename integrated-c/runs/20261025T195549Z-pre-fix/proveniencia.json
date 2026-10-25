@@ -1,0 +1,14 @@
+{
+  "gerado_em": "20261025T195549Z",
+  "execucoes": 2,
+  "classhero_commit_C": "726ff9103958eb4de0c6b38d7dd247d5d9b41942",
+  "classhero_branch_C": "paper/instrumentation-C",
+  "classhero_worktree_limpo": true,
+  "artigo_commit": "n/a",
+  "node": "v26.7.0",
+  "psql": "18.6",
+  "docker": "29.7.2",
+  "postgres_imagem": "postgres:17-alpine",
+  "curador_binario_sha256": "9c45861e92668266450cebe5b4fe6258c43185b6d8956fc70210201cf5917276",
+  "simulador_sha256": "73e1ea369392c6bedc142b4d77d87e48f87c03739285372ee8e897ce76e8613b"
+}

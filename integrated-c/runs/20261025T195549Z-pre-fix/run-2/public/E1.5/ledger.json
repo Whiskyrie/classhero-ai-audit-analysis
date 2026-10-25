@@ -1,0 +1,47 @@
+[
+  {
+    "marker": "e15a",
+    "attempt": 1,
+    "generation_id": "gen-259",
+    "flow": "short_text",
+    "stream": false,
+    "started_ms": 18228642.761,
+    "mode": "ok",
+    "billed_cost_usd": 0.00111,
+    "reported_cost_usd": 0.00111,
+    "prompt_tokens": 1500,
+    "completion_tokens": 1000,
+    "finished_ms": 18228642.78,
+    "finish_seq": 1
+  },
+  {
+    "marker": "e15b",
+    "attempt": 1,
+    "generation_id": "gen-260",
+    "flow": "description",
+    "stream": true,
+    "started_ms": 18228657.439,
+    "mode": "ok",
+    "billed_cost_usd": 0.00222,
+    "reported_cost_usd": 0.00222,
+    "prompt_tokens": 1500,
+    "completion_tokens": 1000,
+    "finished_ms": 18228657.633,
+    "finish_seq": 2
+  },
+  {
+    "marker": "e15c",
+    "attempt": 1,
+    "generation_id": "gen-261",
+    "flow": "short_text",
+    "stream": false,
+    "started_ms": 18228710.136,
+    "mode": "ok",
+    "billed_cost_usd": 0.00333,
+    "reported_cost_usd": 0.00333,
+    "prompt_tokens": 1500,
+    "completion_tokens": 1000,
+    "finished_ms": 18228710.156,
+    "finish_seq": 3
+  }
+]

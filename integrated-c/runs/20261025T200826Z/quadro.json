@@ -1,0 +1,233 @@
+{
+  "runs": [
+    "run-1",
+    "run-2"
+  ],
+  "rows": [
+    {
+      "caso": "E1.5",
+      "criterio": "E1.5-http",
+      "descricao": "todas as requisicoes responderam 2xx e ecoaram o x-request-id",
+      "esperado": "status 2xx; eco igual",
+      "observado": "e15a:200 e15b:201 e15c:200",
+      "ok": true
+    },
+    {
+      "caso": "E1.5",
+      "criterio": "E1.5-ident",
+      "descricao": "cada requisicao tem exatamente um evento, com o generation_id e o custo do proprio marcador",
+      "esperado": "trocas = 0",
+      "observado": "trocas = 0",
+      "ok": true
+    },
+    {
+      "caso": "E1.1",
+      "criterio": "E1.1-http",
+      "descricao": "todas as requisicoes responderam 2xx e ecoaram o x-request-id",
+      "esperado": "status 2xx; eco igual",
+      "observado": "e11a:200 e11b:201 e11c:200 e11d:201 e11e:200",
+      "ok": true
+    },
+    {
+      "caso": "E1.1",
+      "criterio": "E1.1-ident",
+      "descricao": "cada requisicao tem exatamente um evento, com o generation_id e o custo do proprio marcador",
+      "esperado": "trocas = 0",
+      "observado": "trocas = 0",
+      "ok": true
+    },
+    {
+      "caso": "E1.1",
+      "criterio": "E1.1-ordem",
+      "descricao": "ordem de termino no provedor inversa a ordem de partida",
+      "esperado": "e11e,e11d,e11c,e11b,e11a",
+      "observado": "e11e,e11d,e11c,e11b,e11a",
+      "ok": true
+    },
+    {
+      "caso": "E2",
+      "criterio": "E2-http",
+      "descricao": "todas as chamadas responderam 2xx",
+      "esperado": "2xx",
+      "observado": "e2a:200 e2b:200 e2c:200 e2d:200 e2e:201",
+      "ok": true
+    },
+    {
+      "caso": "E2",
+      "criterio": "E2.a-evento",
+      "descricao": "custo conhecido gravado igual ao servido",
+      "esperado": "0.0311",
+      "observado": "0.03110000",
+      "ok": true
+    },
+    {
+      "caso": "E2",
+      "criterio": "E2.b-evento",
+      "descricao": "retry: final em cost_usd, anterior em failed_attempts_cost_usd, 2 tentativas",
+      "esperado": "cost=0.0344 failed=0.0122 attempts=2",
+      "observado": "cost=0.03440000 failed=0.01220000 attempts=2",
+      "ok": true
+    },
+    {
+      "caso": "E2",
+      "criterio": "E2.c-evento",
+      "descricao": "texto sem usage: custo NULL (desconhecido), nao zero",
+      "esperado": "cost=NULL",
+      "observado": "cost=null",
+      "ok": true
+    },
+    {
+      "caso": "E2",
+      "criterio": "E2.d-evento",
+      "descricao": "zero real gravado como 0",
+      "esperado": "cost=0",
+      "observado": "cost=0.00000000",
+      "ok": true
+    },
+    {
+      "caso": "E2",
+      "criterio": "E2.e-evento",
+      "descricao": "SSE sem usage: custo NULL (desconhecido)",
+      "esperado": "cost=NULL",
+      "observado": "cost=null",
+      "ok": true
+    },
+    {
+      "caso": "E2",
+      "criterio": "E2-eventos",
+      "descricao": "um evento por operacao (sem dupla contagem da tentativa final)",
+      "esperado": "5",
+      "observado": "5",
+      "ok": true
+    },
+    {
+      "caso": "E2",
+      "criterio": "E2-rel-total",
+      "descricao": "relatorio: totalCostInUsd = soma do custo informado (inclui tentativa anterior cobrada)",
+      "esperado": "0.0777",
+      "observado": "0.0777",
+      "ok": true
+    },
+    {
+      "caso": "E2",
+      "criterio": "E2-rel-desconhecido",
+      "descricao": "relatorio: unknownCostRequests = operacoes sem custo final",
+      "esperado": "2",
+      "observado": "2",
+      "ok": true
+    },
+    {
+      "caso": "E2",
+      "criterio": "E2-rel-gratis",
+      "descricao": "relatorio: freeRequests conta so o zero real (desconhecido nao vira gratuito)",
+      "esperado": "1",
+      "observado": "1",
+      "ok": true
+    },
+    {
+      "caso": "E2",
+      "criterio": "E2-rel-completo",
+      "descricao": "relatorio: total so pode ser lido como completo se unknownCostRequests = 0; aqui deve sinalizar incompleto",
+      "esperado": "unknownCostRequests > 0 e total < cobrado",
+      "observado": "unknown=2 total=0.0777 cobrado=0.1153",
+      "ok": true
+    },
+    {
+      "caso": "E2",
+      "criterio": "E2-rel-modelo",
+      "descricao": "relatorio: soma por modelo = totalCostInUsd",
+      "esperado": "0.0777",
+      "observado": "0.0777",
+      "ok": true
+    },
+    {
+      "caso": "E2",
+      "criterio": "E2-met-api-custo",
+      "descricao": "metrica API: delta de ai_cost_usd_total = custo informado",
+      "esperado": "0.0777",
+      "observado": "0.0777",
+      "ok": true
+    },
+    {
+      "caso": "E2",
+      "criterio": "E2-met-api-desconhecido",
+      "descricao": "metrica API: delta de ai_cost_unknown_total = operacoes sem custo final",
+      "esperado": "2",
+      "observado": "2",
+      "ok": true
+    },
+    {
+      "caso": "E2",
+      "criterio": "E2-met-curador",
+      "descricao": "metrica curador: delta de curator_ai_cost_usd_total = custo informado",
+      "esperado": "0.0777",
+      "observado": "0.0777",
+      "ok": true
+    },
+    {
+      "caso": "E2",
+      "criterio": "E2.f-rel-gratis",
+      "descricao": "so desconhecido: freeRequests = 0 e unknownCostRequests = 1",
+      "esperado": "free=0 unknown=1",
+      "observado": "http=200 free=0 unknown=1",
+      "ok": true
+    },
+    {
+      "caso": "E2",
+      "criterio": "E2.f-rel-modelo-gratis",
+      "descricao": "so desconhecido: isFree por modelo = false (desconhecido nao vira gratuito)",
+      "esperado": "isFree=false",
+      "observado": "isFree=false",
+      "ok": true
+    },
+    {
+      "caso": "E1.2a",
+      "criterio": "E1.2a-identidade",
+      "descricao": "sonda de composicao (use-cases): 4 operacoes; eventos corretos / sem atribuicao / trocas",
+      "esperado": "trocas = 0",
+      "observado": "eventos=4 corretos=4 sem_atribuicao=0 desconhecidos=0 trocas=0",
+      "ok": true
+    },
+    {
+      "caso": "E1.2b",
+      "criterio": "E1.2b-identidade",
+      "descricao": "sonda de composicao (deferred): 4 operacoes; eventos corretos / sem atribuicao / trocas",
+      "esperado": "trocas = 0",
+      "observado": "eventos=4 corretos=4 sem_atribuicao=0 desconhecidos=0 trocas=0",
+      "ok": true
+    },
+    {
+      "caso": "E1.2c",
+      "criterio": "E1.2c-identidade",
+      "descricao": "sonda de composicao (deferred-no-key): 3 operacoes; eventos corretos / sem atribuicao / trocas",
+      "esperado": "trocas = 0",
+      "observado": "eventos=3 corretos=0 sem_atribuicao=3 desconhecidos=3 trocas=0",
+      "ok": true
+    },
+    {
+      "caso": "E1.3",
+      "criterio": "E1.3-identidade",
+      "descricao": "sonda de composicao (deferred): 2 operacoes; eventos corretos / sem atribuicao / trocas",
+      "esperado": "trocas = 0",
+      "observado": "eventos=2 corretos=2 sem_atribuicao=0 desconhecidos=1 trocas=0",
+      "ok": true
+    },
+    {
+      "caso": "E1.4",
+      "criterio": "E1.4-identidade",
+      "descricao": "sonda de composicao (use-cases): 2 operacoes; eventos corretos / sem atribuicao / trocas",
+      "esperado": "trocas = 0",
+      "observado": "eventos=2 corretos=2 sem_atribuicao=0 desconhecidos=0 trocas=0",
+      "ok": true
+    },
+    {
+      "caso": "E1.2c-controle",
+      "criterio": "E1.2c-mutante-FIFO",
+      "descricao": "controle negativo: com pareamento por posicao, o teste deve acusar trocas",
+      "esperado": "trocas > 0",
+      "observado": "eventos=3 corretos=1 trocas=2",
+      "ok": true
+    }
+  ],
+  "divergent": []
+}

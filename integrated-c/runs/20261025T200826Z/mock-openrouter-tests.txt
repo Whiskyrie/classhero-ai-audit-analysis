@@ -1,0 +1,38 @@
+✔ ok: custo 0.00065 para 1500 entrada / 1000 saida (49.396336ms)
+✔ modo padrao e ok e ids sao unicos (8.65912ms)
+✔ cabecalhos de tokens sobrescrevem a contagem (3.70381ms)
+✔ no_usage: resposta sem usage (3.947145ms)
+✔ free_cost_zero: usage presente com cost 0 (3.111209ms)
+✔ length_with_usage: finish_reason length, conteudo vazio, custo presente (2.401785ms)
+✔ rate_limited: 429 com corpo JSON de erro (2.086954ms)
+✔ /images: custo fixo 0.018 e data URL png (2.857946ms)
+✔ chat com modalities image devolve imagem e custo 0.018 (2.511716ms)
+✔ /_stats acumula por modo e /_reset zera (5.848715ms)
+✔ timeout: nao responde em 300 ms (303.868408ms)
+✔ body_stall: status 200 chega, corpo trava (306.810224ms)
+✔ modo desconhecido: 400 (2.219106ms)
+✔ POST /_mode arma as proximas N geracoes e depois volta ao padrao (3.653765ms)
+✔ cabecalho x-mock-mode tem precedencia e nao consome a fila (3.218624ms)
+✔ POST /_mode rejeita modo desconhecido; /_reset limpa a fila (4.21685ms)
+✔ stream ok: SSE com deltas, usage no ultimo chunk e [DONE] (7.028848ms)
+✔ stream no_usage: nenhum chunk traz usage (2.323625ms)
+✔ stream length_with_usage: finish length, sem conteudo, com custo (2.187487ms)
+✔ stream_abort: usage chega e a conexao cai antes de [DONE] (24.2748ms)
+✔ detectFlow: max_tokens por operacao do curador (1.02135ms)
+✔ chat nao-stream de fluxo JSON devolve o conteudo do fluxo (1.357051ms)
+✔ /images com prompt de insignia devolve a fixture JPEG real (pipeline de fundo do curador) (1.546963ms)
+✔ roteiro: custo fixado por marcador e linha no livro-razao (2.753967ms)
+✔ roteiro: atraso inverte a ordem de termino (906.41316ms)
+✔ decode_error_charged: 200, choices invalido, usage cobrado; tentativa seguinte do roteiro (6.108351ms)
+✔ no_usage roteirizado: cobrado no oraculo, ausente na resposta (4.034892ms)
+✔ stream roteirizado: custo do roteiro no ultimo chunk e livro-razao (5.354732ms)
+✔ requisicao sem marcador nao entra no livro-razao; cabecalho ignora o roteiro (8.854203ms)
+✔ /_script valida modo e custo; /_reset limpa roteiros e livro-razao (7.688978ms)
+ℹ tests 30
+ℹ suites 0
+ℹ pass 30
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1775.153125

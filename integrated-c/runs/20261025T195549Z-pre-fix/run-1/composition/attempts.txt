@@ -1,0 +1,1 @@
+tentativa 1: casos executados (jest exit 0)

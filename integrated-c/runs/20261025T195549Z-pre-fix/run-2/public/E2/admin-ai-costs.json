@@ -1,0 +1,59 @@
+{
+  "summary": {
+    "totalTokens": 7500,
+    "totalCostInUsd": 0.0777,
+    "freeRequests": 1,
+    "freeTokens": 2500,
+    "unknownCostRequests": 2,
+    "periodStart": "2000-10-25T19:56:35.472Z",
+    "periodEnd": "2026-10-25T19:56:35.472Z"
+  },
+  "breakdownByModel": [
+    {
+      "modelName": "claude-haiku-5.5",
+      "requests": 5,
+      "tokensPrompt": 4500,
+      "tokensCompletion": 3000,
+      "costInUsd": 0.0655,
+      "isFree": true
+    }
+  ],
+  "dailyUsage": [
+    {
+      "date": "2026-10-25",
+      "byModel": [
+        {
+          "modelName": "claude-haiku-5.5",
+          "cost": 0.0655,
+          "tokens": 7500
+        }
+      ]
+    }
+  ],
+  "breakdownByEndpoint": [
+    {
+      "endpoint": "POST /courses/b2773bef-645d-4c91-bc3e-d58fa3470a6c/missions/badge/title/suggest",
+      "requests": 4,
+      "costInUsd": 0.0655
+    },
+    {
+      "endpoint": "/courses/ai/description/stream",
+      "requests": 1,
+      "costInUsd": 0
+    }
+  ],
+  "breakdownByUser": [
+    {
+      "user": "user-901",
+      "requests": 5,
+      "costInUsd": 0.0655
+    }
+  ],
+  "previousSummary": {
+    "totalTokens": 0,
+    "totalCostInUsd": 0,
+    "freeRequests": 0,
+    "freeTokens": 0,
+    "unknownCostRequests": 0
+  }
+}

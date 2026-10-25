@@ -1,0 +1,100 @@
+[
+  {
+    "sub": "E2.a",
+    "marker": "e2a",
+    "flow": "badge",
+    "steps": [
+      {
+        "mode": "ok",
+        "cost": 0.0311
+      }
+    ],
+    "kind": "conhecido",
+    "requestId": "ec4ad0d6-5d9a-4b0b-a373-ff1348382a3c",
+    "echoed": "ec4ad0d6-5d9a-4b0b-a373-ff1348382a3c",
+    "status": 200,
+    "ms": 15,
+    "payload": "{\"title\":\"Resposta simulada.\"}"
+  },
+  {
+    "sub": "E2.b",
+    "marker": "e2b",
+    "flow": "badge",
+    "steps": [
+      {
+        "mode": "decode_error_charged",
+        "cost": 0.0122
+      },
+      {
+        "mode": "ok",
+        "cost": 0.0344
+      }
+    ],
+    "kind": "retry cobrado",
+    "requestId": "6b5f1ae0-5088-447f-92db-25bad4783768",
+    "echoed": "6b5f1ae0-5088-447f-92db-25bad4783768",
+    "status": 200,
+    "ms": 715,
+    "payload": "{\"title\":\"Resposta simulada.\"}"
+  },
+  {
+    "sub": "E2.c",
+    "marker": "e2c",
+    "flow": "badge",
+    "steps": [
+      {
+        "mode": "no_usage",
+        "cost": 0.0177
+      }
+    ],
+    "kind": "desconhecido (texto)",
+    "requestId": "3a5274b6-c747-49fa-b615-18b651754eb2",
+    "echoed": "3a5274b6-c747-49fa-b615-18b651754eb2",
+    "status": 200,
+    "ms": 11,
+    "payload": "{\"title\":\"Resposta simulada.\"}"
+  },
+  {
+    "sub": "E2.d",
+    "marker": "e2d",
+    "flow": "badge",
+    "steps": [
+      {
+        "mode": "free_cost_zero"
+      }
+    ],
+    "kind": "zero real",
+    "requestId": "d61571d4-44dd-4616-a544-b01c5acb9679",
+    "echoed": "d61571d4-44dd-4616-a544-b01c5acb9679",
+    "status": 200,
+    "ms": 10,
+    "payload": "{\"title\":\"Resposta simulada.\"}"
+  },
+  {
+    "sub": "E2.e",
+    "marker": "e2e",
+    "flow": "description",
+    "steps": [
+      {
+        "mode": "no_usage",
+        "cost": 0.0199
+      }
+    ],
+    "kind": "desconhecido (SSE)",
+    "requestId": "ba721f2e-0e9f-4f81-82a6-af75a8c16447",
+    "echoed": "ba721f2e-0e9f-4f81-82a6-af75a8c16447",
+    "status": 201,
+    "ms": 49,
+    "payload": {
+      "events": [
+        "progress",
+        "progress",
+        "progress",
+        "progress",
+        "progress",
+        "done"
+      ],
+      "last": "{\"data\":{\"sigla\":\"FGIT\",\"titulo\":\"Fundamentos de Git\",\"ementa\":[\"Introdução ao controle de versão\",\"Conceitos básicos do Git\",\"Configuração inicial do Git\",\"Comandos essenciais do Git\",\"Trabalho com r"
+    }
+  }
+]

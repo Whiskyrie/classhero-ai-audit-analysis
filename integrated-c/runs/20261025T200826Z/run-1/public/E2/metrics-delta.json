@@ -1,0 +1,12 @@
+{
+  "api": {
+    "ai_cost_usd_total": 0.0777,
+    "ai_cost_unknown_total": 2,
+    "ai_requests_total": 5
+  },
+  "curator": {
+    "curator_ai_cost_usd_total": 0.0777,
+    "curator_ai_attempts_total": 6,
+    "curator_ai_requests_total": 5
+  }
+}

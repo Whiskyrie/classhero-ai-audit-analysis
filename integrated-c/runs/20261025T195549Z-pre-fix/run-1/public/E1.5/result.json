@@ -1,0 +1,71 @@
+{
+  "id": "E1.5",
+  "title": "Controle sequencial (termino em ordem)",
+  "ok": true,
+  "checks": [
+    {
+      "id": "E1.5-http",
+      "descricao": "todas as requisicoes responderam 2xx e ecoaram o x-request-id",
+      "esperado": "status 2xx; eco igual",
+      "observado": "e15a:200 e15b:201 e15c:200",
+      "ok": true
+    },
+    {
+      "id": "E1.5-ident",
+      "descricao": "cada requisicao tem exatamente um evento, com o generation_id e o custo do proprio marcador",
+      "esperado": "trocas = 0",
+      "observado": "trocas = 0",
+      "ok": true
+    }
+  ],
+  "rows": [
+    {
+      "marker": "e15a",
+      "flow": "badge",
+      "request_id": "dccec298-9141-446d-9f56-a5380961a1ff",
+      "http_status": 200,
+      "events_for_request": 1,
+      "event_generation_id": "gen-214",
+      "ledger_marker_of_event_generation": "e15a",
+      "expected_final_cost": 0.00111,
+      "expected_failed_cost": 0,
+      "observed_cost_usd": "0.00111000",
+      "observed_failed_cost_usd": null,
+      "observed_attempt_count": null,
+      "ledger_attempts": 1,
+      "finish_seq": 1
+    },
+    {
+      "marker": "e15b",
+      "flow": "description",
+      "request_id": "a6007281-34ef-446b-91e7-f240c82694fa",
+      "http_status": 201,
+      "events_for_request": 1,
+      "event_generation_id": "gen-215",
+      "ledger_marker_of_event_generation": "e15b",
+      "expected_final_cost": 0.00222,
+      "expected_failed_cost": 0,
+      "observed_cost_usd": "0.00222000",
+      "observed_failed_cost_usd": null,
+      "observed_attempt_count": null,
+      "ledger_attempts": 1,
+      "finish_seq": 2
+    },
+    {
+      "marker": "e15c",
+      "flow": "badge",
+      "request_id": "74defd49-caa2-4934-a0a5-616567a52917",
+      "http_status": 200,
+      "events_for_request": 1,
+      "event_generation_id": "gen-216",
+      "ledger_marker_of_event_generation": "e15c",
+      "expected_final_cost": 0.00333,
+      "expected_failed_cost": 0,
+      "observed_cost_usd": "0.00333000",
+      "observed_failed_cost_usd": null,
+      "observed_attempt_count": null,
+      "ledger_attempts": 1,
+      "finish_seq": 3
+    }
+  ]
+}

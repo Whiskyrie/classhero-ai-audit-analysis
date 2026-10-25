@@ -1,0 +1,12 @@
+{
+  "mutante": "pareamento sem chave por posicao (FIFO)",
+  "esperado": "E1.2c com trocas > 0 (teste detecta)",
+  "E1.2c": {
+    "events": 3,
+    "correct": 1,
+    "swaps": 2,
+    "unknown": 0,
+    "ambiguous_marked": 0
+  },
+  "detectado": true
+}

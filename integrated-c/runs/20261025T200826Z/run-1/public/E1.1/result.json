@@ -1,0 +1,110 @@
+{
+  "id": "E1.1",
+  "title": "Concorrencia entre requisicoes publicas, termino invertido",
+  "ok": true,
+  "checks": [
+    {
+      "id": "E1.1-http",
+      "descricao": "todas as requisicoes responderam 2xx e ecoaram o x-request-id",
+      "esperado": "status 2xx; eco igual",
+      "observado": "e11a:200 e11b:201 e11c:200 e11d:201 e11e:200",
+      "ok": true
+    },
+    {
+      "id": "E1.1-ident",
+      "descricao": "cada requisicao tem exatamente um evento, com o generation_id e o custo do proprio marcador",
+      "esperado": "trocas = 0",
+      "observado": "trocas = 0",
+      "ok": true
+    },
+    {
+      "id": "E1.1-ordem",
+      "descricao": "ordem de termino no provedor inversa a ordem de partida",
+      "esperado": "e11e,e11d,e11c,e11b,e11a",
+      "observado": "e11e,e11d,e11c,e11b,e11a",
+      "ok": true
+    }
+  ],
+  "rows": [
+    {
+      "marker": "e11a",
+      "flow": "badge",
+      "request_id": "0aa3a3ba-a244-483d-9a03-71992a1cc322",
+      "http_status": 200,
+      "events_for_request": 1,
+      "event_generation_id": "gen-308",
+      "ledger_marker_of_event_generation": "e11a",
+      "expected_final_cost": 0.01011,
+      "expected_failed_cost": 0,
+      "observed_cost_usd": "0.01011000",
+      "observed_failed_cost_usd": null,
+      "observed_attempt_count": null,
+      "ledger_attempts": 1,
+      "finish_seq": 5
+    },
+    {
+      "marker": "e11b",
+      "flow": "description",
+      "request_id": "55cc5928-32ec-46a6-b903-26c1b936436c",
+      "http_status": 201,
+      "events_for_request": 1,
+      "event_generation_id": "gen-307",
+      "ledger_marker_of_event_generation": "e11b",
+      "expected_final_cost": 0.02022,
+      "expected_failed_cost": 0,
+      "observed_cost_usd": "0.02022000",
+      "observed_failed_cost_usd": null,
+      "observed_attempt_count": null,
+      "ledger_attempts": 1,
+      "finish_seq": 4
+    },
+    {
+      "marker": "e11c",
+      "flow": "badge",
+      "request_id": "fe82433c-4d63-46fa-aaee-0fe04d944aaf",
+      "http_status": 200,
+      "events_for_request": 1,
+      "event_generation_id": "gen-309",
+      "ledger_marker_of_event_generation": "e11c",
+      "expected_final_cost": 0.03033,
+      "expected_failed_cost": 0,
+      "observed_cost_usd": "0.03033000",
+      "observed_failed_cost_usd": null,
+      "observed_attempt_count": null,
+      "ledger_attempts": 1,
+      "finish_seq": 3
+    },
+    {
+      "marker": "e11d",
+      "flow": "description",
+      "request_id": "220d026f-fc5d-4a30-ba6b-1bf27e255fb2",
+      "http_status": 201,
+      "events_for_request": 1,
+      "event_generation_id": "gen-310",
+      "ledger_marker_of_event_generation": "e11d",
+      "expected_final_cost": 0.04044,
+      "expected_failed_cost": 0,
+      "observed_cost_usd": "0.04044000",
+      "observed_failed_cost_usd": null,
+      "observed_attempt_count": null,
+      "ledger_attempts": 1,
+      "finish_seq": 2
+    },
+    {
+      "marker": "e11e",
+      "flow": "badge",
+      "request_id": "ccd45104-e0d4-4a9d-969f-9eb24d931a97",
+      "http_status": 200,
+      "events_for_request": 1,
+      "event_generation_id": "gen-311",
+      "ledger_marker_of_event_generation": "e11e",
+      "expected_final_cost": 0.05055,
+      "expected_failed_cost": 0,
+      "observed_cost_usd": "0.05055000",
+      "observed_failed_cost_usd": null,
+      "observed_attempt_count": null,
+      "ledger_attempts": 1,
+      "finish_seq": 1
+    }
+  ]
+}

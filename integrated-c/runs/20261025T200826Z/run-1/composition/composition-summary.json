@@ -1,0 +1,615 @@
+[
+  {
+    "id": "E1.2a",
+    "mode": "use-cases",
+    "ops": [
+      "e12ax0:badge",
+      "e12ax1:description",
+      "e12ax2:badge",
+      "e12ax3:description"
+    ],
+    "provider_finish_order": [
+      "e12ax3",
+      "e12ax2",
+      "e12ax1",
+      "e12ax0"
+    ],
+    "events": 4,
+    "markers_covered": true,
+    "correct": 4,
+    "swaps": 0,
+    "unattributed": 0,
+    "unknown": 0,
+    "ambiguous_marked": 0,
+    "event_rows": [
+      {
+        "marker": "e12ax3",
+        "success": true,
+        "error_code": null,
+        "generation_id": "gen-320",
+        "cost_usd": "0.04404000",
+        "usage_reported": true,
+        "identity": null
+      },
+      {
+        "marker": "e12ax2",
+        "success": true,
+        "error_code": null,
+        "generation_id": "gen-322",
+        "cost_usd": "0.03303000",
+        "usage_reported": true,
+        "identity": null
+      },
+      {
+        "marker": "e12ax1",
+        "success": true,
+        "error_code": null,
+        "generation_id": "gen-319",
+        "cost_usd": "0.02202000",
+        "usage_reported": true,
+        "identity": null
+      },
+      {
+        "marker": "e12ax0",
+        "success": true,
+        "error_code": null,
+        "generation_id": "gen-321",
+        "cost_usd": "0.01101000",
+        "usage_reported": true,
+        "identity": null
+      }
+    ],
+    "ledger": [
+      {
+        "marker": "e12ax3",
+        "attempt": 1,
+        "generation_id": "gen-320",
+        "flow": "description",
+        "stream": true,
+        "started_ms": 18969181.113,
+        "mode": "ok",
+        "billed_cost_usd": 0.04404,
+        "reported_cost_usd": 0.04404,
+        "prompt_tokens": 1500,
+        "completion_tokens": 1000,
+        "finished_ms": 18969181.35,
+        "finish_seq": 1
+      },
+      {
+        "marker": "e12ax2",
+        "attempt": 1,
+        "generation_id": "gen-322",
+        "flow": "short_text",
+        "stream": false,
+        "started_ms": 18969196.785,
+        "mode": "ok",
+        "billed_cost_usd": 0.03303,
+        "reported_cost_usd": 0.03303,
+        "prompt_tokens": 1500,
+        "completion_tokens": 1000,
+        "finished_ms": 18969447.147,
+        "finish_seq": 2
+      },
+      {
+        "marker": "e12ax1",
+        "attempt": 1,
+        "generation_id": "gen-319",
+        "flow": "description",
+        "stream": true,
+        "started_ms": 18969180.262,
+        "mode": "ok",
+        "billed_cost_usd": 0.02202,
+        "reported_cost_usd": 0.02202,
+        "prompt_tokens": 1500,
+        "completion_tokens": 1000,
+        "finished_ms": 18969680.717,
+        "finish_seq": 3
+      },
+      {
+        "marker": "e12ax0",
+        "attempt": 1,
+        "generation_id": "gen-321",
+        "flow": "short_text",
+        "stream": false,
+        "started_ms": 18969182.994,
+        "mode": "ok",
+        "billed_cost_usd": 0.01101,
+        "reported_cost_usd": 0.01101,
+        "prompt_tokens": 1500,
+        "completion_tokens": 1000,
+        "finished_ms": 18969933.153,
+        "finish_seq": 4
+      }
+    ],
+    "results": [
+      {
+        "marker": "e12ax0",
+        "kind": "badge",
+        "ok": true,
+        "finishIdx": 4
+      },
+      {
+        "marker": "e12ax1",
+        "kind": "description",
+        "ok": true,
+        "finishIdx": 3
+      },
+      {
+        "marker": "e12ax2",
+        "kind": "badge",
+        "ok": true,
+        "finishIdx": 2
+      },
+      {
+        "marker": "e12ax3",
+        "kind": "description",
+        "ok": true,
+        "finishIdx": 1
+      }
+    ]
+  },
+  {
+    "id": "E1.2b",
+    "mode": "deferred",
+    "ops": [
+      "e12bx0:badge",
+      "e12bx1:badge",
+      "e12bx2:description",
+      "e12bx3:badge"
+    ],
+    "provider_finish_order": [
+      "e12bx3",
+      "e12bx2",
+      "e12bx1",
+      "e12bx0"
+    ],
+    "events": 4,
+    "markers_covered": true,
+    "correct": 4,
+    "swaps": 0,
+    "unattributed": 0,
+    "unknown": 0,
+    "ambiguous_marked": 0,
+    "event_rows": [
+      {
+        "marker": "e12bx0",
+        "success": true,
+        "error_code": null,
+        "generation_id": "gen-324",
+        "cost_usd": "0.01101000",
+        "usage_reported": true,
+        "identity": null
+      },
+      {
+        "marker": "e12bx1",
+        "success": true,
+        "error_code": null,
+        "generation_id": "gen-326",
+        "cost_usd": "0.02202000",
+        "usage_reported": true,
+        "identity": null
+      },
+      {
+        "marker": "e12bx2",
+        "success": true,
+        "error_code": null,
+        "generation_id": "gen-325",
+        "cost_usd": "0.03303000",
+        "usage_reported": true,
+        "identity": null
+      },
+      {
+        "marker": "e12bx3",
+        "success": true,
+        "error_code": null,
+        "generation_id": "gen-323",
+        "cost_usd": "0.04404000",
+        "usage_reported": true,
+        "identity": null
+      }
+    ],
+    "ledger": [
+      {
+        "marker": "e12bx3",
+        "attempt": 1,
+        "generation_id": "gen-323",
+        "flow": "short_text",
+        "stream": false,
+        "started_ms": 18970067.999,
+        "mode": "ok",
+        "billed_cost_usd": 0.04404,
+        "reported_cost_usd": 0.04404,
+        "prompt_tokens": 1500,
+        "completion_tokens": 1000,
+        "finished_ms": 18970068.021,
+        "finish_seq": 1
+      },
+      {
+        "marker": "e12bx2",
+        "attempt": 1,
+        "generation_id": "gen-325",
+        "flow": "description",
+        "stream": true,
+        "started_ms": 18970069.552,
+        "mode": "ok",
+        "billed_cost_usd": 0.03303,
+        "reported_cost_usd": 0.03303,
+        "prompt_tokens": 1500,
+        "completion_tokens": 1000,
+        "finished_ms": 18970320.661,
+        "finish_seq": 2
+      },
+      {
+        "marker": "e12bx1",
+        "attempt": 1,
+        "generation_id": "gen-326",
+        "flow": "short_text",
+        "stream": false,
+        "started_ms": 18970070.011,
+        "mode": "ok",
+        "billed_cost_usd": 0.02202,
+        "reported_cost_usd": 0.02202,
+        "prompt_tokens": 1500,
+        "completion_tokens": 1000,
+        "finished_ms": 18970570.402,
+        "finish_seq": 3
+      },
+      {
+        "marker": "e12bx0",
+        "attempt": 1,
+        "generation_id": "gen-324",
+        "flow": "short_text",
+        "stream": false,
+        "started_ms": 18970068.175,
+        "mode": "ok",
+        "billed_cost_usd": 0.01101,
+        "reported_cost_usd": 0.01101,
+        "prompt_tokens": 1500,
+        "completion_tokens": 1000,
+        "finished_ms": 18970817.981,
+        "finish_seq": 4
+      }
+    ],
+    "results": [
+      {
+        "marker": "e12bx0",
+        "kind": "badge",
+        "ok": true,
+        "finishIdx": 4,
+        "saveIdx": 1,
+        "callId": "1a98cf73-43c4-4b76-8922-7711f8c6386b",
+        "costUsdFromResult": 0.01101
+      },
+      {
+        "marker": "e12bx1",
+        "kind": "badge",
+        "ok": true,
+        "finishIdx": 3,
+        "saveIdx": 2,
+        "callId": "e63c72ff-cfda-4ad7-8f66-158c9b055426",
+        "costUsdFromResult": 0.02202
+      },
+      {
+        "marker": "e12bx2",
+        "kind": "description",
+        "ok": true,
+        "finishIdx": 2,
+        "saveIdx": 3,
+        "callId": "01b0045f-e857-4c0e-934b-124b8bfa94d9",
+        "costUsdFromResult": 0.03303
+      },
+      {
+        "marker": "e12bx3",
+        "kind": "badge",
+        "ok": true,
+        "finishIdx": 1,
+        "saveIdx": 4,
+        "callId": "291a25a4-7dc4-47b6-9756-7b979e806d09",
+        "costUsdFromResult": 0.04404
+      }
+    ]
+  },
+  {
+    "id": "E1.2c",
+    "mode": "deferred-no-key",
+    "ops": [
+      "e12cx0:badge",
+      "e12cx1:description",
+      "e12cx2:badge"
+    ],
+    "provider_finish_order": [
+      "e12cx2",
+      "e12cx1",
+      "e12cx0"
+    ],
+    "events": 3,
+    "markers_covered": true,
+    "correct": 0,
+    "swaps": 0,
+    "unattributed": 3,
+    "unknown": 3,
+    "ambiguous_marked": 3,
+    "event_rows": [
+      {
+        "marker": "e12cx0",
+        "success": true,
+        "error_code": null,
+        "generation_id": null,
+        "cost_usd": null,
+        "usage_reported": null,
+        "identity": "ambiguous_unpaired"
+      },
+      {
+        "marker": "e12cx1",
+        "success": true,
+        "error_code": null,
+        "generation_id": null,
+        "cost_usd": null,
+        "usage_reported": null,
+        "identity": "ambiguous_unpaired"
+      },
+      {
+        "marker": "e12cx2",
+        "success": true,
+        "error_code": null,
+        "generation_id": null,
+        "cost_usd": null,
+        "usage_reported": null,
+        "identity": "ambiguous_unpaired"
+      }
+    ],
+    "ledger": [
+      {
+        "marker": "e12cx2",
+        "attempt": 1,
+        "generation_id": "gen-328",
+        "flow": "short_text",
+        "stream": false,
+        "started_ms": 18970931.344,
+        "mode": "ok",
+        "billed_cost_usd": 0.03303,
+        "reported_cost_usd": 0.03303,
+        "prompt_tokens": 1500,
+        "completion_tokens": 1000,
+        "finished_ms": 18970931.353,
+        "finish_seq": 1
+      },
+      {
+        "marker": "e12cx1",
+        "attempt": 1,
+        "generation_id": "gen-329",
+        "flow": "description",
+        "stream": true,
+        "started_ms": 18970931.643,
+        "mode": "ok",
+        "billed_cost_usd": 0.02202,
+        "reported_cost_usd": 0.02202,
+        "prompt_tokens": 1500,
+        "completion_tokens": 1000,
+        "finished_ms": 18971182.171,
+        "finish_seq": 2
+      },
+      {
+        "marker": "e12cx0",
+        "attempt": 1,
+        "generation_id": "gen-327",
+        "flow": "short_text",
+        "stream": false,
+        "started_ms": 18970931.262,
+        "mode": "ok",
+        "billed_cost_usd": 0.01101,
+        "reported_cost_usd": 0.01101,
+        "prompt_tokens": 1500,
+        "completion_tokens": 1000,
+        "finished_ms": 18971431.6,
+        "finish_seq": 3
+      }
+    ],
+    "results": [
+      {
+        "marker": "e12cx0",
+        "kind": "badge",
+        "ok": true,
+        "finishIdx": 3,
+        "saveIdx": 1,
+        "callId": "70442e3d-68de-44a3-a4e8-69bc4b238fc1",
+        "costUsdFromResult": 0.01101
+      },
+      {
+        "marker": "e12cx1",
+        "kind": "description",
+        "ok": true,
+        "finishIdx": 2,
+        "saveIdx": 2,
+        "callId": "f0337f93-6375-492e-8328-27027f0ef19f",
+        "costUsdFromResult": 0.02202
+      },
+      {
+        "marker": "e12cx2",
+        "kind": "badge",
+        "ok": true,
+        "finishIdx": 1,
+        "saveIdx": 3,
+        "callId": "6f174cf0-2adb-496b-9cf8-49d5217f683c",
+        "costUsdFromResult": 0.03303
+      }
+    ]
+  },
+  {
+    "id": "E1.3",
+    "mode": "deferred",
+    "ops": [
+      "e13x0:description",
+      "e13x1:badge"
+    ],
+    "provider_finish_order": [
+      "e13x1",
+      "e13x0"
+    ],
+    "events": 2,
+    "markers_covered": true,
+    "correct": 2,
+    "swaps": 0,
+    "unattributed": 0,
+    "unknown": 1,
+    "ambiguous_marked": 0,
+    "event_rows": [
+      {
+        "marker": "e13x0",
+        "success": true,
+        "error_code": null,
+        "generation_id": "gen-330",
+        "cost_usd": null,
+        "usage_reported": false,
+        "identity": null
+      },
+      {
+        "marker": "e13x1",
+        "success": true,
+        "error_code": null,
+        "generation_id": "gen-331",
+        "cost_usd": "0.02202000",
+        "usage_reported": true,
+        "identity": null
+      }
+    ],
+    "ledger": [
+      {
+        "marker": "e13x1",
+        "attempt": 1,
+        "generation_id": "gen-331",
+        "flow": "short_text",
+        "stream": false,
+        "started_ms": 18971529.192,
+        "mode": "ok",
+        "billed_cost_usd": 0.02202,
+        "reported_cost_usd": 0.02202,
+        "prompt_tokens": 1500,
+        "completion_tokens": 1000,
+        "finished_ms": 18971529.207,
+        "finish_seq": 1
+      },
+      {
+        "marker": "e13x0",
+        "attempt": 1,
+        "generation_id": "gen-330",
+        "flow": "description",
+        "stream": true,
+        "started_ms": 18971528.769,
+        "mode": "no_usage",
+        "billed_cost_usd": 0.01101,
+        "reported_cost_usd": null,
+        "prompt_tokens": 1500,
+        "completion_tokens": 1000,
+        "finished_ms": 18971779.574,
+        "finish_seq": 2
+      }
+    ],
+    "results": [
+      {
+        "marker": "e13x0",
+        "kind": "description",
+        "ok": true,
+        "finishIdx": 2,
+        "saveIdx": 1,
+        "callId": "7ab46fa1-4d1c-4b3d-867b-1df636bd096d",
+        "costUsdFromResult": null
+      },
+      {
+        "marker": "e13x1",
+        "kind": "badge",
+        "ok": true,
+        "finishIdx": 1,
+        "saveIdx": 2,
+        "callId": "4afb090a-3d64-4c9d-baeb-73e52ed7de2c",
+        "costUsdFromResult": 0.02202
+      }
+    ]
+  },
+  {
+    "id": "E1.4",
+    "mode": "use-cases",
+    "ops": [
+      "e14x0:description",
+      "e14x1:badge"
+    ],
+    "provider_finish_order": [
+      "e14x1",
+      "e14x0"
+    ],
+    "events": 2,
+    "markers_covered": true,
+    "correct": 2,
+    "swaps": 0,
+    "unattributed": 0,
+    "unknown": 0,
+    "ambiguous_marked": 0,
+    "event_rows": [
+      {
+        "marker": "e14x1",
+        "success": true,
+        "error_code": null,
+        "generation_id": "gen-333",
+        "cost_usd": "0.02202000",
+        "usage_reported": true,
+        "identity": null
+      },
+      {
+        "marker": "e14x0",
+        "success": false,
+        "error_code": "AI_RESPONSE_INVALID",
+        "generation_id": "gen-332",
+        "cost_usd": "0.01101000",
+        "usage_reported": true,
+        "identity": null
+      }
+    ],
+    "ledger": [
+      {
+        "marker": "e14x1",
+        "attempt": 1,
+        "generation_id": "gen-333",
+        "flow": "short_text",
+        "stream": false,
+        "started_ms": 18971898.676,
+        "mode": "ok",
+        "billed_cost_usd": 0.02202,
+        "reported_cost_usd": 0.02202,
+        "prompt_tokens": 1500,
+        "completion_tokens": 1000,
+        "finished_ms": 18971898.687,
+        "finish_seq": 1
+      },
+      {
+        "marker": "e14x0",
+        "attempt": 1,
+        "generation_id": "gen-332",
+        "flow": "description",
+        "stream": true,
+        "started_ms": 18971895.989,
+        "mode": "stream_abort",
+        "billed_cost_usd": 0.01101,
+        "reported_cost_usd": 0.01101,
+        "prompt_tokens": 1500,
+        "completion_tokens": 1000,
+        "finished_ms": 18972146.038,
+        "finish_seq": 2
+      }
+    ],
+    "results": [
+      {
+        "marker": "e14x0",
+        "kind": "description",
+        "ok": false,
+        "error": "stream:error",
+        "finishIdx": 2
+      },
+      {
+        "marker": "e14x1",
+        "kind": "badge",
+        "ok": true,
+        "finishIdx": 1
+      }
+    ]
+  }
+]

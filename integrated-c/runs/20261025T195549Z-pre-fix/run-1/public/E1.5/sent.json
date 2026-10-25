@@ -1,0 +1,42 @@
+[
+  {
+    "marker": "e15a",
+    "flow": "badge",
+    "cost": 0.00111,
+    "requestId": "dccec298-9141-446d-9f56-a5380961a1ff",
+    "echoed": "dccec298-9141-446d-9f56-a5380961a1ff",
+    "status": 200,
+    "ms": 21,
+    "payload": "{\"title\":\"Resposta simulada.\"}"
+  },
+  {
+    "marker": "e15b",
+    "flow": "description",
+    "cost": 0.00222,
+    "requestId": "a6007281-34ef-446b-91e7-f240c82694fa",
+    "echoed": "a6007281-34ef-446b-91e7-f240c82694fa",
+    "status": 201,
+    "ms": 53,
+    "payload": {
+      "events": [
+        "progress",
+        "progress",
+        "progress",
+        "progress",
+        "progress",
+        "done"
+      ],
+      "last": "{\"data\":{\"sigla\":\"FGIT\",\"titulo\":\"Fundamentos de Git\",\"ementa\":[\"Introdução ao controle de versão\",\"Conceitos básicos do Git\",\"Configuração inicial do Git\",\"Comandos essenciais do Git\",\"Trabalho com r"
+    }
+  },
+  {
+    "marker": "e15c",
+    "flow": "badge",
+    "cost": 0.00333,
+    "requestId": "74defd49-caa2-4934-a0a5-616567a52917",
+    "echoed": "74defd49-caa2-4934-a0a5-616567a52917",
+    "status": 200,
+    "ms": 13,
+    "payload": "{\"title\":\"Resposta simulada.\"}"
+  }
+]
