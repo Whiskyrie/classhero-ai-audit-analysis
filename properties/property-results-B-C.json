@@ -1,0 +1,191 @@
+{
+  "note": "Sanitized summary of the Jest JSON outputs of the 17 deterministic property tests (mocked fetch and database, no provider call). Test titles are in Portuguese, as in the private spec. The spec, patches and B-to-C diff are private.",
+  "versions": {
+    "B": {
+      "classhero_commit": "196effba1aee75514000734afbb5bb875edc0dd6",
+      "passed": 7,
+      "failed": 10,
+      "total": 17,
+      "tests": [
+        {
+          "group": "identidade entre inferência e evento",
+          "title": "controle: evento salvo logo após cada conclusão recebe o custo certo",
+          "status": "passed"
+        },
+        {
+          "group": "identidade entre inferência e evento",
+          "title": "[DEFEITO ESPERADO] conclusão concorrente fora de ordem, salvamento em ordem de início: sem troca de custo",
+          "status": "failed"
+        },
+        {
+          "group": "identidade entre inferência e evento",
+          "title": "sem chave e com mais de um rastro pendente, não adivinha: custo nulo e marcado ambíguo",
+          "status": "failed"
+        },
+        {
+          "group": "cobertura",
+          "title": "controle: SSE sem usage no done, salvo logo após concluir, não afeta a seguinte",
+          "status": "passed"
+        },
+        {
+          "group": "cobertura",
+          "title": "[DEFEITO ESPERADO] SSE sem usage no done, com salvamentos adiados até as duas concluírem, não desloca o rastro da seguinte",
+          "status": "failed"
+        },
+        {
+          "group": "cobertura",
+          "title": "SSE com usage no done: call_id viaja no payload e pareia mesmo com outra chamada concluída depois",
+          "status": "passed"
+        },
+        {
+          "group": "cobertura",
+          "title": "[DEFEITO ESPERADO] stream encerrado sem evento terminal deixa rastro de erro",
+          "status": "failed"
+        },
+        {
+          "group": "custo desconhecido não é zero",
+          "title": "evento sem custo reportado não grava zero",
+          "status": "passed"
+        },
+        {
+          "group": "custo desconhecido não é zero",
+          "title": "[DEFEITO ESPERADO] relatório administrativo não conta custo desconhecido como gratuito nem omite tentativas falhas",
+          "status": "failed"
+        },
+        {
+          "group": "persistência",
+          "title": "controle: INSERT rejeitado não propaga erro ao fluxo de negócio",
+          "status": "passed"
+        },
+        {
+          "group": "limite de durabilidade declarado (D4)",
+          "title": "INSERT rejeitado é contado como perda e o custo continua nas métricas",
+          "status": "passed"
+        },
+        {
+          "group": "x-request-id na API",
+          "title": "[DEFEITO ESPERADO] longo (500 caracteres) resulta em id válido",
+          "status": "failed"
+        },
+        {
+          "group": "x-request-id na API",
+          "title": "[DEFEITO ESPERADO] com caractere de controle resulta em id válido",
+          "status": "failed"
+        },
+        {
+          "group": "x-request-id na API",
+          "title": "[DEFEITO ESPERADO] com espaço interno resulta em id válido",
+          "status": "failed"
+        },
+        {
+          "group": "x-request-id na API",
+          "title": "[DEFEITO ESPERADO] vazio resulta em id válido",
+          "status": "failed"
+        },
+        {
+          "group": "x-request-id na API",
+          "title": "[DEFEITO ESPERADO] repetido (array) resulta em id válido",
+          "status": "failed"
+        },
+        {
+          "group": "x-request-id na API",
+          "title": "controle: id válido é preservado",
+          "status": "passed"
+        }
+      ]
+    },
+    "C": {
+      "classhero_commit": "b5dd3ee9076eb6728c7c2a987573f43c66feecdd",
+      "passed": 17,
+      "failed": 0,
+      "total": 17,
+      "tests": [
+        {
+          "group": "identidade entre inferência e evento",
+          "title": "controle: evento salvo logo após cada conclusão recebe o custo certo",
+          "status": "passed"
+        },
+        {
+          "group": "identidade entre inferência e evento",
+          "title": "[DEFEITO ESPERADO] conclusão concorrente fora de ordem, salvamento em ordem de início: sem troca de custo",
+          "status": "passed"
+        },
+        {
+          "group": "identidade entre inferência e evento",
+          "title": "sem chave e com mais de um rastro pendente, não adivinha: custo nulo e marcado ambíguo",
+          "status": "passed"
+        },
+        {
+          "group": "cobertura",
+          "title": "controle: SSE sem usage no done, salvo logo após concluir, não afeta a seguinte",
+          "status": "passed"
+        },
+        {
+          "group": "cobertura",
+          "title": "[DEFEITO ESPERADO] SSE sem usage no done, com salvamentos adiados até as duas concluírem, não desloca o rastro da seguinte",
+          "status": "passed"
+        },
+        {
+          "group": "cobertura",
+          "title": "SSE com usage no done: call_id viaja no payload e pareia mesmo com outra chamada concluída depois",
+          "status": "passed"
+        },
+        {
+          "group": "cobertura",
+          "title": "[DEFEITO ESPERADO] stream encerrado sem evento terminal deixa rastro de erro",
+          "status": "passed"
+        },
+        {
+          "group": "custo desconhecido não é zero",
+          "title": "evento sem custo reportado não grava zero",
+          "status": "passed"
+        },
+        {
+          "group": "custo desconhecido não é zero",
+          "title": "[DEFEITO ESPERADO] relatório administrativo não conta custo desconhecido como gratuito nem omite tentativas falhas",
+          "status": "passed"
+        },
+        {
+          "group": "persistência",
+          "title": "controle: INSERT rejeitado não propaga erro ao fluxo de negócio",
+          "status": "passed"
+        },
+        {
+          "group": "limite de durabilidade declarado (D4)",
+          "title": "INSERT rejeitado é contado como perda e o custo continua nas métricas",
+          "status": "passed"
+        },
+        {
+          "group": "x-request-id na API",
+          "title": "[DEFEITO ESPERADO] longo (500 caracteres) resulta em id válido",
+          "status": "passed"
+        },
+        {
+          "group": "x-request-id na API",
+          "title": "[DEFEITO ESPERADO] com caractere de controle resulta em id válido",
+          "status": "passed"
+        },
+        {
+          "group": "x-request-id na API",
+          "title": "[DEFEITO ESPERADO] com espaço interno resulta em id válido",
+          "status": "passed"
+        },
+        {
+          "group": "x-request-id na API",
+          "title": "[DEFEITO ESPERADO] vazio resulta em id válido",
+          "status": "passed"
+        },
+        {
+          "group": "x-request-id na API",
+          "title": "[DEFEITO ESPERADO] repetido (array) resulta em id válido",
+          "status": "passed"
+        },
+        {
+          "group": "x-request-id na API",
+          "title": "controle: id válido é preservado",
+          "status": "passed"
+        }
+      ]
+    }
+  }
+}
